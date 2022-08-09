@@ -1,0 +1,16 @@
+<!-- _sidebar.md -->
+
+* [Welcome](/docs/welcome/intro.md)
+  * [What is TI Plannnig Tool](/docs/welcome/what_is_ti_planning_tool.md)
+* [Platform Overview](/docs/platform_introduction/platform.md)
+  * [Overview](/docs/platform_introduction/overview.md)
+  * [Dashboard](/docs/platform_introduction/dashboard.md)
+  * [Data](/docs/platform_introduction/data.md)
+* [Quick Start Guide](/docs/plan/start.md)
+  * [Creating a New Plan](/docs/plan/create_new_plan.md)
+  * [Electrode Selector](/docs/services/electrode_selector.md)
+  * [Post Processing](/docs/services/post_processing.md)
+  * [S4L Post Processing](/docs/services/s4l_post_processing.md)
+* [Need Help](/docs/support/support.md)
+  * [License](/docs/support/license.md)
+  * [Known Bugs](/docs/support/knownbugs.md)
