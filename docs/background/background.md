@@ -1,0 +1,1 @@
+This section briefly introduces the the theoretical and technical background behind the TI planning tool.

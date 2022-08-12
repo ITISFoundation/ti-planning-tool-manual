@@ -2,6 +2,13 @@
 
 * [Welcome](/docs/welcome/intro.md)
   * [What is TI Plannnig Tool](/docs/welcome/what_is_ti_planning_tool.md)
+* [Background](/docs/background/background.md)
+  * [Modeling Steps](/docs/background/modeling_steps.md)
+  * [Electromagnetic Modeling](/docs/background/electromagnetic_modeling.md)
+    * [Quantities-of-Interest](/docs/background/quantities_of_interest.md)
+  * [Multi-Goal Optimization](/docs/background/multi_goal_optimization.md)
+  * [Ongoing Research and Upcoming Functionality](/docs/background/ongoing_research.md)
+  * [References](/docs/background/references.md)
 * [Platform Overview](/docs/platform_introduction/platform.md)
   * [Overview](/docs/platform_introduction/overview.md)
   * [Dashboard](/docs/platform_introduction/dashboard.md)
