@@ -5,7 +5,7 @@
 * [Background](/docs/background/background.md)
   * [Modeling Steps](/docs/background/modeling_steps.md)
   * [Electromagnetic Modeling](/docs/background/electromagnetic_modeling.md)
-    * [Quantities-of-Interest](/docs/background/quantities_of_interest.md)
+    * [Quantities-of-Interest](/docs/background/electromagnetic_modeling/quantities_of_interest.md)
   * [Multi-Goal Optimization](/docs/background/multi_goal_optimization.md)
   * [Ongoing Research and Upcoming Functionality](/docs/background/ongoing_research.md)
   * [References](/docs/background/references.md)
