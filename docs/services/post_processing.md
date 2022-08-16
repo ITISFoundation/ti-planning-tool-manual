@@ -11,7 +11,10 @@ It is separated in two main sections.
     Different setups can be compared and sorted using the three main metrics: Strength, Selectivity and Collateral. 
     The second half is used for visualization of the fields in 2D, 3D and waveforms.
 
-    https://github.com/ITISFoundation/ti-planning-tool-manual/blob/main/_media/postpro/analysis_slicer.png
+    <br>
+    <p align="center">
+      <img width="350" height="150" src="_media/postpro/analysis_slicer.png">
+    </p>
 
 
 * **Report** <br/>
