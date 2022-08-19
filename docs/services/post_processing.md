@@ -24,8 +24,14 @@ It is separated in two main sections.
 ## Analysis
 
 Let us now have a closer look at the **Analysis** stage. In the beginning, your attention should be directed towards the 
-table summarizing the optimizers results. To facilitate the search for an ideal setup, the table is sortable. The sorting 
-can be done either using the scaling sliders on top (1.), where the importance of each metric can be set and the whole table
+table summarizing the optimizers results. To facilitate the search for an ideal setup, the table is sortable. 
+
+<br>
+<p align="center">
+  <img width="350" height="150" src="_media/postpro/analysis_table_nums.png">
+</p>
+
+The sorting can be done either using the scaling sliders on top (1.), where the importance of each metric can be set and the whole table
 is then sorted according to the score resulting from this weighting. The score is also shown in the last column of the table.
 For further detail on how this score is achieved, please refer to the more detailed explanations in the **Background** section. 
 Alternatively the table can be sorted for only one quantity by clicking on the columns name (2.). 
@@ -35,6 +41,11 @@ to create the E-Fields and the subsequent channel weight sweep is shown at the b
 
 When the calculations are finished, all the viewers in the lower half of the screen will update. Now you can visually 
 inspect the scenario. A quick explanation of the different sections and elements:
+
+<br>
+<p align="center">
+  <img width="350" height="150" src="_media/postpro/analysis_slicer_numbers.png">
+</p>
 
 1. **Main Controls** <br/>
    Here, all the setting options for the viewers are located. 
