@@ -1,4 +1,4 @@
-**1. **The MIDA head model [Iacono2015], developed by the IT'IS Foundation in collaboration with the US Food and 
+The MIDA head model [Iacono2015], developed by the IT'IS Foundation in collaboration with the US Food and 
 Drug Administration (FDA), was used as center of the electromagnetic (EM) simulations. The model is derived combining
 multiple MRI (Magnetic Resonance Imaging) modality images (morphological T1- and T2-weighted images, and arterial spin 
 labelling (ASL) for imaging the vascularity), and non-rigidly registered diffusion tensor imaging (DTI) data which allows 
