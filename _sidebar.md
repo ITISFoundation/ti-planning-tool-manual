@@ -3,7 +3,7 @@
 * [Welcome](/docs/welcome/intro.md)
   * [What is TI Plannnig Tool](/docs/welcome/what_is_ti_planning_tool.md)
 * [Materials and Methods](docs/material_methods/material_and_methods.md)
-  * [Anatomical references human head model](docs/material_methods/anatomical_refs.md)
+  * [Anatomical References Human Head Model](docs/material_methods/anatomical_refs.md)
   * [Electrode Models and Electrode Placement](docs/material_methods/electrode_models.md)
   * [Electromagnetic (EM) Simulations](docs/material_methods/em_sim.md)
     * [Dielectric Properties of Materials and Tissues](docs/material_methods/dielectric_properties.md)

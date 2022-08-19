@@ -75,11 +75,30 @@ inspect the scenario. A quick explanation of the different sections and elements
    An interactive 3D model of the current setup. The electrode pair's locations are marked in yellow and blue, the target 
    in red and the iso-surface in orange. The iso-surface visualizes all voxels with value equal to the strength metric 
    reached within the target.
-6. **E-Field Envelope** <br/>
+6. **Export Buttons** <br/>
    * ```Add Slicer to Report``` allows to add the six elements of the viewer to the PDF report as they are.
    * ```Export to S4L``` creates a .cache file of the TI max. modulation amplitude, which can be used in Sim4Life web.
 
+## Report
 
+In the **Report** section, the chosen setup is presented from numerical side as opposed to the visual one from the **Analysis**.
+A brief explanation of the different parts:
 
-    
-    
+1. **Remarks** <br/>
+   This field can be used to write some personal comments. Everything written in this field will be included in the PDF 
+   when this tab is added to the Report.
+
+2. **Settings** <br/>
+   Toggle between Log and dB scale and choose the channel weighting ratio.
+ 
+3. **General Information** <br/>
+   The electrode locations, applied currents and best metrics for this specific setup are summarized. 
+
+4. **Cummulative Histograms** <br/>
+   Separate plots for HF and TI exposure are created per default. The development of the field within and without the
+   target tissue are compared in each. You can add plots for other regions of interest using the dropdown menu.
+5. **Metrics Plots** <br/>
+   The development of the three main metrics is plotted over the whole channel ratio range for both HF and TI.
+6. **Export Buttons** <br/>
+   * ```Add Metrics to Report``` allows to add all the information from this section to the PDF report.
+   * ```Export Report``` when you added everything to the report, it can be generated and exported for download.
