@@ -8,5 +8,5 @@ of the inner brain structures, including brainsteam, hippocampus and amygdala.
 
 <br>
 <p align="center">
-  <img width="350" height="150" src="_media/methods/antonino_img.png">
+  <img width="128" height="261" src="_media/methods/antonino_img.png">
 </p>
