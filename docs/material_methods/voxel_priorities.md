@@ -1,0 +1,1 @@
+Electrodes were assigned lower priority with respect to the head tissues.

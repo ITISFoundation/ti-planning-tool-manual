@@ -1,0 +1,2 @@
+In order to use the superposition principle, two Dirichlet (voltage) boundary conditions were used, with one contact
+set to 1V while all the other set to 0V. Electrodes were therefore considered isopotential.
