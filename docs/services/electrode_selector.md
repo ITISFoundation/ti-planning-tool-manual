@@ -7,7 +7,7 @@ outlined in the **Background** chapter.
 
 <br>
 <p align="center">
-  <img width="440" height="336" src="_media/electrode_selectro/electrode_selector.png">
+  <img width="440" height="336" src="_media/electrode_selector/electrode_selector.png">
 </p>
 
 Let us briefly explain the different elements of the interface:
@@ -18,7 +18,7 @@ Let us briefly explain the different elements of the interface:
 
 <br>
 <p align="center">
-  <img width="300" height="144" src="_media/electrode_selectro/species.png">
+  <img width="300" height="144" src="_media/electrode_selector/species.png">
 </p>
 
 3. **Target Structure** <br/>
