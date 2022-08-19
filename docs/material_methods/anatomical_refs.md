@@ -5,3 +5,8 @@ labelling (ASL) for imaging the vascularity), and non-rigidly registered diffusi
 inhomogeneous, anisotropic material property distributions to be assigned to neural tissues. The model was acquired with 
 a spatial resolution of xxmm, and consists of 115 distinct tissues. The model includes as well a detailed segmentation 
 of the inner brain structures, including brainsteam, hippocampus and amygdala.
+
+<br>
+<p align="center">
+  <img width="350" height="150" src="_media/methods/antonino_img.png">
+</p>
