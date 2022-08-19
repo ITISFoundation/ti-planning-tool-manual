@@ -13,7 +13,7 @@ It is separated in two main sections.
 
     <br>
     <p align="center">
-      <img width="350" height="150" src="_media/postpro/analysis_slicer.png">
+      <img width="412" height="232" src="_media/postpro/analysis_slicer.png">
     </p>
 
 * **Report** <br/>
@@ -28,7 +28,7 @@ table summarizing the optimizers results. To facilitate the search for an ideal 
 
 <br>
 <p align="center">
-  <img width="350" height="150" src="_media/postpro/analysis_table_nums.png">
+  <img width="382" height="136" src="_media/postpro/analysis_table_nums.png">
 </p>
 
 The sorting can be done either using the scaling sliders on top (1.), where the importance of each metric can be set and the whole table
@@ -44,7 +44,7 @@ inspect the scenario. A quick explanation of the different sections and elements
 
 <br>
 <p align="center">
-  <img width="350" height="150" src="_media/postpro/analysis_slicer_numbers.png">
+  <img width="412" height="232" src="_media/postpro/analysis_slicer_numbers.png">
 </p>
 
 1. **Main Controls** <br/>
