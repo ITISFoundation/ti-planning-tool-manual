@@ -29,6 +29,6 @@
   * [S4L Post Processing](/docs/services/s4l_post_processing.md)
 * [Support](/docs/support/support.md)
   * [License](/docs/support/license.md)
-    * [Sim4Life](/docs/support/license/sim4life/sim4life.md)
-    * [SEMCADX](/docs/support/license/semcad/SEMCADX.md)
+    * [Sim4Life](/docs/support/sim4life/sim4life.md)
+    * [SEMCADX](/docs/support/semcad/SEMCADX.md)
   * [Known Bugs](/docs/support/knownbugs.md)
