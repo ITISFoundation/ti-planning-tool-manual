@@ -1,1 +1,1 @@
-In case you need some support, please, do not hesitate to contact us in [ti-plan-support@itis.swiss](mailto:ti-plan-support@itis.swiss)
+In case you need some support, please, do not hesitate to contact us in [tip@itis.swiss](mailto:tip@itis.swiss)
