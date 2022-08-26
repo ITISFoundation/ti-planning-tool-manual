@@ -1,8 +1,8 @@
 TI Planning Tool is powered by the following software and libraries:
 
 - [oSPARC](https://github.com/ITISFoundation/osparc-simcore)
-- [Sim4Life](/docs/support/license/sim4life/sim4life.md)
-- [SEMCADX](/docs/support/license/semcad/SEMCADX.md)
+- [Sim4Life](/docs/support/license/sim4life/copyright_Sim4Life.html)
+- [SEMCADX](/docs/support/license/semcad/copyright_SEMCADX.html)
 - [Adminer](https://www.adminer.org/)
 - [Celery](https://docs.celeryproject.org/en/stable/)
 - [Dask](https://dask.org/)
