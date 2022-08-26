@@ -1,6 +1,6 @@
 <!-- _sidebar.md -->
 
-* [Welcome](/docs/welcome/intro.md)
+* [Welcome](README.md)
   * [What is TI Plannnig Tool](/docs/welcome/what_is_ti_planning_tool.md)
 * [Materials and Methods](docs/material_methods/material_and_methods.md)
   * [Anatomical References Human Head Model](docs/material_methods/anatomical_refs.md)
