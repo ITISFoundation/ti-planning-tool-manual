@@ -27,6 +27,6 @@
   * [Electrode Selector](/docs/services/electrode_selector.md)
   * [Post Processing](/docs/services/post_processing.md)
   * [S4L Post Processing](/docs/services/s4l_post_processing.md)
-* [Need Help](/docs/support/support.md)
+* [Support](/docs/support/support.md)
   * [License](/docs/support/license.md)
   * [Known Bugs](/docs/support/knownbugs.md)
