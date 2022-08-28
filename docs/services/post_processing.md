@@ -1,9 +1,16 @@
-# Post Processing
+# Identification of Optimal Configuration(s)
 
 ## Overview
 
-The Post Processing stage allows you to sort, visualize and analyze the optimizers results of your electrode selection. 
-It is separated in two main sections. 
+After a fully automated search procedure has been executed using the results of highly realistic simulations, a list of optimized configurations is presented that can be sorted according to weighted optimality criteria (see below).
+
+Starting from a thus optimized, or from a user defined TIS configuration, the resulting exposure can be studied and if desired, the configuration (electrode locations, current magnitudes) can be interactively refined.
+
+For that purpose, TI and high-frequency exposure distributions are dynamically visualized on top of medical image data, and key exposure metrics as well as plots are shown.
+
+Once promising exposure conditions have been identified, the associated visualizations and metrics can be added to an automatically generated, downloadable report.
+
+xxx review the below xxx
 
 * **Analysis** <br/>
 
