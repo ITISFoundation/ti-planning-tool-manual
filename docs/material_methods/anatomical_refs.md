@@ -1,10 +1,6 @@
-The MIDA head model [Iacono2015], developed by the IT'IS Foundation in collaboration with the US Food and 
-Drug Administration (FDA), was used as center of the electromagnetic (EM) simulations. The model is derived combining
-multiple MRI (Magnetic Resonance Imaging) modality images (morphological T1- and T2-weighted images, and arterial spin 
-labelling (ASL) for imaging the vascularity), and non-rigidly registered diffusion tensor imaging (DTI) data which allows 
-inhomogeneous, anisotropic material property distributions to be assigned to neural tissues. The model was acquired with 
-a spatial resolution of xxmm, and consists of 115 distinct tissues. The model includes as well a detailed segmentation 
-of the inner brain structures, including brainsteam, hippocampus and amygdala.
+TIP is designed, such that it supports different head models. While the initial release only provides access to a single head model, more models will be provided over time. The following list provides additional information about the provided models:
+
+* The MIDA head model [Iacono2015], developed by the IT'IS Foundation in collaboration with the US Food and Drug Administration (FDA), is derived from multi-modal MRI (Magnetic Resonance Imaging) imaging data from a healthy volunteer.  The underlying image data includes T1- and T2-weighted images, arterial spin labelling (ASL) for vasculature imaging, and non-rigidly registered diffusion tensor imaging (DTI) data. The latter can be used to assign inhomogeneous, anisotropic conductivity maps to neural tissues. The resolution of the underlying image data is better than 0.5mm throughout, and it was segmented into 115 distinct tissues and anatomical regions, including important (deep) brain structures.
 
 <br>
 <p align="center">
