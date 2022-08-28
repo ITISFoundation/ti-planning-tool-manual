@@ -1,7 +1,7 @@
 <!-- _sidebar.md -->
 
 * [Welcome](README.md)
-  * [Why offer a TI Plannig Tool](/docs/welcome/what_is_ti_planning_tool.md)
+  * [Why offer a TI Plannig Tool?](/docs/welcome/what_is_ti_planning_tool.md)
 * [Background](/docs/background/background.md)
   * [Planning Steps](/docs/background/modeling_steps.md)
   * [Electromagnetic Modeling](/docs/background/electromagnetic_modeling.md)
