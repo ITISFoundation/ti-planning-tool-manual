@@ -1,6 +1,6 @@
 # Welcome
 
-Welcome to the *TI Planning Tool* Documentation. This user manual aims to provide detailed information and background about how to use the Tool.
+Welcome to the *TI Planning Tool* (TIP) user manual. This document provides background and detailed usage information to guide TIP users.
 
 <br>
 <p align="center">
