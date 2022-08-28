@@ -15,7 +15,6 @@
     * [Solver Settings](docs/material_methods/solver_settings.md)
   * [Quantities-of-Interest](/docs/background/electromagnetic_modeling/quantities_of_interest.md)
   * [Multi-Goal Optimization](/docs/background/multi_goal_optimization.md)
-  * [Ongoing Research and Upcoming Functionality](/docs/background/ongoing_research.md)
 * [Quick Start Guide](/docs/plan/start.md)
   * [Platform Overview](/docs/platform_introduction/platform.md)
     * [Landing Page](/docs/platform_introduction/overview.md)
@@ -31,4 +30,5 @@
   * [SEMCAD X](/docs/support/semcad/copyright_SEMCADX.html)
 * [Release Notes](/docs/support/releases.md)
   * [Known Bugs](/docs/support/knownbugs.md)
+  * [Ongoing Research and Upcoming Functionality](/docs/background/ongoing_research.md)
 * [Support](/docs/support/support.md)
