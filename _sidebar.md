@@ -1,7 +1,7 @@
 <!-- _sidebar.md -->
 
 * [Welcome](README.md)
-  * [What is TI Plannnig Tool](/docs/welcome/what_is_ti_planning_tool.md)
+  * [Why TI Plannnig Tool](/docs/welcome/what_is_ti_planning_tool.md)
 * [Materials and Methods](docs/material_methods/material_and_methods.md)
   * [Anatomical References Human Head Model](docs/material_methods/anatomical_refs.md)
   * [Electrode Models and Electrode Placement](docs/material_methods/electrode_models.md)
@@ -17,7 +17,6 @@
     * [Quantities-of-Interest](/docs/background/electromagnetic_modeling/quantities_of_interest.md)
   * [Multi-Goal Optimization](/docs/background/multi_goal_optimization.md)
   * [Ongoing Research and Upcoming Functionality](/docs/background/ongoing_research.md)
-  * [References](/docs/background/references.md)
 * [Platform Overview](/docs/platform_introduction/platform.md)
   * [Overview](/docs/platform_introduction/overview.md)
   * [Dashboard](/docs/platform_introduction/dashboard.md)
@@ -32,3 +31,4 @@
     * [Sim4Life](/docs/support/sim4life/copyright_Sim4Life.html)
     * [SEMCADX](/docs/support/semcad/copyright_SEMCADX.html)
   * [Known Bugs](/docs/support/knownbugs.md)
+* [References](/docs/background/references.md)
