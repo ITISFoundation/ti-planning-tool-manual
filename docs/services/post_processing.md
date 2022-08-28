@@ -2,13 +2,17 @@
 
 ## Overview
 
-After a fully automated search procedure has been executed using the results of highly realistic simulations, a list of optimized configurations is presented that can be sorted according to weighted optimality criteria (see below).
+_Based on the information provided during the setup step, an fully automatic, exhaustive search of the considered electrode placement configuration space is performed in which three key metrics are considered_
+* _target exposure magnitude: the median of the TI modulation envelope magnitude within the target_
+* _stimulation selectivity: the ratio of the mean TI exposure in the target vs. the rest of the brain_
+* _collateral stimulation: the off-target brain fraction with a TI exposure above the target exposure magnitude_
+_These metrics are also central to the visualization and included in the downloadable report._
 
-Starting from a thus optimized, or from a user defined TIS configuration, the resulting exposure can be studied and if desired, the configuration (electrode locations, current magnitudes) can be interactively refined.
+_By dynamically weighting the often conflicting performance metrics, a sorted list of TI configurations is obtained (this list is always headed by a Pareto-optimal configuration). Using such multi-goal optimization techniques empowers users to make informed choices with regard to conflicting TI exposure criteria._
 
-For that purpose, TI and high-frequency exposure distributions are dynamically visualized on top of medical image data, and key exposure metrics as well as plots are shown.
+_Starting from a thus optimized, or from a user defined TIS configuration, the resulting exposure can be studied and if desired, the configuration (electrode locations, current magnitudes) can be interactively refined. For that purpose, TI and high-frequency exposure distributions are dynamically visualized on top of medical image data, and key exposure metrics as well as plots are shown._
 
-Once promising exposure conditions have been identified, the associated visualizations and metrics can be added to an automatically generated, downloadable report.
+_Once promising exposure conditions have been identified, the associated visualizations and metrics can be added to an automatically generated, downloadable report._
 
 xxx review the below xxx
 
