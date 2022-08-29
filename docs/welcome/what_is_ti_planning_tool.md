@@ -1,4 +1,4 @@
-Why offer a TI Planning Tool?
+**Why offer a TI Planning Tool?**
 
 Temporal interference stimulation (TIS) [add link here] and its potential to selectively stimulate deep-seated brain regions without activating overlaying structures has recently generated huge interest and stimulated a large number of animal and human studies. 
 
