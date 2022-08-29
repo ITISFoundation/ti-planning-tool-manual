@@ -15,8 +15,7 @@ outlined in the **Background** chapter.
 Let us briefly explain the different elements of the interface:
 
 1. **Select Species** <br/>
-   Depending on what sort of experiment should be planned, a human or mouse model with the standard electrode positions
-   can be selected. 
+   Depending on the TI exposure to be planned, a human or mouse model with associated standard electrode locations can be selected. The list of available models will continue to expand in the near future.
 
 <br>
 <p align="center">
@@ -24,13 +23,12 @@ Let us briefly explain the different elements of the interface:
 </p>
 
 3. **Target Structure** <br/>
-   Specify the structure that should be targeted by TI. All the metrics will be calculated for this region. 
+   Specify the brain structure that should be targeted by TI. All the exposure quality metrics will be calculated according to the selected structure. 
  
 4. **Electrode Pairs** <br/>
-   Interactive selection of electrode position candidates. Ex +/- create one E-Field. All permutations of the candidates 
-   are then evaluated in the **Optimizer**.
+   Interactive selection of electrode position candidates. xxxxxxxx E*n* + and E*n* - correspond to candidate locations for the two electrodes that make up the *n*-th pair. All permutations of the candidates locations are then evaluated as part of the optimization process.
 
 5. **Submit Button** <br/>
-   Once you are finished setting up all parameters, you can hit ```Submit```. This will relay all the necessary information
-   to the **Optimizer** for the evaluation. If settings were changed after submitting, the Button will become orange to 
-   indicate this mismatch. Settings need to be resubmitted and the **Optimizer** executed once more to update the pipeline.
+   Once you are finished with the setup, you can press ```Submit```. This will relay all the required information
+   to the **Optimizer** for the evaluation. If settings are changed again after submitting, the button turns orange to 
+   indicate that the optimization results are outdated. Settings can then be resubmitted and the **Optimizer** is executed once more to update the pipeline, and the button color reverts to the standard color.
