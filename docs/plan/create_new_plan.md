@@ -1,3 +1,3 @@
-**Create New plan**
+**Create a New Plan**
 
 xxx
