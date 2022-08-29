@@ -86,24 +86,22 @@ inspect the exposure scenario:
 
 ## Report
 
-In the **Report** section, the chosen setup is presented from numerical side as opposed to the visual one from the **Analysis**.
+In the **Report** section, a more quantitative view is presented (compared to the visual one on the **Analysis** section).
 A brief explanation of the different parts:
 
 1. **Remarks** <br/>
-   This field can be used to write some personal comments. Everything written in this field will be included in the PDF 
-   when this tab is added to the Report.
+   This field can be used to add notes, provide meta-information, and comment. Everything written in this field will be included in the PDF report if this tab is added to the Report by pressing the ```Add Metrics to Report``` button.
 
 2. **Settings** <br/>
    Toggle between Log and dB scale and choose the channel weighting.
  
 3. **General Information** <br/>
-   The electrode locations, applied currents and best metrics for this specific setup are summarized. 
+   The electrode locations, applied currents and primary metrics for the selected exposure configuration are summarized. 
 
 4. **Cummulative Histograms** <br/>
-   Separate plots for HF and TI exposure are created per default. The development of the field within and without the
-   target tissue are compared in each. You can add plots for other regions of interest using the dropdown menu.
+   Cumulative histograms of the HF and TI fields within and outside the target region. Plots for other regions-of-interest can be added using the dropdown menu.
 5. **Metrics Plots** <br/>
-   The development of the three main metrics is plotted over the whole channel ratio range for both HF and TI.
+   The three principal metrics are plotted as a function of the distribution of the total current to the two channels, for both HF and TI.
 6. **Export Buttons** <br/>
-   * ```Add Metrics to Report``` allows to add all the information from this section to the PDF report.
-   * ```Export Report``` when you added everything to the report, it can be generated and exported for download.
+   * ```Add Metrics to Report``` allows to add all the information from the **Report** section to the PDF report.
+   * ```Export Report``` permits to create and download the PDF report, provided that views, metrics, or curves have been added.
