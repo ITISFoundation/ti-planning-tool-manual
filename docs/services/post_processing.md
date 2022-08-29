@@ -71,18 +71,18 @@ inspect the exposure scenario:
    they don't trigger an immediate visualization update, since changing them requires re-calculations of the fields and metrics. Viewer update can instead be triggered using the ```Update Fields``` Button.
  
 3. **Slice Viewers** <br/>
-   Here, the individual slices of the volume are shown in each direction. 
+   Here, the three orthogonal slice field views are shown. They are overlayed on the image-data from which the anatomical model was created. Crosshairs on the view indicate the intersections with the other two slices.
 
 4. **E-Field Envelope** <br/>
-   These graphs show the envelope of the E-Field at the location of the crosshair from (3.) and similarly the field's 
-   x, y and z components.
-5. **E-Field Envelope** <br/>
-   An interactive 3D model of the current setup. The electrode pair's locations are marked in yellow and blue, the target 
+   These graphs show the transient E-Field at the location of the crosshair from (3.). The absolute field magnitude and the 
+   x, y and z components are shown. The plots show both the high-frequency transient E-field, as well as the low-frequency TI envelope.
+5. **Iso-Surface View** <br/>
+   An interactive 3D model of the current setup: The electrode pair locations are shown in yellow and blue, the target 
    in red and the iso-surface in orange. The iso-surface visualizes all voxels with value equal to the strength metric 
    reached within the target.
 6. **Export Buttons** <br/>
-   * ```Add Slicer to Report``` allows to add the six elements of the viewer to the PDF report as they are.
-   * ```Export to S4L``` creates a .cache file of the TI max. modulation amplitude, which can be used in Sim4Life web.
+   * ```Add Slicer to Report``` allows to add the six viewing elements to the PDF report (according to the currently selected slicing positions and viewing angle).
+   * ```Export to S4L``` creates a .cache file of the TI maximum modulation amplitude, which can then be explored in the Sim4Life:web step.
 
 ## Report
 
@@ -94,7 +94,7 @@ A brief explanation of the different parts:
    when this tab is added to the Report.
 
 2. **Settings** <br/>
-   Toggle between Log and dB scale and choose the channel weighting ratio.
+   Toggle between Log and dB scale and choose the channel weighting.
  
 3. **General Information** <br/>
    The electrode locations, applied currents and best metrics for this specific setup are summarized. 
