@@ -23,11 +23,9 @@ As TI-exposure quantity, the modulation envelope magnitude (MEM) has been chosen
 where $\alpha$ denotes the angle between $\vec{E}_{1,2}$. This metric has been chosen because it reproduces empirical observations, such as the neurons responding to the demodulated exposure and stimulation target moving towards the channel carrying less current when the current ratio is adapted.
 
 To assess the quality of a TI exposure condition, three key metrics have been defined:
-\begin{itemize}
-    \item M1 -- target exposure strength (`strength'): the median of $T_{\textrm{max}}$ in the target,
-    \item M2 -- exposure selectivity (`selectivity'): the ratio of the mean target $T_{\textrm{max}}$ and the mean off-target $T_{\textrm{max}}$,
-    \item M3 -- off-target exposure (`collateral'): the fraction of the non-target brain volume with $T_{\textrm{max}}$ exceeding M1.
-\end{itemize}
+* M1 - target exposure strength (‘strength'): the median of $T_{\textrm{max}}$ in the target,
+* M2 - exposure selectivity (‘selectivity'): the ratio of the mean target $T_{\textrm{max}}$ and the mean off-target $T_{\textrm{max}}$,
+* M3 - off-target exposure (‘collateral'): the fraction of the non-target brain volume with $T_{\textrm{max}}$ exceeding M1.
 Typically, it is not possible to find exposure conditions that simultaneously optimize all three metrics, and a compromise or prioritization is needed.
 
 In addition to the TI-relevant MEM distribution, `high-frequency' exposure can also be of interest (e.g., to analyze potential high frequency stimulation or conduction blocking). For this, the peak field magnitude is used, which is obtained as:
