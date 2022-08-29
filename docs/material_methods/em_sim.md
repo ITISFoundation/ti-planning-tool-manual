@@ -11,3 +11,5 @@ the permittivity of the vacuum, and 𝜔 is the angular frequency of the applie
 Under these conditions, ohmic currents dominate over displacement currents, and inductive effects can be neglected (see [Bossetti2008] for an analysis on the applicability of the quasistatic approximation in neurostimulation applications).
 
 The structured EM simulation was set-up by assigning (i) material and tissue dielectric properties, (ii) boundary conditions at the head surface and the electrode contacts, and (iii) by discretizing the computational domain.
+
+To ensure solver convergence, a string convergence criterion was used: reduction of the residuum by 12 orders of magnitude.
