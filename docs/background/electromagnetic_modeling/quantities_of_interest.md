@@ -3,10 +3,8 @@
 Based on precomputed $E$-fields for the different electrode pairs (actually, based on linear combinations of single source-electrode simulations) distributions of the relevant TI-exposure quantity can be computed, and key performance metrics can be determined.
 
 The total field is obtained as:
-\begin{equation}
-    \vec{E}(t,x)=\textrm{sin} (\omega_1\cdot t)\vec{E}_1(x)+\textrm{sin}(\omega_2\cdot t)\vec{E}_2(x),
-\end{equation}
-where $$\vec{E}_{1,2}$$ are the fields of the two channels and $\omega_{1,2}$ are their angular frequencies (initial phases are set to zero without loss of generality). It projection along a direction of interest $\vec{n}$ (e.g., the principal axis of a pyramidal neuron, or the principal axis of the local diffusion tensor; $\left| \vec{n} \right| = 1$) is obtained as:
+$\vec{E}(t,x)=\textrm{sin} (\omega_1\cdot t)\vec{E}_1(x)+\textrm{sin}(\omega_2\cdot t)\vec{E}_2(x),$
+where $\vec{E}_{1,2}$ are the fields of the two channels and $\omega_{1,2}$ are their angular frequencies (initial phases are set to zero without loss of generality). It projection along a direction of interest $\vec{n}$ (e.g., the principal axis of a pyramidal neuron, or the principal axis of the local diffusion tensor; $\left| \vec{n} \right| = 1$) is obtained as:
 \begin{equation}
     \vec{E}_{\vec{n}}(t,x)=\textrm{sin} (\omega_1\cdot t)\left(\vec{n}\cdot\vec{E}_1(x)\right)+\textrm{sin}(\omega_2\cdot t)\left(\vec{n}\cdot\vec{E}_2(x)\right).
 \end{equation}
