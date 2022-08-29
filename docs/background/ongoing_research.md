@@ -1,3 +1,5 @@
+## Ongoing Research, Upcoming Functionality 
+
 In the near future, the library of precomputed fields will be broadened (more head models, other species, different electrode shapes).
 
 More functionality will be added to the TI Planning tool over time, as existing research code matures:

@@ -1,3 +1,5 @@
+# References
+
 [1] Maria Ida Iacono, Esra Neufeld, Esther Akinnagbe, Kelsey Bower, Johanna Wolf, Ioannis Vogiatzis Oikonomidis, Deepika Sharma, Bryn Lloyd, Bertram J Wilm, Michael Wyss, et al. Mida: a multimodal imagingbased detailed anatomical model of the human head and neck. PloS one, 10(4):e0124126, 2015.
 
 [2] Marie-Christine Gosselin, Esra Neufeld, Heidi Moser, Eveline Huber, Silvia Farcito, Livia Gerber, Maria Jedensj¨o, Isabel Hilber, Fabienne Di Gennaro, Bryn Lloyd, et al. Development of a new generation of high-resolution anatomical models for medical device evaluation: the virtual population 3.0. Physics in Medicine & Biology, 59(18):5287, 2014.

@@ -1,4 +1,4 @@
-**Quantities-of-Interest**
+## Quantities-of-Interest
 
 Based on precomputed $E$-fields for the different electrode pairs (actually, based on linear combinations of single source-electrode simulations) distributions of the relevant TI-exposure quantity can be computed, and key performance metrics can be determined.
 

@@ -1,6 +1,6 @@
-# Identification of Optimal Configuration(s)
+## Identification of Optimal Configuration(s)
 
-## Overview
+### Overview
 
 _Based on the information provided during the setup step, an fully automatic, exhaustive search of the considered electrode placement configuration space is performed in which three key metrics are considered_
 * _target exposure magnitude: the median of the TI modulation envelope magnitude within the target_

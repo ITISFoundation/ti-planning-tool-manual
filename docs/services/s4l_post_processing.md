@@ -1,4 +1,4 @@
-**Interactive exposure exploration**
+## Interactive exposure exploration
 
 _In addition to the predefined exposure visualizations of the second step, free exploration using the full visualization and analysis power of Sim4Life:web (ZMT Zurich MedTech AG) [add link here] is optionally possible, which includes volume rendering, streamline extraction, masking, projecting, calculation of derived quantities, etc._
 

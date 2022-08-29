@@ -1,4 +1,4 @@
-**Platform Overview**
+## Platform Overview
 
 The TI Planning Tool page has the following principal views:
 * a [Landing Page](/docs/platform_introduction/overview.md), which currently serves primarily for user authentication
