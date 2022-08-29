@@ -11,8 +11,6 @@
     * [Dielectric Tissue Properties](docs/material_methods/dielectric_properties.md)
     * [Boundary Conditions](docs/material_methods/boundary_cond.md)
     * [Discretization](docs/material_methods/grid_settings.md)
-    * [Voxel Priorities](docs/material_methods/voxel_priorities.md)
-    * [Solver Settings](docs/material_methods/solver_settings.md)
   * [Quantities-of-Interest](/docs/background/electromagnetic_modeling/quantities_of_interest.md)
   * [Multi-Goal Optimization](/docs/background/multi_goal_optimization.md)
 * [Quick Start Guide](/docs/plan/start.md)
