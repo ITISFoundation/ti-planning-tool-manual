@@ -7,7 +7,7 @@
   * [Electromagnetic Modeling](/docs/background/electromagnetic_modeling.md)
     * [Head Models](docs/material_methods/anatomical_refs.md)
     * [Electrode Shapes and Placement](docs/material_methods/electrode_models.md)
-    * [EM Simulator](docs/material_methods/em_sim.md)
+    * [Electromagnetic (EM) Simulator](docs/material_methods/em_sim.md)
     * [Dielectric Tissue Properties](docs/material_methods/dielectric_properties.md)
     * [Boundary Conditions](docs/material_methods/boundary_cond.md)
     * [Discretization](docs/material_methods/grid_settings.md)
