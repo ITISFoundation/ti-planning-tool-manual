@@ -6,7 +6,7 @@ valid when:
 * 𝜎≫![](file:///C:/Users/steiner/AppData/Local/Temp/msohtmlclip1/01/clip_image004.png), where 𝜀 is the 
 electrical permittivity of the tissue/material, ![](file:///C:/Users/steiner/AppData/Local/Temp/msohtmlclip1/01/clip_image006.png)is 
 the permittivity of the vacuum, and 𝜔 is the angular frequency of the applied field, and
-* 𝜆≫_d_,  where 𝜆  is the wavelength of the EM field and *d* is characteristic size of the structure of interest, or the computational domain. 
+* 𝜆≫*d*,  where 𝜆  is the wavelength of the EM field and *d* is characteristic size of the structure of interest, or the computational domain. 
 
 Under these conditions, ohmic currents dominate over displacement currents, and inductive effects can be neglected (see [Bossetti2008] for an analysis on the applicability of the quasistatic approximation in neurostimulation applications).
 
