@@ -28,5 +28,5 @@
   * [SEMCAD X](/docs/support/semcad/copyright_SEMCADX.html)
 * [Release Notes](/docs/support/releases.md)
   * [Known Bugs](/docs/support/knownbugs.md)
-  * [Ongoing Research, Upcoming Functionality](/docs/background/ongoing_research.md)
+  * [Research & Upcoming Functionality](/docs/background/ongoing_research.md)
 * [Support](/docs/support/support.md)
