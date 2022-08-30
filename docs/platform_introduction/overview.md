@@ -1,7 +1,7 @@
-## Landing Page
+### Landing Page
 
 <br>
 <p align="center">
-  <img width="400" height="267" src="_media/quickguide/landingpage.png">
+  <img width="600" height="400" src="_media/quickguide/landingpage.png">
 </p>
 

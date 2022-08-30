@@ -1,7 +1,15 @@
 # Support
 
-Request your login online on the “TI Planning” webpage [add link here]. In case you need support, please, do not hesitate to contact us at [tip@itis.swiss](mailto:tip@itis.swiss)
+### Create account
 
-Feedback is warmly welcomed – we listen! Kind regards, 
+Request your login online on the [“TI Planning” webpage](https://tip.itis.swiss/). 
+
+### Send us an email
+
+Please contact us at [tip@itis.swiss](mailto:tip@itis.swiss) in case you need support.
+
+Feedback is warmly welcomed – we listen!
+
+Thank you!
 
 The IT’IS TIP Team
