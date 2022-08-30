@@ -35,34 +35,13 @@
   <script src="lib/plugins/footer.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>  <!-- Jquery for GitHub issues -->
   <script src="//unpkg.com/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script> -->
-  
-  <script>
-    MathJax = {
-      startup: {
-        ready: function() {
-          var HTMLDomStrings = MathJax._.handlers.html.HTMLDomStrings.HTMLDomStrings;
-          var handleTag = HTMLDomStrings.prototype.handleTag;
-          HTMLDomStrings.prototype.handleTag = function (node, ignore) {
-            if (this.adaptor.kind(node) === '#comment') {
-              var text = this.adaptor.textContent(node);
-              if (text.match(/^\[CDATA\[(?:\n|.)*\]\]$/)) {
-                this.string += '<!'
-                this.extendString(node, text);
-                this.string += '>';
-                return this.adaptor.next(node);
-              }
-            }
-            return handleTag.call(this, node, ignore);
-          }
-          MathJax.startup.defaultReady();
-          MathJax.startup.document.inputJax[0].preFilters.add(function (data) {
-            data.math.math = data.math.math.replace(/^% <!\[CDATA\[/, '').replace(/%\]\]>$/, '');
-          });
-        }
-      }
-    };
-    </script>
-    
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Register.StartupHook('TeX Jax Ready', function () {
+      MathJax.InputJax.TeX.prefilterHooks.Add(function (data) {
+        data.math = data.math.replace(/^% <!\[CDATA\[/, '').replace(/%\]\]>$/, '');
+      });
+    });
+  </script>  
   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
 
 
