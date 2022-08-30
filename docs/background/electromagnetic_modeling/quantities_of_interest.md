@@ -16,9 +16,7 @@ $$
 
 The modulation envelope magnitude (MEM) along $\vec{n}$ can easily be obtained as \begin{equation}
 
-$$
-    T_{\vec{n}}(x)=\textrm{min}(\left|\vec{n}\cdot\vec{E}_1(x)\right|,\left|\vec{n}\cdot\vec{E}_2(x)\right|)
-$$
+$$ T_{\vec{n}}(x)=\textrm{min}(\left|\vec{n}\cdot\vec{E}_1(x)\right|,\left|\vec{n}\cdot\vec{E}_2(x)\right|) $$
 
 As TI-exposure quantity, the modulation envelope magnitude (MEM) has been chosen, which is computed according to the formula from [grossman2017noninvasive]:
 
@@ -27,8 +25,7 @@ T_{\textrm{max}}(x)=\textrm{max}_{\vec{n}}\,T_{\vec{n}}(x)=\left|\vec{E}_{AM}^{\
 \begin{cases}
 2 \cdot \left|\vec{E_2}(\vec{x})\right| & \text{if $\left|\vec{E_2}(\vec{x})\right| < \left|\vec{E_1}(\vec{x})\right|\cos{\alpha}$}\\
 \frac{2\cdot\left|\vec{E_2}(\vec{x}) \times (\vec{E_1}(\vec{x}) - \vec{E_2}(\vec{x}))\right|}{\left|{\vec{E_1}(\vec{x}) - \vec{E_2}(\vec{x})}\right|} & \text{otherwise}
-\end{cases}
-    
+\end{cases}    
 $$
 
 where $\alpha$ denotes the angle between $\vec{E}_{1,2}$. This metric has been chosen because it reproduces empirical observations, such as the neurons responding to the demodulated exposure and stimulation target moving towards the channel carrying less current when the current ratio is adapted.
