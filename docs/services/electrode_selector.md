@@ -1,7 +1,5 @@
 ## Setup
 
-----
-
 **_Summary_**: _During the **Setup** step, an anatomical model and an electrode shape and placement is chosen, the target structure is specified, and the huge search space is narrowed down by selecting potential electrode placement regions._
 
 ----

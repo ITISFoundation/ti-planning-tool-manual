@@ -1,6 +1,6 @@
 ## Identification of Optimal Configuration(s)
 
-### Overview
+**_Summary_**
 
 _Based on the information provided during the setup step, an fully automatic, exhaustive search of the considered electrode placement configuration space is performed in which three key metrics are considered_
 * _target exposure magnitude: the median of the TI modulation envelope magnitude within the target_
@@ -13,6 +13,10 @@ _By dynamically weighting the often conflicting performance metrics, a sorted li
 _Starting from a thus optimized, or from a user defined TIS configuration, the resulting exposure can be studied and if desired, the configuration (electrode locations, current magnitudes) can be interactively refined. For that purpose, TI and high-frequency exposure distributions are dynamically visualized on top of medical image data, and key exposure metrics as well as plots are shown._
 
 _Once promising exposure conditions have been identified, the associated visualizations and metrics can be added to an automatically generated, downloadable report._
+
+----
+
+<br>
 
 xxx review the below xxx
 
