@@ -59,8 +59,8 @@ inspect the exposure scenario:
    * At the top, you have the possibility to freely change electrode positions and then update the fields. 
    * Below that, the channel weighting can be changed. 
    * Next are the masking options, where you can switch between seeing the field in the whole head or only in the brain. 
-      Using the region-of-interest dropdown, a region can be selected, which is then highlighted in the visualizations. 
-      To reset the highlighting, choose 'None' in the dropdown. xxx multiple regions xxx 
+      Using the region-of-interest dropdown, one or multiple regions can be selected, which are then highlighted in the visualizations. 
+      To reset the highlighting, choose 'None' in the dropdown. 
    * Field Options permit to toggle between Log and dB scales and between high frequency(HF) and temporal interferance(TI) field visualization.
      Additionally, a fader is available to adapt the opacity of the field display on top of the medical image data in the Slice Views.
    * The value range of the field views can be adapted.
