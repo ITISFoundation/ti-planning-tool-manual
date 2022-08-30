@@ -4,7 +4,6 @@
 
 ----
 
-<br>
 
 To use it, the .cache file of the setup of interest needs to be generated in the **Post Processing** service's
 **Analysis** tab using the ```Export to S4L``` Button. Once the pipeline detects a .cache file, it will be loaded into

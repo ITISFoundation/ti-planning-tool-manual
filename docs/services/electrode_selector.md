@@ -4,8 +4,6 @@
 
 ----
 
-<br>
-
 When you start the pipeline, you will see the **Electrode Selector** interface. Here, you can interactively select the 
 electrode candidates for each electrode pair. These candidates are then used in the **Optimizer** and **Post Processing**
 stages to find the optimal electrode setup to target a certain region of interest with respect to the three main metrics

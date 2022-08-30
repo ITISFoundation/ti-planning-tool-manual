@@ -16,8 +16,6 @@ _Once promising exposure conditions have been identified, the associated visuali
 
 ----
 
-<br>
-
 xxx review the below xxx
 
 * **Analysis** <br/>
