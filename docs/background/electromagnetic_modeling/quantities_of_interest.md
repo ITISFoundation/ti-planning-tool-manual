@@ -4,7 +4,9 @@ Based on precomputed E-fields for the different electrode pairs (actually, based
 
 The total field is obtained as:
 
-$\vec{E}(t,x)=\textrm{sin} (\omega_1\cdot t)\vec{E}_1(x)+\textrm{sin}(\omega_2\cdot t)\vec{E}_2(x),$
+$$
+\vec{E}(t,x)=\textrm{sin} (\omega_1\cdot t)\vec{E}_1(x)+\textrm{sin}(\omega_2\cdot t)\vec{E}_2(x)
+$$ 
 
 where $\vec{E}_{1,2}$ are the fields of the two channels and $\omega_{1,2}$ are their angular frequencies (initial phases are set to zero without loss of generality). Its projection along a direction of interest $\vec{n}$ (e.g., the principal axis of a pyramidal neuron, or the principal axis of the local diffusion tensor; $\left| \vec{n} \right| = 1$) is obtained as:
 
