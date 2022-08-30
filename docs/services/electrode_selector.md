@@ -1,6 +1,12 @@
 ## Setup
 
-_During the **Setup** step, an anatomical model and an electrode shape and placement is chosen, the target structure is specified, and the huge search space is narrowed down by selecting potential electrode placement regions._
+----
+
+**_Summary_**: _During the **Setup** step, an anatomical model and an electrode shape and placement is chosen, the target structure is specified, and the huge search space is narrowed down by selecting potential electrode placement regions._
+
+----
+
+<br>
 
 When you start the pipeline, you will see the **Electrode Selector** interface. Here, you can interactively select the 
 electrode candidates for each electrode pair. These candidates are then used in the **Optimizer** and **Post Processing**
