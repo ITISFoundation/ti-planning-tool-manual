@@ -25,7 +25,6 @@
 * [References](/docs/background/references.md)
 * [Licensing](/docs/support/license.md)
   * [Sim4Life](/docs/support/sim4life/copyright_Sim4Life.html)
-  * [SEMCAD X](/docs/support/semcad/copyright_SEMCADX.html)
 * [Release Notes](/docs/support/releases.md)
   * [Known Bugs](/docs/support/knownbugs.md)
   * [Research & Upcoming Functionality](/docs/background/ongoing_research.md)
