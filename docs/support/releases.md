@@ -1,6 +1,6 @@
 # Release Notes
 
-## TIP V1.0
+### TIP V1.0
 _Release Date: 01.09.2022_ 
 
 TIP V1.0 is the first public release of the Temporal Interference Planning Tool (TIP). The tool empowers individual researchers that might not be modeling experts and supports neuroscientists and brain stimulation experts in the design of optimized electrode placement and exposure conditions for targeted Temporal Interference Stimulation (TIS). TIP V1.0 
