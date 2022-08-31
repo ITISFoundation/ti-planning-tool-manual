@@ -14,7 +14,7 @@ $$
 $$
 -->
 
-where <img src="_media/eq2.png"> $\vec{E}_{1,2}$ are the fields of the two channels and $\omega_{1,2}$ are their angular frequencies (initial phases are set to zero without loss of generality). Its projection along a direction of interest $\vec{n}$ (e.g., the principal axis of a pyramidal neuron, or the principal axis of the local diffusion tensor; $\left| \vec{n} \right| = 1$) is obtained as:
+where <img src="_media/E12.png"> are the fields of the two channels and ω<sub>(1,2)</sub> are their angular frequencies (initial phases are set to zero without loss of generality). Its projection along a direction of interest <img src="_media/nvec.png"> (e.g., the principal axis of a pyramidal neuron, or the principal axis of the local diffusion tensor; <img src="_media/n1.png"> ) is obtained as:
 
 <p align="center">
   <img src="_media/eq2.png">
@@ -26,7 +26,7 @@ $$
 $$
 -->
 
-The modulation envelope magnitude (MEM) along $\vec{n}$ can easily be obtained as
+The modulation envelope magnitude (MEM) along <img src="_media/nvec.png">  can easily be obtained as
 
 <p align="center">
   <img src="_media/eq3.png">
@@ -55,13 +55,13 @@ $$
 -->
 
 
-where $\alpha$ denotes the angle between $\vec{E}_{1,2}$. This metric has been chosen because it reproduces empirical observations, such as the neurons responding to the demodulated exposure and stimulation target moving towards the channel carrying less current when the current ratio is adapted.
+where α denotes the angle between <img src="_media/E12.png">. This metric has been chosen because it reproduces empirical observations, such as the neurons responding to the demodulated exposure and stimulation target moving towards the channel carrying less current when the current ratio is adapted.
 
 To assess the quality of a TI exposure condition, three key metrics have been defined:
 
-* M1 - target exposure strength (**strength**): the median of $T_{\textrm{max}}$ in the target,
-* M2 - exposure selectivity (**selectivity**): the ratio of the mean target $T_{\textrm{max}}$ and the mean off-target $T_{\textrm{max}}$,
-* M3 - off-target exposure (**collateral**): the fraction of the non-target brain volume with $T_{\textrm{max}}$ exceeding M1.
+* M1 - target exposure strength (**strength**): the median of T<sub>max</sub> in the target,
+* M2 - exposure selectivity (**selectivity**): the ratio of the mean target T<sub>max</sub> and the mean off-target T<sub>max</sub>,
+* M3 - off-target exposure (**collateral**): the fraction of the non-target brain volume with T<sub>max</sub> exceeding M1.
 Typically, it is not possible to find exposure conditions that simultaneously optimize all three metrics, and a compromise or prioritization is needed.
 
 In addition to the TI-relevant MEM distribution, **high-frequency** exposure can also be of interest (e.g., to analyze potential high frequency stimulation or conduction blocking). For this, the peak field magnitude is used, which is obtained as:
