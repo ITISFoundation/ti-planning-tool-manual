@@ -14,7 +14,7 @@ $$
 $$
 -->
 
-where <img src="_media/E12.png"> are the fields of the two channels and ω<sub>(1,2)</sub> are their angular frequencies (initial phases are set to zero without loss of generality). Its projection along a direction of interest <img src="_media/nvec.png"> (e.g., the principal axis of a pyramidal neuron, or the principal axis of the local diffusion tensor; <img src="_media/n1.png"> ) is obtained as:
+where <img src="_media/E12.png"> are the fields of the two channels and ω<sub>1,2</sub> are their angular frequencies (initial phases are set to zero without loss of generality). Its projection along a direction of interest <img src="_media/nvec.png"> (e.g., the principal axis of a pyramidal neuron, or the principal axis of the local diffusion tensor; <img src="_media/n1.png"> ) is obtained as:
 
 <p align="center">
   <img src="_media/eq2.png">

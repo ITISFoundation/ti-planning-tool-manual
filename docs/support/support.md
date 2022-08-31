@@ -1,6 +1,6 @@
 # Support
 
-### Create account
+### Create an account
 
 Request your login online on the [“TI Planning” webpage](https://tip.itis.swiss/). 
 

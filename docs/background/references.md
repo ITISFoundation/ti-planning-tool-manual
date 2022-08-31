@@ -6,7 +6,10 @@
 
 [3] [ViZOO](https://itis.swiss/virtual-population/animal-models/animals/). Accessed: 2022-08-09.
 
-[4] PA Hasgall, F Di Gennaro, C Baumgartner, E Neufeld, MC Gosselin, D Payne, A Klingenb¨ock, and N Kuster. IT’IS database for thermal and electromagnetic parameters of biological tissues. Version 3.0, 2015.
+[4] Philippe Hasgall, Fabienne Di Gennaro, Christian Baumgartner, Esra Neufeld, Marie-Christine Gosselin, Davnah Payne, Anja Klingenböck, and Niels Kuster. IT’IS database for thermal and electromagnetic parameters of biological tissues. Version 4.1, Feb 22, 2022, DOI: 10.13099/VIP21000-04-1.
+
+<!--Version 3.0, 2015.-->
+
 
 [5] Nir Grossman, David Bono, Nina Dedic, Suhasa B Kodandaramaiah, Andrii Rudenko, Ho-Jun Suk, Antonino M Cassara, Esra Neufeld, Niels Kuster, Li-Huei Tsai, et al. Noninvasive deep brain stimulation via temporally interfering electric fields. Cell 169.6:1029-1041, 2017.
 
