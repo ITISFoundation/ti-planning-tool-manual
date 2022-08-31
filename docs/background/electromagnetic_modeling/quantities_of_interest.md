@@ -16,7 +16,7 @@ $$
 
 The modulation envelope magnitude (MEM) along $\vec{n}$ can easily be obtained as \begin{equation}
 
-$$ T_{\vec{n}}(x)=\textrm{min}(\left|\vec{n}\cdot\vec{E}_1(x)\right|,\left|\vec{n}\cdot\vec{E}_2(x)\right|) $$
+$$T_{\vec{n}}(x)=\textrm{min}(\left|\vec{n}\cdot\vec{E}_1(x)\right|,\left|\vec{n}\cdot\vec{E}_2(x)\right|)$$
 
 As TI-exposure quantity, the modulation envelope magnitude (MEM) has been chosen, which is computed according to the formula from [[5]](/docs/background/references.md):
 
