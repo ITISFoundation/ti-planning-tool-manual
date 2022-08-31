@@ -13,7 +13,7 @@ When you start the pipeline, you will see the **Electrode Selector** interface. 
   <img width="600" height="510" src="_media/electrode_selector/setup.png">
 </p>
 
-The interface has the following elements:
+The **_Setup_** interface has the following elements:
 
 1. **_Select Species_** <br/>
    Depending on the TI exposure to be planned, a human or mouse model with associated standard electrode locations is selected here via the drop-down list. The list of available models will continue to expand in the near future.
@@ -38,4 +38,4 @@ The interface has the following elements:
 
 Once you are finished with the setup, you can press ```Finish set up```. This will relay all the required information to the **Optimizer** for the evaluation. If settings are changed after submitting, the ```Finish set up``` button turns orange to indicate that the optimization results are outdated. Settings can then be resubmitted and the **Optimizer** is executed once more to update the pipeline, and the button color reverts to the standard color.
 
-You can now click to the arrow on the right side of the browser to move to [Optimal Configuration Identification](/docs/services/post_processing.md).
+You can now click to the arrow on the right side of the browser to move to [**_Optimal Configuration Identification_**](/docs/services/post_processing.md).

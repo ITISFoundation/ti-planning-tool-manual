@@ -1,4 +1,4 @@
-## Identification of Optimal Configuration(s)
+## Optimal Configuration Identification
 
 **_Summary_**
 
