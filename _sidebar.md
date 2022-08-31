@@ -26,6 +26,6 @@
 * [Licensing](/docs/support/license.md)
   * [Sim4Life](/docs/support/sim4life/copyright_Sim4Life.html)
 * [Release Notes](/docs/support/releases.md)
-  * [Known Bugs](/docs/support/knownbugs.md)
+  * [Known Issues](/docs/support/knownbugs.md)
   * [Research & Upcoming Functionality](/docs/background/ongoing_research.md)
 * [Support](/docs/support/support.md)
