@@ -7,6 +7,5 @@ _In addition to the predefined exposure visualizations of the second step, free 
 ----
 
 
-To use it, the .cache file of the setup of interest needs to be generated in the **Post Processing** service's
-**Analysis** tab using the ```Export to S4L``` Button. Once the pipeline detects a .cache file, it will be loaded into
+To perform an interactive exposure analysis, the .cache file of the setup of interest needs to be generated in the **Post Processing** service's **Analysis** tab using the ```Export to S4L``` Button. Once the pipeline detects a .cache file, it will be loaded into
 Sim4Life web's workbench automatically. Now, all of Sim4Life's analysis capabilities are available to you. 
