@@ -24,6 +24,7 @@
   * [Step 3: Exposure Analysis](/docs/services/s4l_post_processing.md)
 * [References](/docs/background/references.md)
 * [Licensing](/docs/support/license.md)
+  * [IT'IS TIP](/docs/support/itis/itis_tc.md)
   * [Sim4Life](/docs/support/sim4life/copyright_Sim4Life.html)
 * [Release Notes](/docs/support/releases.md)
   * [Known Issues](/docs/support/knownbugs.md)
