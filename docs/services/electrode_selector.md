@@ -10,7 +10,7 @@ When you start the pipeline, you will see the **Electrode Selector** interface. 
 
 <br>
 <p align="center">
-  <img width="600" height="510" src="_media/electrode_selector/setup.png">
+  <img width="600" height="510" src="assets/electrode_selector/setup.png">
 </p>
 
 The **_Setup_** interface has the following elements:
@@ -20,7 +20,7 @@ The **_Setup_** interface has the following elements:
 
 <br>
 <p align="center">
-  <img width="300" height="144" src="_media/electrode_selector/species.png">
+  <img width="300" height="144" src="assets/electrode_selector/species.png">
 </p>
 
 2. **_Select Target Structure_** <br/>

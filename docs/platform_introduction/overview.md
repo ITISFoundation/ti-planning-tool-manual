@@ -2,7 +2,7 @@
 
 <br>
 <p align="center">
-  <img width="600" height="400" src="_media/quickguide/landingpage.png">
+  <img width="600" height="400" src="assets/quickguide/landingpage.png">
 </p>
 
 The Landing Page, which currently serves primarily for user authentication. Two-factor authentication is required:
