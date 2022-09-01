@@ -6,5 +6,5 @@ TIP is designed such that it supports different head models. While the initial r
 
 <br>
 <p align="center">
-  <img width="300" height="426" src="assets/methods/MIDAHead.png">
+  <img width="500" src="assets/methods/MIDAHead.png">
 </p>

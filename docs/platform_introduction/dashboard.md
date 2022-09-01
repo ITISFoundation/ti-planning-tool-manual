@@ -2,9 +2,8 @@
 
 The **Dashboard** hosts the two principal views ```Studies``` and ```Data```.
 
-<br>
 <p align="center">
-  <img width="500" src="assets/quickguide/dashboard.png">
+  <img width="90%" src="assets/quickguide/dashboard.png">
 </p>
 
 
