@@ -87,12 +87,17 @@ Once that sweep is complete, all the viewers in the lower half of the screen are
    * ```Add Slicer to Report``` allows addition of the six viewing elements to the PDF report (according to the currently selected slicing positions and viewing angle).
    * ```Export to S4L``` creates a .cache file of the TI maximum modulation amplitude, which can then be explored in [Step 3: Exposure Analysis](/docs/services/s4l_post_processing.md).
 
+Metrics table:
 <p align="center">
   <img width="90%"  src="assets/quickguide/postpro_gui_1.gif">
 </p>
+
+Slice Viewers:
 <p align="center">
   <img width="90%"  src="assets/quickguide/postpro_gui_2.gif">
 </p>
+
+Reporting:
 <p align="center">
   <img width="90%"  src="assets/quickguide/postpro_gui_3.gif">
 </p>
