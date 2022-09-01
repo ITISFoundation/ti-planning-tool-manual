@@ -2,9 +2,8 @@
 
 The setup of new TI Plan can easily be initiated by clicking on the large ```New Plan``` icon on the ```Dashboard```. 
 
-<br>
 <p align="center">
-  <img src="assets/quickguide/newplan.png">
+  <img width="90%" src="assets/quickguide/newplan.png">
 </p>
 
 
