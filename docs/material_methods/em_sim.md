@@ -7,7 +7,7 @@ valid when:
 * σ ≫ ωϵϵ<sub>0</sub>, where ϵ is the electrical permittivity of the tissue/material, ϵ<sub>0</sub> is the permittivity of the vacuum, and ω is the angular frequency of the applied field, and
 *  λ ≫ *d*,  where  λ is the wavelength of the EM field and *d* is the characteristic size of the structure of interest or the computational domain. 
 
-Under these conditions, ohmic currents dominate over displacement currents, and inductive effects can be neglected (see [Bossetti2008] for an analysis on the applicability of the quasistatic approximation in neurostimulation applications).
+Under these conditions, ohmic currents dominate over displacement currents, and inductive effects can be neglected (see [[6]](/docs/background/references.md) for an analysis on the applicability of the quasistatic approximation in neurostimulation applications).
 
 After selection of the solver, the structured EM simulation was set up by following the steps below:
 
