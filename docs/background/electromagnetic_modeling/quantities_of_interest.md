@@ -5,7 +5,7 @@ Based on precomputed E-fields for the different electrode pairs (actually, based
 The total field is obtained as:
 
 <p align="center">
-  <img src="_media/eq1.png">
+  <img src="_media/eq1w.png">
 </p>
 
 <!--
