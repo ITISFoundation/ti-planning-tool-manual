@@ -8,6 +8,11 @@ The total field is obtained as:
   <img src="assets/equations/eq1w.png">
 </p>
 
+
+<p align="center">
+  <img src="assets/equations/eq1w2.png">
+</p>
+
 <!--
 $$
 \vec{E}(t,x)=\textrm{sin} (\omega_1\cdot t)\vec{E}_1(x)+\textrm{sin}(\omega_2\cdot t)\vec{E}_2(x)
