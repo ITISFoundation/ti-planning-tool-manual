@@ -39,3 +39,7 @@ The **_Setup_** interface has the following elements:
 Once you are finished with the setup, you can press ```Finish set up```. This will relay all the required information to the **Optimizer** for the evaluation. If settings are changed after submitting, the ```Finish set up``` button turns orange to indicate that the optimization results are outdated. Settings can then be resubmitted and the **Optimizer** is executed once more to update the pipeline, and the button color reverts to the standard color.
 
 You can now click to the arrow on the right side of the browser to move to [**_Optimal Configuration Identification_**](/docs/services/post_processing.md).
+
+<p align="center">
+   <img src="assets/quickguide/electrode_selector.gif" width="740" height="578" />
+</p>
