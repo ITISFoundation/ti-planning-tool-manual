@@ -10,7 +10,7 @@ The total field is obtained as:
 
 
 <p align="center">
-  <img width = "40%" src="assets/equations/eq1w2.png">
+  <img width = "410" src="assets/equations/eq1w2.png">
 </p>
 
 <!--
@@ -19,10 +19,10 @@ $$
 $$
 -->
 
-where <img width = "40%" src="assets/equations/E12w2.png">  <img src="assets/equations/E12w.png">   are the fields of the two channels and ω<sub>1,2</sub> are their angular frequencies (initial phases are set to zero without loss of generality). Its projection along a direction of interest <img width = "40%" src="assets/equations/nvecw2.png"> (e.g., the principal axis of a pyramidal neuron, or the principal axis of the local diffusion tensor; <img width = "40%" src="assets/equations/n1w2.png"> ) is obtained as:
+where <img src="assets/equations/E12w2.png">  <img src="assets/equations/E12w.png">   are the fields of the two channels and ω<sub>1,2</sub> are their angular frequencies (initial phases are set to zero without loss of generality). Its projection along a direction of interest <img src="assets/equations/nvecw2.png"> (e.g., the principal axis of a pyramidal neuron, or the principal axis of the local diffusion tensor; <img src="assets/equations/n1w2.png"> ) is obtained as:
 
 <p align="center">
-  <img width = "40%" src="assets/equations/eq2w2.png">
+  <img width = "537" src="assets/equations/eq2w2.png">
 </p>
 
 <!--
@@ -31,10 +31,10 @@ $$
 $$
 -->
 
-The modulation envelope magnitude (MEM) along <img width = "40%" src="assets/equations/nvecw2.png">  can easily be obtained as
+The modulation envelope magnitude (MEM) along <img src="assets/equations/nvecw2.png">  can easily be obtained as
 
 <p align="center">
-  <img width = "40%" src="assets/equations/eq3w2.png">
+  <img width = "346" src="assets/equations/eq3w2.png">
 </p>
 
 <!--
@@ -46,7 +46,7 @@ $$
 As TI-exposure quantity, the modulation envelope magnitude (MEM) has been chosen, which is computed according to the formula from [[5]](/docs/background/references.md):
 
 <p align="center">
-  <img width = "40%" src="assets/equations/eq4w2.png">
+  <img width = "831" src="assets/equations/eq4w2.png">
 </p>
 
 <!--
@@ -60,7 +60,7 @@ $$
 -->
 
 
-where α denotes the angle between <img width = "40%" src="assets/equations/E12w2.png">. This metric has been chosen because it reproduces empirical observations, such as the neurons responding to the demodulated exposure and stimulation target moving towards the channel carrying less current when the current ratio is adapted.
+where α denotes the angle between <img src="assets/equations/E12w2.png">. This metric has been chosen because it reproduces empirical observations, such as the neurons responding to the demodulated exposure and stimulation target moving towards the channel carrying less current when the current ratio is adapted.
 
 To assess the quality of a TI exposure condition, three key metrics have been defined:
 
@@ -72,7 +72,7 @@ Typically, it is not possible to find exposure conditions that simultaneously op
 In addition to the TI-relevant MEM distribution, **high-frequency** exposure can also be of interest (e.g., to analyze potential high frequency stimulation or conduction blocking). For this, the peak field magnitude is used, which is obtained as:
 
 <p align="center">
-  <img width = "40%" src="assets/equations/eq5w2.png">
+  <img width = "484" src="assets/equations/eq5w2.png">
 </p>
 
 <!--
