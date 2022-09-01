@@ -4,13 +4,9 @@ Based on precomputed E-fields for the different electrode pairs (actually, based
 
 The total field is obtained as:
 
-<p align="center">
-  <img src="assets/equations/eq1w.png">
-</p>
-
 
 <p align="center">
-  <img width = "400" src="assets/equations/eq1w2.png">
+  <img width = "390" src="assets/equations/eq1w2.png">
 </p>
 
 <!--
@@ -19,10 +15,10 @@ $$
 $$
 -->
 
-where <img width = "30" src="assets/equations/E12w2.png">  <img src="assets/equations/E12w.png">   are the fields of the two channels and ω<sub>1,2</sub> are their angular frequencies (initial phases are set to zero without loss of generality). Its projection along a direction of interest <img width = "30" src="assets/equations/nvecw2.png"> (e.g., the principal axis of a pyramidal neuron, or the principal axis of the local diffusion tensor; <img width = "30" src="assets/equations/n1w2.png"> ) is obtained as:
+where <img width = "30" src="assets/equations/E12w2.png"> are the fields of the two channels and ω<sub>1,2</sub> are their angular frequencies (initial phases are set to zero without loss of generality). Its projection along a direction of interest <img width = "12" src="assets/equations/nvecw2.png"> (e.g., the principal axis of a pyramidal neuron, or the principal axis of the local diffusion tensor; <img width = "52" src="assets/equations/n1w2.png"> ) is obtained as:
 
 <p align="center">
-  <img width = "530" src="assets/equations/eq2w2.png">
+  <img width = "520" src="assets/equations/eq2w2.png">
 </p>
 
 <!--
@@ -31,7 +27,7 @@ $$
 $$
 -->
 
-The modulation envelope magnitude (MEM) along <img src="assets/equations/nvecw2.png">  can easily be obtained as
+The modulation envelope magnitude (MEM) along <img width = "12" src="assets/equations/nvecw2.png">  can easily be obtained as
 
 <p align="center">
   <img width = "340" src="assets/equations/eq3w2.png">
@@ -42,10 +38,10 @@ $$
 T_{\vec{n}}(x)=\textrm{min}(\left|\vec{n}\cdot\vec{E}_1(x)\right|,\left|\vec{n}\cdot\vec{E}_2(x)\right|)
 $$
 -->
-esAs TI-exposure quantity, the modulation envelope magnitude (MEM) has been chosen, which is computed according to the formula from [[5]](/docs/background/references.md):
+As TI-exposure quantity, the modulation envelope magnitude (MEM) has been chosen, which is computed according to the formula from [[5]](/docs/background/references.md):
 
 <p align="center">
-  <img width = "820" src="assets/equations/eq4w2.png">
+  <img width = "800" src="assets/equations/eq4w2.png">
 </p>
 
 <!--
@@ -71,7 +67,7 @@ Typically, it is not possible to find exposure conditions that simultaneously op
 In addition to the TI-relevant MEM distribution, **high-frequency** exposure can also be of interest (e.g., to analyze potential high frequency stimulation or conduction blocking). For this, the peak field magnitude is used, which is obtained as:
 
 <p align="center">
-  <img width = "480" src="assets/equations/eq5w2.png">
+  <img width = "470" src="assets/equations/eq5w2.png">
 </p>
 
 <!--
