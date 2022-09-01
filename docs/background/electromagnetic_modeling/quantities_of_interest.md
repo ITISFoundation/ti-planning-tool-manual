@@ -14,10 +14,10 @@ $$
 $$
 -->
 
-where <img src="_media/E12.png"> are the fields of the two channels and ω<sub>1,2</sub> are their angular frequencies (initial phases are set to zero without loss of generality). Its projection along a direction of interest <img src="_media/nvec.png"> (e.g., the principal axis of a pyramidal neuron, or the principal axis of the local diffusion tensor; <img src="_media/n1.png"> ) is obtained as:
+where <img src="_media/E12w.png"> are the fields of the two channels and ω<sub>1,2</sub> are their angular frequencies (initial phases are set to zero without loss of generality). Its projection along a direction of interest <img src="_media/nvecw.png"> (e.g., the principal axis of a pyramidal neuron, or the principal axis of the local diffusion tensor; <img src="_media/n1w.png"> ) is obtained as:
 
 <p align="center">
-  <img src="_media/eq2.png">
+  <img src="_media/eq2w.png">
 </p>
 
 <!--
@@ -26,10 +26,10 @@ $$
 $$
 -->
 
-The modulation envelope magnitude (MEM) along <img src="_media/nvec.png">  can easily be obtained as
+The modulation envelope magnitude (MEM) along <img src="_media/nvecw.png">  can easily be obtained as
 
 <p align="center">
-  <img src="_media/eq3.png">
+  <img src="_media/eq3w.png">
 </p>
 
 <!--
@@ -41,7 +41,7 @@ $$
 As TI-exposure quantity, the modulation envelope magnitude (MEM) has been chosen, which is computed according to the formula from [[5]](/docs/background/references.md):
 
 <p align="center">
-  <img src="_media/eq4.png">
+  <img src="_media/eq4w.png">
 </p>
 
 <!--
@@ -55,7 +55,7 @@ $$
 -->
 
 
-where α denotes the angle between <img src="_media/E12.png">. This metric has been chosen because it reproduces empirical observations, such as the neurons responding to the demodulated exposure and stimulation target moving towards the channel carrying less current when the current ratio is adapted.
+where α denotes the angle between <img src="_media/E12w.png">. This metric has been chosen because it reproduces empirical observations, such as the neurons responding to the demodulated exposure and stimulation target moving towards the channel carrying less current when the current ratio is adapted.
 
 To assess the quality of a TI exposure condition, three key metrics have been defined:
 
@@ -67,7 +67,7 @@ Typically, it is not possible to find exposure conditions that simultaneously op
 In addition to the TI-relevant MEM distribution, **high-frequency** exposure can also be of interest (e.g., to analyze potential high frequency stimulation or conduction blocking). For this, the peak field magnitude is used, which is obtained as:
 
 <p align="center">
-  <img src="_media/eq5.png">
+  <img src="_media/eq5w.png">
 </p>
 
 <!--
