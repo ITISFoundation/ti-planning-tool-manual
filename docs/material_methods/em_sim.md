@@ -1,8 +1,12 @@
 ### Electromagnetic (EM) Simulations
 
-Electromagnetic (EM) simulations were executed using the Sim4Life V7.0 (ZMT Zurich MedTech AG, Zurich, Switzerland) platform for computational life sciences, using the structured (rectilinear) version of the LF QS Ohmic Current Dominated (LF-QS-OCD) solver. The LF-QS-OCD solver finds the solution to the equation: ∇σ∇ϕ = 0, where σ is the local electrical conductivity (scalar or tensorial) 
-and ϕ is the electric potential (electric field: E=-∇ϕ). The equation is the QS-approximation of Maxwell's equations, which is
-valid when: 
+Electromagnetic (EM) simulations were executed using the Sim4Life V7.0 (ZMT Zurich MedTech AG, Zurich, Switzerland) platform for computational life sciences, using the structured (rectilinear) version of the LF QS Ohmic Current Dominated (LF-QS-OCD) solver. The LF-QS-OCD solver finds the solution to the equation: 
+
+<p align="center">
+∇σ∇ϕ = 0, 
+</p>
+
+where σ is the local electrical conductivity (scalar or tensorial) and ϕ is the electric potential (electric field: E=-∇ϕ). The equation is the QS-approximation of Maxwell's equations, which is valid when: 
 
 * σ ≫ ωϵϵ<sub>0</sub>, where ϵ is the electrical permittivity of the tissue/material, ϵ<sub>0</sub> is the permittivity of the vacuum, and ω is the angular frequency of the applied field, and
 *  λ ≫ *d*,  where  λ is the wavelength of the EM field and *d* is the characteristic size of the structure of interest or the computational domain. 
