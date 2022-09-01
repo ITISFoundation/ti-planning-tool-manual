@@ -1,6 +1,13 @@
 ### Dashboard
 
-The **Dashboard** hosts the two principal views ```Studies``` and ```Data```
+The **Dashboard** hosts the two principal views ```Studies``` and ```Data```.
+
+<br>
+<p align="center">
+  <img width="500" src="assets/quickguide/dashboard.png">
+</p>
+
+
 - Under ```Studies```, existing Plans (own Plans, or plans that have been shared by other users) can be accessed and managed and new Plans can be [created](https://github.com/ITISFoundation/ti-planning-tool-manual/blob/main/docs/plan/create_new_plan.md). See the [o<sup>2</sup>S<sup>2</sup>PARC User Manual](https://docs.osparc.io/#/) for information about the meaning of the displayed icons and the functionality accessible through the three-dot menu icon (**_Plan management_**, **_information_**, **_sharing_**, **_Service overview and update_**, and more), as well as the locking states. 
 - Under ```Data```, the existing data can be managed and downloaded (see [Data](https://github.com/ITISFoundation/ti-planning-tool-manual/blob/main/docs/platform_introduction/data.md)).
 

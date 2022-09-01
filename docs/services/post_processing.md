@@ -35,7 +35,7 @@ xxx review the below xxx
 
 -->
 
-## Analysis
+### Analysis
 
 <!-- Let us now have a closer look at the **Analysis** section. -->
 
@@ -87,7 +87,7 @@ Once that sweep is complete, all the viewers in the lower half of the screen are
    * ```Add Slicer to Report``` allows addition of the six viewing elements to the PDF report (according to the currently selected slicing positions and viewing angle).
    * ```Export to S4L``` creates a .cache file of the TI maximum modulation amplitude, which can then be explored in [Step 3: Exposure Analysis](/docs/services/s4l_post_processing.md).
 
-## Report
+### Report
 
 In the **Report** section, a more detailed and quantitative exposure overview is provided for both high frequency (HF) and temporal interference (TI) fields (compared to the visual one in the **Analysis** section). A brief explanation of the different parts is as follows:
 
