@@ -4,7 +4,7 @@ The setup of new TI Plan can easily be initiated by clicking on the large ```New
 
 <br>
 <p align="center">
-  <img width="500" src="assets/quickguide/new_plan.png">
+  <img src="assets/quickguide/newplan.png">
 </p>
 
 
