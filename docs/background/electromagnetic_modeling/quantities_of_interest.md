@@ -10,7 +10,7 @@ The total field is obtained as:
 
 
 <p align="center">
-  <img src="assets/equations/eq1w2.png">
+  <img width = "50%" src="assets/equations/eq1w2.png">
 </p>
 
 <!--
