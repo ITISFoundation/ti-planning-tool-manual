@@ -6,6 +6,7 @@ The setup of new TI Plan can easily be initiated by clicking on the large ```New
   <img width="90%" src="assets/quickguide/newplan.png">
 </p>
 
+Three different kinds of planning studies can be initialized, which correspond to the [three modes](/docs/background/modes.md): classic TI, multi-channel TI, and phase-modulation TI.
 
 Allow for some time for the study initiation. Once the study is ready, you will have access to the different planning steps and their views:
 * [Step 1: Setup](/docs/services/electrode_selector.md)
