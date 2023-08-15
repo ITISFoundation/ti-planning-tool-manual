@@ -15,4 +15,6 @@ The electric field (E-field) is obtained as
 E = −∇ϕ
 </p>
 
-This equation is applicable, as the wavelength is much larger than the head size and displacement currents are negligible compared to ohmic currents at the relevant frequencies. Tissue properties of the models were assigned according to [[4]](/docs/background/references.md), and careful solver convergence and grid refinement analyses were carried out.
+This equation is applicable, as the wavelength is much larger than the head size and displacement currents are negligible compared to ohmic currents at the relevant frequencies. Tissue properties of the models were assigned according to [[4]](/docs/background/references.md), and careful solver convergence and grid refinement analyses were carried out. 
+
+For some precomputed models, the anisotropy of brain tissues is considered by using tensorial rather than scalar distributions of conductivity σ, as reflected in the model name. This is achieved by mapping diffusion tensor imaging data (from the same subjects imaged to generate the anatomical models) to tensorial σ maps.
