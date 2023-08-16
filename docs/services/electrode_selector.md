@@ -6,7 +6,7 @@ _During the **Setup** step, an anatomical model and an electrode shape and place
 
 ----
 
-When you start the pipeline, you will see the **Electrode Selector** interface. Here, you can interactively select the electrode candidates for each electrode pair. These candidates are then used in the **Optimizer** and **Post Processing** stages to find the optimal electrode setup to target a certain region of interest with respect to the three main metrics outlined in the [**Background**](/docs/background/background.md) chapter. 
+When you start the pipeline in the [classic TI mode](/docs/background/modes.md), you will see the **Electrode Selector** interface. Here, you can interactively select the electrode candidates for each electrode pair. These candidates are then used in the **Optimizer** and **Post Processing** stages to find the optimal electrode setup to target a certain region of interest with respect to the three main metrics outlined in the [**Background**](/docs/background/background.md) chapter. 
 
 <br>
 <p align="center">
