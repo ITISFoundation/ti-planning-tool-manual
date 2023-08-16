@@ -2,6 +2,7 @@
 
 **_Summary_**
 
+[Classic TI](/docs/background/modes.md):
 _Based on the information provided during the setup step, a fully automatic, exhaustive search of the considered electrode placement configuration space is performed in which three key metrics are considered_
 * _target exposure magnitude: the median of the TI modulation envelope magnitude within the target_
 * _stimulation selectivity: the ratio of the mean TI exposure in the target vs. the rest of the brain_
@@ -15,14 +16,16 @@ _Starting from a thus optimized, or from a user-defined TIS configuration, the r
 
 _Once promising exposure conditions have been identified, the associated visualizations and metrics can be added to an automatically generated, downloadable report._
 
+[Multi-channel and phase-modulation TI](/docs/background/modes.md): For multi-channel and phase-modulation TI, the offered functionality is slightly different. Additional or alternative settings are presented, reflecting the obvious differences in relevant stimulation parameters (e.g., targeted modulation shape, number of channels and channel frequencies). Also the definition of the Quantities-of-Interest necessarily differs (see [here](/docs/background/electromagnetic_modeling/quantities_of_interest)). Finally, the vast parameter space of multi-channel and phase-modulation TI currently prohibits systematic optimization, such that only user-specified configurations can be analyzed.
+
 ----
 <!--
 xxx review the below xxx
 
 * **Analysis** <br/>
 
-    In the first half of the **Analysis** section, information from the **Optimizer** regarding the performance of different electrode configurations is presented in a sortable table.
-    Different setups can be compared and sorted using the three main [metrics](/docs/background/electromagnetic_modeling/quantities_of_interest.md): Strength, Selectivity, and Collateral. 
+    In the first half of the **Analysis** section, information from the **Optimizer** regarding the performance of different electrode configurations is presented in a sortable table (only applies to planning for [classic TI](/docs/background/modes.md)).
+    Different setups can be compared and sorted using the three main [metrics](/docs/background/electromagnetic_modeling/quantities_of_interest.md): Strength, Selectivity, and Collateral. A 3D scatter plots also visually presents configurations near the [Pareto Front](/docs/background/multi_goal_optimization) to illustrate the trade-offs.
     The second half is used for visualization of the fields in 2D and 3D, as well as the visualization of waveforms.
 
     <br>
