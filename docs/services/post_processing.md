@@ -110,7 +110,7 @@ Reporting:
   <img width="90%"  src="assets/quickguide/postpro_gui_3.gif">
 </p>
 
-#### Multichanne TI
+#### Multichannel TI
 
 #### Phase-Modulation TI
 
