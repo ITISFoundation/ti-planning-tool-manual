@@ -34,7 +34,8 @@ xxx review the below xxx
 
     <br>
     <p align="center">
-      <img width="500" height="281" src="assets/postpro/classic_ti_three_metrics_numbered.png">
+      <!-- <img width="500" height="281" src="assets/postpro/classic_ti_three_metrics_numbered.png"> -->
+      <img width="90%" src="assets/postpro/classic_ti_three_metrics_numbered.png">
     </p>
 
 * **Report** <br/>
