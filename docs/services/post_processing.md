@@ -43,7 +43,7 @@ xxx review the below xxx
 
 ### Analysis
 
-## Classic TI
+#### Classic TI
 
 <!-- Let us now have a closer look at the **Analysis** section. -->
 
@@ -110,9 +110,9 @@ Reporting:
   <img width="90%"  src="assets/quickguide/postpro_gui_3.gif">
 </p>
 
-## Multichanne TI
+#### Multichanne TI
 
-## Phase-Modulation TI
+#### Phase-Modulation TI
 
 ### Report
 
