@@ -8,10 +8,6 @@ _Based on the information provided during the setup step, a fully automatic, exh
 * _stimulation selectivity: the ratio of the mean TI exposure in the target vs. the rest of the brain_
 * _collateral stimulation: the off-target brain fraction with a TI exposure above the target exposure magnitude_
 
-<p align="center">
-  <img width="90%" src="assets/postpro/classic_ti_three_metrics.png">
-</p>
-
 _These metrics are also central to the visualization and included in the downloadable report._
 
 _By dynamically weighting the often conflicting performance metrics, a sorted list of TI configurations is obtained (this list is always headed by a Pareto-optimal configuration). Using such multi-goal optimization techniques empowers users to make informed choices with regard to conflicting TI exposure criteria._
