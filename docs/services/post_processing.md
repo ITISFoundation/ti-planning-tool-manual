@@ -95,6 +95,10 @@ Once that sweep is complete, all the viewers in the lower half of the screen are
    * ```Add to Report``` allows addition of the six viewing elements to the PDF report (according to the currently selected slicing positions and viewing angle).
    * ```Export to S4L``` creates a .cache file of the TI maximum modulation amplitude, which can then be explored in [Step 3: Exposure Analysis](/docs/services/s4l_post_processing.md).
 
+<p align="center">
+  <img width="90%"  src="assets/postpro/classic_ti_quantitative_analysis.png">
+</p>
+
 Metrics table:
 <p align="center">
   <img width="90%"  src="assets/quickguide/postpro_gui_1.gif">
@@ -112,8 +116,31 @@ Reporting:
 
 #### Multichannel TI
 
+<p align="center">
+  <img width="90%"  src="assets/postpro/multichannel_ti_settings.png">
+</p>
+
+<p align="center">
+  <img width="90%"  src="assets/postpro/multichannel_ti_visual_analysis.png">
+</p>
+
+<p align="center">
+  <img width="90%"  src="assets/postpro/multichannel_ti_quantitative_analysis.png">
+</p>
+
 #### Phase-Modulation TI
 
+<p align="center">
+  <img width="90%"  src="assets/postpro/phase_modulation_ti_settings.png">
+</p>
+
+<p align="center">
+  <img width="90%"  src="assets/postpro/phase_modulation_ti_visual_analysis.png">
+</p>
+
+<p align="center">
+  <img width="90%"  src="assets/postpro/phase_modulation_ti_quantitative_analysis.png">
+</p>
 ### Report
 
 In the **Report** section, a more detailed and quantitative exposure overview is provided for both high frequency (HF) and temporal interference (TI) fields (compared to the visual one in the **Analysis** section). A brief explanation of the different parts is as follows:
