@@ -15,7 +15,7 @@ _Selected New Features_
 
 <!-- Many smaller features have also been added, e.g., to improve the presented information content and usability. --> 
 
-TIP V2.0 includes many smaller features and general improvements in the presented information content and usability, as well as bug fixes.
+TIP V2.0 also includes many smaller features and general improvements in the presented information content and usability, as well as bug fixes.
 
 
 ----
