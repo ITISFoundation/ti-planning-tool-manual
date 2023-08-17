@@ -67,6 +67,10 @@ Once that sweep is complete, all the viewers in the lower half of the screen are
   <img width="90%"  src="assets/postpro/analysis_slicer_numbers_v2_classic_ti.png">
 </p>
 
+<p align="center">
+  <img width="90%"  src="assets/postpro/classic_ti_quantitative_analysis.png">
+</p>
+
 1. **Main Controls** <br/>
    Here, all the setting options for the viewers are located. 
    * At the top, you can freely change electrode positions (**_Configuration_**) and then update the fields by clicking the ```Reload Field``` button. 
@@ -94,10 +98,6 @@ Once that sweep is complete, all the viewers in the lower half of the screen are
 6. **Export Buttons** <br/>
    * ```Add to Report``` allows addition of the six viewing elements to the PDF report (according to the currently selected slicing positions and viewing angle).
    * ```Export to S4L``` creates a .cache file of the TI maximum modulation amplitude, which can then be explored in [Step 3: Exposure Analysis](/docs/services/s4l_post_processing.md).
-
-<p align="center">
-  <img width="90%"  src="assets/postpro/classic_ti_quantitative_analysis.png">
-</p>
 
 Metrics table:
 <p align="center">
