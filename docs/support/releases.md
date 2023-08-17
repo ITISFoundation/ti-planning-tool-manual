@@ -5,15 +5,20 @@ _Release Date: 17.08.2023_
 
 TIP V2.0 brings a range of new functionalities and improvements to the Temporal Interference Planning Tool (TIP).
 
-_New Key Features_
+_Selected New Features_
 - Library of highly detailed anatomical head models, complete with precomputed field exposures, enabling inter-subject variability assessment
 - Mouse model to facilitate TI research involving rodents
 - Two new modes complementing the classic TI model: multichannel TI and phase-modulation TI
 - Expanded list of brain stimulation targets
-- Flexibilized optimization goal functons
+- Flexibilized optimization goal functions
 - Optimized utilization of cloud-computing and parallelization, delivering an interactive user experience for efficient exploration of large stimulation parameter spaces
 
-Many smaller feature have also been added, e.g., to improve the presented information content and usability.
+<!-- Many smaller features have also been added, e.g., to improve the presented information content and usability. --> 
+
+TIP V2.0 includes many smaller features and general improvements in the presented information content and usability, as well as bug fixes.
+
+
+----
 
 ### TIP V1.0
 _Release Date: 01.09.2022_ 
