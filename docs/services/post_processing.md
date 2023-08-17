@@ -88,7 +88,7 @@ Once that sweep is complete, all the viewers in the lower half of the screen are
    An interactive 3D model of the current setup: The electrode pair locations are shown in yellow and blue, the target in red, and the iso-surface in orange. The iso-surface visualizes all voxels with value equal to the strength metric reached within the target.
 
 6. **Export Buttons** <br/>
-   * ```Add Slicer to Report``` allows addition of the six viewing elements to the PDF report (according to the currently selected slicing positions and viewing angle).
+   * ```Add to Report``` allows addition of the six viewing elements to the PDF report (according to the currently selected slicing positions and viewing angle).
    * ```Export to S4L``` creates a .cache file of the TI maximum modulation amplitude, which can then be explored in [Step 3: Exposure Analysis](/docs/services/s4l_post_processing.md).
 
 Metrics table:
