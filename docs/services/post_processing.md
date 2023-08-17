@@ -65,7 +65,7 @@ Once that sweep is complete, all the viewers in the lower half of the screen are
 
 1. **Main Controls** <br/>
    Here, all the setting options for the viewers are located. 
-   * At the top, you can freely change electrode positions (**_Configuration_**) and then update the fields by clicking the ```Update Field``` button. 
+   * At the top, you can freely change electrode positions (**_Configuration_**) and then update the fields by clicking the ```Reload Field``` button. 
    * Below that, the channel weighting (**_Channel Weight A/B_**) can be changed via the slide bar. 
    * Next are the **_Masking Options_**, where you can switch between seeing the field in the whole head or only in the brain. 
       Using the **_Region of Interest_** dropdown list, one or multiple regions can be selected, which are then highlighted in the visualizations. 
@@ -76,7 +76,7 @@ Once that sweep is complete, all the viewers in the lower half of the screen are
    * Finally, three sliders (**_Slice X_**, **_Slice Y_**, and **_Slice Z_**) are available to change the three slice locations of the Slice Views.
 
 2. **Special Settings** <br/>
-   The number of sweep steps (**_Sweep Step_**) and the maximal current applied (**_Max Current [mA]_**) to the electrode pairs differ from the other settings in that they don't trigger an immediate visualization update, since changing them requires re-calculations of the fields and metrics. Viewer updates can instead be triggered using the ```Update Field``` Button.
+   The number of sweep steps (**_Sweep Step_**) and the maximal current applied (**_Max Current [mA]_**) to the electrode pairs differ from the other settings in that they don't trigger an immediate visualization update, since changing them requires re-calculations of the fields and metrics. Viewer updates can instead be triggered using the ```Reload Field``` Button.
  
 3. **Slice Viewers** <br/>
    Here, the three orthogonal slice field views are shown. They are overlayed on the image data from which the anatomical model was created. Crosshairs on the view indicate the intersections with the other two slices.
