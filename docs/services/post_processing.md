@@ -24,6 +24,8 @@ xxx review the below xxx
 
 * **Analysis** <br/>
 
+
+
     In the first half of the **Analysis** section, information from the **Optimizer** regarding the performance of different electrode configurations is presented in a sortable table (only applies to planning for [classic TI](/docs/background/modes.md)).
     Different setups can be compared and sorted using the three main [metrics](/docs/background/electromagnetic_modeling/quantities_of_interest.md): Strength, Selectivity, and Collateral. A 3D scatter plots also visually presents configurations near the [Pareto Front](/docs/background/multi_goal_optimization) to illustrate the trade-offs.
     The second half is used for visualization of the fields in 2D and 3D, as well as the visualization of waveforms.
@@ -41,9 +43,11 @@ xxx review the below xxx
 
 ### Analysis
 
+## Classic TI
+
 <!-- Let us now have a closer look at the **Analysis** section. -->
 
-In the first half of the **Analysis** section, information from the **Optimizer** regarding the performance of different electrode configurations is presented in a sortable table. Different setups can be compared and sorted using the three main [metrics](/docs/background/electromagnetic_modeling/quantities_of_interest.md): Strength, Selectivity, and Collateral. The second half is used for visualization of the fields in 2D and 3D, as well as the visualization of waveforms.
+In the first half of this section, information from the **Optimizer** regarding the performance of different electrode configurations is presented in a sortable table. Different setups can be compared and sorted using the three main [metrics](/docs/background/electromagnetic_modeling/quantities_of_interest.md): Strength, Selectivity, and Collateral. The second half is used for visualization of the fields in 2D and 3D, as well as the visualization of waveforms.
 
 In the beginning, your attention should be directed toward the table summarizing the results of the optimizer. To facilitate the search for an ideal setup, the table is sortable. 
 
@@ -105,6 +109,10 @@ Reporting:
 <p align="center">
   <img width="90%"  src="assets/quickguide/postpro_gui_3.gif">
 </p>
+
+## Multichanne TI
+
+## Phase-Modulation TI
 
 ### Report
 
