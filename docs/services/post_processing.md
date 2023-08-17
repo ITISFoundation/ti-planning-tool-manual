@@ -47,9 +47,11 @@ xxx review the below xxx
 
 <!-- Let us now have a closer look at the **Analysis** section. -->
 
-In the first half of this section, information from the **Optimizer** regarding the performance of different electrode configurations is presented in a sortable table. Different setups can be compared and sorted using the three main [metrics](/docs/background/electromagnetic_modeling/quantities_of_interest.md): Strength, Selectivity, and Collateral. The second half is used for visualization of the fields in 2D and 3D, as well as the visualization of waveforms.
+In the first half of this section, sweep and optimization parameters are defined. This includes the number of current ratio sweep steps, the maximal total current, and parameters affecting the performance [metrics](/docs/background/electromagnetic_modeling/quantities_of_interest.md) - namely, whether the assumed threshold shall be based on the overall brain or the target region, and what isopercentile should be used. 
 
-In the beginning, your attention should be directed toward the table summarizing the results of the optimizer. To facilitate the search for an ideal setup, the table is sortable. 
+After executing the optimization and loading the analysis, information from the **Optimizer** regarding the performance of different electrode configurations is presented in a sortable table. Different setups can be compared and sorted using the three [metrics](/docs/background/electromagnetic_modeling/quantities_of_interest.md): Strength, Selectivity, and Collateral. The second half is used for visualization of the fields in 2D and 3D, as well as the visualization of waveforms.
+
+To facilitate the search for an ideal setup, the table summarizing the results of the optimizer is sortable. 
 
 <br>
 <p align="center">
@@ -57,6 +59,8 @@ In the beginning, your attention should be directed toward the table summarizing
 </p>
 
 The sorting can be done using the scaling sliders on top (1.), where the weight (importance) of each metric can be set. The table is then sorted according to the score resulting from this weighting. The score is also shown in the last table column. For additional information regarding these metrics, check the [**Background**](/docs/background/background.md) section. Alternatively, the table can be sorted according to a single metric by clicking on the column name (2.). 
+
+A 3D scatter plot helps visually judge the compromise between the different performance metrics of the current selection, compared to alternative [Pareto-optimal](/docs/background/multi_goal_optimization) solutions.
 
 Once a promising setup has been identified, you can load the corresponding fields and data by clicking Load (3.). A sweep over channel weights is performed to render subsequent exporation more interactive and responsive. The progress of the sweep is shown below the table (4.).
 
@@ -74,7 +78,8 @@ Once that sweep is complete, all the viewers in the lower half of the screen are
 1. **Main Controls** <br/>
    Here, all the setting options for the viewers are located. 
    * At the top, you can freely change electrode positions (**_Configuration_**) and then update the fields by clicking the ```Reload Field``` button. 
-   * Below that, the channel weighting (**_Channel Weight A/B_**) can be changed via the slide bar. 
+   * Below that, the channel weighting (**_Channel Weight A/B_**) can be changed via the slide bar.
+   * Then, the parameters for the performance metrics can be adapted, by selecting the considered **_volume_** and **_isopercentile level_**.
    * Next are the **_Masking Options_**, where you can switch between seeing the field in the whole head or only in the brain. 
       Using the **_Region of Interest_** dropdown list, one or multiple regions can be selected, which are then highlighted in the visualizations. 
       To reset the highlighting, choose **_None_** in the dropdown list. 
@@ -114,7 +119,11 @@ Reporting:
   <img width="90%"  src="assets/quickguide/postpro_gui_3.gif">
 </p>
 
-#### Multichannel TI
+#### Multichannel TI and Phase-Modulation TI
+
+For the non-classic TI modes, the settings are similar, except for the fact that instead of using an automatic optimization, the user defines the setup of interest manually.
+
+Multichannel TI:
 
 <p align="center">
   <img width="90%"  src="assets/postpro/multichannel_ti_settings.png">
@@ -128,7 +137,10 @@ Reporting:
   <img width="90%"  src="assets/postpro/multichannel_ti_quantitative_analysis.png">
 </p>
 
-#### Phase-Modulation TI
+
+#### 
+
+Phase-Modulation TI:
 
 <p align="center">
   <img width="90%"  src="assets/postpro/phase_modulation_ti_settings.png">
@@ -141,6 +153,7 @@ Reporting:
 <p align="center">
   <img width="90%"  src="assets/postpro/phase_modulation_ti_quantitative_analysis.png">
 </p>
+
 ### Report
 
 In the **Report** section, a more detailed and quantitative exposure overview is provided for both high frequency (HF) and temporal interference (TI) fields (compared to the visual one in the **Analysis** section). A brief explanation of the different parts is as follows:
