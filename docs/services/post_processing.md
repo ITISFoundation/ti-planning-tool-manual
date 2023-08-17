@@ -49,7 +49,7 @@ In the beginning, your attention should be directed toward the table summarizing
 
 <br>
 <p align="center">
-  <img width="90%"  src="assets/postpro/analysis_table_nums.png">
+  <img width="90%"  src="assets/postpro/classic_ti_three_metrics_numbered.png">
 </p>
 
 The sorting can be done using the scaling sliders on top (1.), where the weight (importance) of each metric can be set. The table is then sorted according to the score resulting from this weighting. The score is also shown in the last table column. For additional information regarding these metrics, check the [**Background**](/docs/background/background.md) section. Alternatively, the table can be sorted according to a single metric by clicking on the column name (2.). 
@@ -60,7 +60,7 @@ Once that sweep is complete, all the viewers in the lower half of the screen are
 
 <br>
 <p align="center">
-  <img width="90%"  src="assets/postpro/analysis_slicer_numbers.png">
+  <img width="90%"  src="assets/postpro/analysis_slicer_numbers_v2_classic_ti.png">
 </p>
 
 1. **Main Controls** <br/>
