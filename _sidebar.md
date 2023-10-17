@@ -28,6 +28,7 @@
   * [IT'IS TIP](/docs/support/itis/itis_tc.md)
   * [Sim4Life](/docs/support/sim4life/copyright_Sim4Life.html)
 * [Release Notes](/docs/support/releases.md)
+  * [Changelog](/docs/support/changelog.md)
   * [Known Issues](/docs/support/knownbugs.md)
   * [Research & Upcoming Functionality](/docs/background/ongoing_research.md)
 * [Support](/docs/support/support.md)
