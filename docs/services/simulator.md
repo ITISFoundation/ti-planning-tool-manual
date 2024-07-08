@@ -1,4 +1,4 @@
-## Setup
+## EM Simulations
 
 **_Summary_**: 
 
@@ -6,9 +6,11 @@ _During the **Setup** step, an anatomical model and an electrode shape and place
 
 ----
 
-When you start the pipeline in the [classic TI mode](/docs/background/modes.md), you will see the **Electrode Selector** interface. Here, you can interactively select the model, target region and electrode candidates for each electrode pair. These candidates are then used in the **Optimizer** and **Post Processing** stages to find the optimal electrode setup to target a certain region of interest with respect to the three main metrics outlined in the [**Background**](/docs/background/background.md) chapter. 
+In this step, the generation of the field library, as described in the chapter [**_Electromagnetic Modeling_**](/docs/background/electromagnetic_modeling.md), is computed. Given that DTI data was provided, the user can use the drop-down to select which type of simulation they would like to run first, isotropic or anisotropic. Afterwards the computation can be initialized by hitting the ```Setup``` button. A pop-up will appear with the information about the estimated cost of this action which can be accepted using the ```Confirm``` button. Since TIP v3.0 runs on AWS servers and creating the field library is a rather computationally intense step, this part is a premium feature which needs credits to be executed. For instructions on how to acquire credits, please refer to chapter \textit{Quick-Start-Guide/Platform overview/Billing Center}
 
-If you are using the personalized classic TI mode, the model selection will be extended by the simulated models that have been completed in the [**EM Simulator**](/docs/services/simulator.md). In the model dropdown you will see ```Human - Personalized isotropic```, ```Human - Personalized anisotropic``` or both. The targets list is automatically adapted depending if you chose to register an additional atlas in [**Images Processing**](/docs/services/personalizer.md).
+Once all the preparations are finished, the logging console will show the information that the window can be closed. Since the simulations will run for approximately 2.5 to 3 hours, users can come back later once the results are available.
+
+When all the simulations are done, users can hit the ```Export``` button which downloads all the results, and compiles all the necessary files which are needed to for the following steps. Once this step is done, users can either start another simulation run in case both anisotropic and isotropic flavors should be compared, otherwise they can proceed to the next step by clicking on the right arrow.
 
 <br>
 <p align="center">

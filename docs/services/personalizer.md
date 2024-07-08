@@ -1,4 +1,4 @@
-## Setup
+## Images Processing
 
 **_Summary_**: 
 
@@ -6,9 +6,9 @@ _During the **Setup** step, an anatomical model and an electrode shape and place
 
 ----
 
-When you start the pipeline in the [classic TI mode](/docs/background/modes.md), you will see the **Electrode Selector** interface. Here, you can interactively select the model, target region and electrode candidates for each electrode pair. These candidates are then used in the **Optimizer** and **Post Processing** stages to find the optimal electrode setup to target a certain region of interest with respect to the three main metrics outlined in the [**Background**](/docs/background/background.md) chapter. 
+As the initial step for personalization, the user is asked to provide, in the file picker, the data you want to work with. Here you have two options: building an isotropic model which only requires a T1-weighted MR image, or an anisotropic model which requires a DTI with bval & bvac files on top of the T1. If the anisotropic option is desired, all four files should be zipped together.
 
-If you are using the personalized classic TI mode, the model selection will be extended by the simulated models that have been completed in the [**EM Simulator**](/docs/services/simulator.md). In the model dropdown you will see ```Human - Personalized isotropic```, ```Human - Personalized anisotropic``` or both. The targets list is automatically adapted depending if you chose to register an additional atlas in [**Images Processing**](/docs/services/personalizer.md).
+Once uploaded, the user can specify the geometry of the electrode, and if the head should be registered to the ICBM_152 atlas for cortical structures. By clicking start, the anatomical model is generated. Computational time is approximated to be ~1h, and can increase to ~2.5h if cortical atlas registration is selected. The computation is done when a tick-icon appears on the previously pushed start button. The user can go to the next step by pressing the arrow on the right.
 
 <br>
 <p align="center">

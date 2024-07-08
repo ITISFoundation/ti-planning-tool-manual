@@ -1,4 +1,4 @@
-## Setup
+## Fiducials Placement
 
 **_Summary_**: 
 
@@ -6,9 +6,7 @@ _During the **Setup** step, an anatomical model and an electrode shape and place
 
 ----
 
-When you start the pipeline in the [classic TI mode](/docs/background/modes.md), you will see the **Electrode Selector** interface. Here, you can interactively select the model, target region and electrode candidates for each electrode pair. These candidates are then used in the **Optimizer** and **Post Processing** stages to find the optimal electrode setup to target a certain region of interest with respect to the three main metrics outlined in the [**Background**](/docs/background/background.md) chapter. 
-
-If you are using the personalized classic TI mode, the model selection will be extended by the simulated models that have been completed in the [**EM Simulator**](/docs/services/simulator.md). In the model dropdown you will see ```Human - Personalized isotropic```, ```Human - Personalized anisotropic``` or both. The targets list is automatically adapted depending if you chose to register an additional atlas in [**Images Processing**](/docs/services/personalizer.md).
+Now that the anatomical 3D model is generated, it needs to be imported into the newly open GUI. Selecting ```Import```, the model file to be loaded should be in the ```inputs/input_1``` directory. Now, the user can place the fiducial points that will be used for the positioning of the electrodes on a 10-10 system. In the top ribbon of the GUI, selecting ```Sketch``` then ```Point``` allows for the creation of points directly on the model visible in the 3D viewer on the right. Users are asked to create 4 points, representing positions Nz (nasion), Iz (inion), LPA and RPA (left/right pre-auricular). These points should be properly renamed according to their position (Nz, Iz, LPA, RPA). This can be done using the shortcut ```F2```. Once created, points need to be exported by selecting them and clicking ```Export Selected``` in the top ribbon to put them in the ```outputs/output_1``` directory. Please specify the file extension ```.sab``` in the file name.
 
 <br>
 <p align="center">

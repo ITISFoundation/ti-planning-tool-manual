@@ -2,7 +2,9 @@
 
 The TI exposure optimization and visualization is currently based on libraries of precomputed fields for rapid answers and an interactive experience. From the precomputed fields (and associated impedance matrices), distributions of TI, as well as high frequency exposure can be obtained for any stimulation configuration, using the superposition principle.
 
-These precomputed fields were determined using the Sim4Life software, along with detailed anatomical models, such as the MIDA model [[1]](/docs/background/references.md), the Virtual Population (ViP) models [[2]](/docs/background/references.md), and the Virtual Zoo (ViZoo) models [[3]](/docs/background/references.md). The simulations were performed using the ohmic-current-dominated electro-quasistatic simulator that solves the equation 
+These precomputed fields were determined using the Sim4Life software, along with detailed anatomical models, such as the MIDA model [[1]](/docs/background/references.md), the Virtual Population (ViP) models [[2]](/docs/background/references.md), and the Virtual Zoo (ViZoo) models [[3]](/docs/background/references.md). The personalized flavor allows for the computation of all electrode fields based on the desired dataset.
+
+The simulations were performed using the ohmic-current-dominated electro-quasistatic simulator that solves the equation 
 
 <p align="center">
 ∇σ∇ϕ = 0

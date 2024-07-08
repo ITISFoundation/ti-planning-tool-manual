@@ -1,4 +1,4 @@
-## Setup
+## Uploading Your Data
 
 **_Summary_**: 
 
@@ -6,9 +6,7 @@ _During the **Setup** step, an anatomical model and an electrode shape and place
 
 ----
 
-When you start the pipeline in the [classic TI mode](/docs/background/modes.md), you will see the **Electrode Selector** interface. Here, you can interactively select the model, target region and electrode candidates for each electrode pair. These candidates are then used in the **Optimizer** and **Post Processing** stages to find the optimal electrode setup to target a certain region of interest with respect to the three main metrics outlined in the [**Background**](/docs/background/background.md) chapter. 
-
-If you are using the personalized classic TI mode, the model selection will be extended by the simulated models that have been completed in the [**EM Simulator**](/docs/services/simulator.md). In the model dropdown you will see ```Human - Personalized isotropic```, ```Human - Personalized anisotropic``` or both. The targets list is automatically adapted depending if you chose to register an additional atlas in [**Images Processing**](/docs/services/personalizer.md).
+This preparatory step is crucial for smooth operation of the pipeline. If you choose to follow the personalized pipeline, you have the prepare your data according to our acceptable formatting and setting.
 
 <br>
 <p align="center">

@@ -1,4 +1,4 @@
-## Setup
+## Electrode Placement
 
 **_Summary_**: 
 
@@ -6,9 +6,13 @@ _During the **Setup** step, an anatomical model and an electrode shape and place
 
 ----
 
-When you start the pipeline in the [classic TI mode](/docs/background/modes.md), you will see the **Electrode Selector** interface. Here, you can interactively select the model, target region and electrode candidates for each electrode pair. These candidates are then used in the **Optimizer** and **Post Processing** stages to find the optimal electrode setup to target a certain region of interest with respect to the three main metrics outlined in the [**Background**](/docs/background/background.md) chapter. 
+Once exported, the user can click on the left arrow to go back to the page seen in [**Images Processing**](/docs/services/personalizer.md) and click on the ```Start``` button to automatically position electrodes on a 10-10 system according to the fiducials. After the placment finished successfully, users can press the arrow on the right to return to modelling GUI. Once re-importing the model again, the head model will contain the 10-10 system with it and you can move on to the EM simulation. Here the user is expected to view the head model and the placed electrodes. If the electrodes are misplaced, or present an undesired orientation with respect to the scalp try to re-do fiducials' placement.
 
-If you are using the personalized classic TI mode, the model selection will be extended by the simulated models that have been completed in the [**EM Simulator**](/docs/services/simulator.md). In the model dropdown you will see ```Human - Personalized isotropic```, ```Human - Personalized anisotropic``` or both. The targets list is automatically adapted depending if you chose to register an additional atlas in [**Images Processing**](/docs/services/personalizer.md).
+It is important to note that if the fiducial were misplaced, or the imported head model is not proportional to the chosen electrode geometry, an error will occur. A workaround to this issue could be to:
+
+*  Verify accurate and consistent placement of fiducials according to the standard.
+*  Reduce electrode diameter for smaller circumference heads.
+
 
 <br>
 <p align="center">
