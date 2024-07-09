@@ -3,7 +3,7 @@
 The **Dashboard** hosts the two principal views: ```Studies``` and ```Data``` (1.).
 
 <p align="center">
-  <img width="90%" src="assets/quickguide/dashboard.png">
+  <img width="90%" src="../../assets/quickguide/dashboard.png">
 </p>
 
 
@@ -24,7 +24,7 @@ on the **Dashboard**. Clicking this icon will bring you directly to the update m
 versions of each Service and where you can update them either individually or all together.
 
 <p align="center">
-  <img width="90%" src="assets/quickguide/settings_service.png">
+  <img width="90%" src="../../assets/quickguide/settings_service.png">
 </p>
 
 

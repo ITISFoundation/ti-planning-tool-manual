@@ -1,7 +1,7 @@
 ### Landing Page
 
 <p align="center">
-  <img width="90%" src="assets/quickguide/landingpage_v2.png">
+  <img width="90%" src="../../assets/quickguide/landingpage_v2.png">
 </p>
 
 The Landing Page currently serves primarily for user authentication. Two-factor authentication is required:

@@ -1,6 +1,6 @@
 ## EM Simulations
 
-**_Summary_**: 
+**_Summary_**:
 
 _During the **Setup** step, an anatomical model and an electrode shape and placement are chosen, the target structure is specified, and the huge search space is narrowed down by selecting potential electrode placement regions._
 
@@ -14,18 +14,13 @@ When all the simulations are done, users can hit the ```Export``` button which d
 
 <br>
 <p align="center">
-  <img width="90%" src="assets/electrode_selector/setup.png">
+  <img width="90%" src="../../assets/quickguide/simulator.png">
 </p>
 
 The **_Setup_** interface has the following elements:
 
 1. **_Select Species_** <br/>
    Depending on the TI exposure to be planned, a human or mouse model with associated standard electrode locations is selected here via the drop-down list. The list of available models will continue to expand in the near future.
-
-<br>
-<p align="center">
-  <img width="90%" src="assets/electrode_selector/species.png">
-</p>
 
 2. **_Select Target Structure_** <br/>
    The brain structure that should be targeted by TI is specified here via the drop-down list. All the exposure quality metrics will be calculated according to the selected structure. 
@@ -44,6 +39,3 @@ Once you are finished with the setup, you can press ```Finish set up```. This wi
 
 You can now click to the arrow on the right side of the browser to move to [**_Optimal Configuration Identification_**](/docs/services/post_processing.md).
 
-<p align="center">
-   <img src="assets/quickguide/electrode_selector.gif" width="740" height="578" />
-</p>
