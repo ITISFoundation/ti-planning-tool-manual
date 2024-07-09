@@ -10,18 +10,13 @@ Now that the anatomical 3D model is generated, it needs to be imported into the 
 
 <br>
 <p align="center">
-  <img width="90%" src="../../assets/electrode_selector/setup.png">
+  <img width="90%" src="../../assets/quickguide/fiducial_placement_1.png">
 </p>
 
 The **_Setup_** interface has the following elements:
 
 1. **_Select Species_** <br/>
    Depending on the TI exposure to be planned, a human or mouse model with associated standard electrode locations is selected here via the drop-down list. The list of available models will continue to expand in the near future.
-
-<br>
-<p align="center">
-  <img width="90%" src="../../assets/electrode_selector/species.png">
-</p>
 
 2. **_Select Target Structure_** <br/>
    The brain structure that should be targeted by TI is specified here via the drop-down list. All the exposure quality metrics will be calculated according to the selected structure. 
@@ -34,6 +29,11 @@ The **_Setup_** interface has the following elements:
    
 5. **_Electrode Pair Candidates_** <br/>
    Electrode position candidates are interactively selected here. Click ```+``` button next to _Start selecting_ under each _Pair_ and then click on the location in the diagram to add. The selected electrode pair locations will be highlighted with the same color (Blue for _Pair 1_ and Yellow for _Pair 2_). Click the icon next to candidate electrode under _Pair_ list to unselect it. E*n* + and E*n* - correspond to candidate locations for the two electrodes that make up the *n*-th pair. All permutations of the candidates locations are then evaluated as part of the optimization process.
+
+<br>
+<p align="center">
+  <img width="90%" src="../../assets/quickguide/fiducial_placement_2.png">
+</p>
 
 
 Once you are finished with the setup, you can press ```Finish set up```. This will relay all the required information to the **Optimizer** for the evaluation. If settings are changed after submitting, the ```Finish set up``` button turns orange to indicate that the optimization results are outdated. Settings can then be resubmitted and the **Optimizer** is executed once more to update the pipeline, and the button color reverts to the standard color.
