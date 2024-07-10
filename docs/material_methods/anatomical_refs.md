@@ -28,9 +28,9 @@ In version 3.0, users can generate personalized head models based on a T1-weight
 
 Here is a list of all the tissues which are segmented and their electric conductivity values which are taken directly from our material database:
 
-<table style="width: 100%; border-collapse: separate; border-spacing: 0px;">
+<table style="width: 100%; border-collapse: separate; border-spacing: 10%;">
 <tr>
-<td style="padding-left: 0px; vertical-align: top;">
+<td style="padding-left: 10%; vertical-align: top;">
 
 | Tissue Name       | Elec. Conductivity [S/m] | Density [kg/m^3]        |
 | ---------- | --- | ----------- |

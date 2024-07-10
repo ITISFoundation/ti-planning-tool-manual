@@ -20,7 +20,7 @@
     * [Dashboard](/docs/platform_introduction/dashboard.md)
     * [Data](/docs/platform_introduction/data.md)
   * [Creating a New Plan](/docs/plan/create_new_plan.md)
-  * [Step 0: Uploading Your Data](/docs/services/file_picker.md)
+  * [Step 0: Preparing Your Data](/docs/services/file_picker.md)
   * [Step 1: Images Processing](/docs/services/personalizer.md)
   * [Step 2: Fiducials Placement](/docs/services/fiducials_placement.md)
   * [Step 3: Electrode Placement](/docs/services/electrode_placement.md)
