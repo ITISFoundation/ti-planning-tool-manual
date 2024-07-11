@@ -1,44 +1,41 @@
 ## Fiducials Placement
 
-**_Summary_**: 
+**_Summary_**:
 
-_During the **Setup** step, an anatomical model and an electrode shape and placement are chosen, the target structure is specified, and the huge search space is narrowed down by selecting potential electrode placement regions._
+Import the generated anatomical 3D model into the GUI by selecting ```Import``` and loading the model file from the ```inputs/input_1``` directory. Place the fiducial points Nz, Iz, LPA, and RPA by selecting ```Sketch``` then ```Point``` in the GUI, rename them using ```F2```, and export them to the ```outputs/output_1``` directory with the .sab extension.
 
 ----
 
-Now that the anatomical 3D model is generated, it needs to be imported into the newly open GUI. Selecting ```Import```, the model file to be loaded should be in the ```inputs/input_1``` directory. Now, the user can place the fiducial points that will be used for the positioning of the electrodes on a 10-10 system. In the top ribbon of the GUI, selecting ```Sketch``` then ```Point``` allows for the creation of points directly on the model visible in the 3D viewer on the right. Users are asked to create 4 points, representing positions Nz (nasion), Iz (inion), LPA and RPA (left/right pre-auricular). These points should be properly renamed according to their position (Nz, Iz, LPA, RPA). This can be done using the shortcut ```F2```. Once created, points need to be exported by selecting them and clicking ```Export Selected``` in the top ribbon to put them in the ```outputs/output_1``` directory. Please specify the file extension ```.sab``` in the file name.
+Now that the anatomical 3D model is generated, it needs to be imported into the newly open GUI. Selecting ```Import```, the model file to be loaded should be in the ```inputs/input_1``` directory. Now, the user can place the fiducial points that will be used for the positioning of the electrodes on a 10-10 system. In the top ribbon of the GUI, selecting ```Sketch``` then ```Point``` allows for the creation of points directly on the model visible in the 3D viewer on the right.
 
 <br>
 <p align="center">
   <img width="90%" src="../../assets/quickguide/fiducial_placement_1.png">
 </p>
 
-The **_Setup_** interface has the following elements:
+The **Fiducials Placement** interface has the following elements:
 
-1. **_Select Species_** <br/>
-   Depending on the TI exposure to be planned, a human or mouse model with associated standard electrode locations is selected here via the drop-down list. The list of available models will continue to expand in the near future.
+1. **_Place Points_** <br/>
+   To place a point, select ```Sketch``` then ```Point``` in the top toolbar and click on the chosen location in the 3D model.
 
-2. **_Select Target Structure_** <br/>
-   The brain structure that should be targeted by TI is specified here via the drop-down list. All the exposure quality metrics will be calculated according to the selected structure. 
-
-3. **_Select Electrode Shape_** <br/>
-   The shape of the electrode is selected here via the drop-down list. Currently the circular shape is available only.
-   
-4. **_Select Electrode Dimensions_** <br/>
-   The dimension of the electrode is set here via the drop-down list. Currently the area of 3cm<sup>2</sup> is available only.
-   
-5. **_Electrode Pair Candidates_** <br/>
-   Electrode position candidates are interactively selected here. Click ```+``` button next to _Start selecting_ under each _Pair_ and then click on the location in the diagram to add. The selected electrode pair locations will be highlighted with the same color (Blue for _Pair 1_ and Yellow for _Pair 2_). Click the icon next to candidate electrode under _Pair_ list to unselect it. E*n* + and E*n* - correspond to candidate locations for the two electrodes that make up the *n*-th pair. All permutations of the candidates locations are then evaluated as part of the optimization process.
+2. **_Model Tree_** <br/>
+   This part of the UI shows you an exact overview of all the entities visible in the model view. This entails entity groups containing different tissues for example.
 
 <br>
 <p align="center">
   <img width="90%" src="../../assets/quickguide/fiducial_placement_2.png">
 </p>
 
+Users are asked to create 4 points, representing positions Nz (nasion), Iz (inion), LPA and RPA (left/right pre-auricular). These points should be properly renamed according to their position (Nz, Iz, LPA, RPA). This can be done using the shortcut ```F2```. Once created, points need to be exported by selecting them and clicking ```Export Selected``` in the top ribbon to put them in the ```outputs/output_1``` directory. Please specify the file extension ```.sab``` in the file name.
 
-Once you are finished with the setup, you can press ```Finish set up```. This will relay all the required information to the **Optimizer** for the evaluation. If settings are changed after submitting, the ```Finish set up``` button turns orange to indicate that the optimization results are outdated. Settings can then be resubmitted and the **Optimizer** is executed once more to update the pipeline, and the button color reverts to the standard color.
+1. **_Export Selected_** <br/>
+   Clicking this button will open the file explorer, where the selected entities can be saved to a file.
 
-You can now click to the arrow on the right side of the browser to move to [**_Optimal Configuration Identification_**](/docs/services/post_processing.md).
+2. **_Fiducial Point Entities_** <br/>
+   Once points are placed on the 3D model, they appear in the model tree. Here they can be renamed, deleted or selected for export.
+
+3. **_Selection Details_** <br/>
+   When selecting an entity from the model tree, this section of the UI will display information and editable settings.
 
 <p align="center">
    <img src="../../assets/quickguide/electrode_selector.gif" width="740" height="578" />

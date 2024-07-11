@@ -1,8 +1,8 @@
 ## Electrode Placement
 
-**_Summary_**: 
+**_Summary_**:
 
-_During the **Setup** step, an anatomical model and an electrode shape and placement are chosen, the target structure is specified, and the huge search space is narrowed down by selecting potential electrode placement regions._
+After exporting, users can return to the [**Images Processing**](/docs/services/personalizer.md) page, click ```Start``` to automatically position electrodes on a 10-10 system, and then return to the modeling GUI. Upon re-importing, the head model will include the 10-10 system for the EM simulation; if electrodes are misplaced, users should redo the fiducials' placement.
 
 ----
 
@@ -10,11 +10,13 @@ Once exported, the user can click on the left arrow to go back to the page seen 
 
 It is important to note that if the fiducial were misplaced, or the imported head model is not proportional to the chosen electrode geometry, an error will occur. A workaround to this issue could be to:
 
-*  Verify accurate and consistent placement of fiducials according to the standard.
-*  Reduce electrode diameter for smaller circumference heads.
+* Verify accurate and consistent placement of fiducials according to the standard.
+* Reduce electrode diameter for smaller circumference heads.
 
 
 <br>
 <p align="center">
   <img width="90%" src="../../assets/quickguide/fiducial_placement_3.png">
 </p>
+
+You can now click to the arrow on the right side of the browser to move to [**_Step 4: EM Simulations_**](/docs/services/simulator.md).

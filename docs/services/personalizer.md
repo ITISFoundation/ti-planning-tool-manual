@@ -1,21 +1,21 @@
 ## Images Processing
 
-**_Summary_**: 
+**_Summary_**:
 
-_During the **Setup** step, an anatomical model and an electrode shape and placement are chosen, the target structure is specified, and the huge search space is narrowed down by selecting potential electrode placement regions._
+As the first step for personalization, provide the data via the file picker: either a T1-weighted MRI for an isotropic model or a zipped file containing T1, DTI, bval, and bvec files for an anisotropic model. After uploading, specify the electrode geometry and whether to register a detailed atlas to the brain; click Start to generate the anatomical model.
 
 ----
 
 As the initial step for personalization, the user is asked to provide, in the file picker, the data you want to work with. Here you have two options: building an isotropic model which only requires a T1-weighted MR image, or an anisotropic model which requires a DTI with bval & bvac files on top of the T1. If the anisotropic option is desired, all four files should be zipped together.
 
-<table style="width: 100%; border-collapse: separate; border-spacing: 10px;">
+<table style="width: 100%; border-collapse: separate; border-spacing: 5px; border: 1px solid white">
 <tr>
-<td style="padding-left: 50px; vertical-align: top;">
+<td style="padding-left: 10%; vertical-align: top; border: 1px solid white">
 
 - 📃 `subject_t1.nii.gz`
 
 </td>
-<td style="vertical-align: top;">
+<td style="padding-left: 10%; vertical-align: top; border: 1px solid white">
 
 - 📂 `input_data.zip/`
   - 📃 `subject_t1.nii.gz`
@@ -34,10 +34,13 @@ As the initial step for personalization, the user is asked to provide, in the fi
 
 1. **Data Instructions**
    A brief summary of what files and formates are needed, image quality recommendations and a reminder to annonymize the data before uploading.
+
 2. **Upload Option 1**
    Select a file using the file explorer by clicking on ```Select File``` or directly drag and drop the the data to the designated area.
+
 3. **Upload Option 2**
    If the data is already available online somewhere (eg. Google Drive or Dropbox), given that the sharing is set to public, the link can be provided.
+
 4. **Upload Option 3**
    In case data already uploaded to TIP in a different study shall be reused, it can be selected from TIP's data explorer.
 
@@ -48,24 +51,18 @@ Once uploaded, the user can specify the geometry of the electrode, and if the he
   <img width="90%" src="../../assets/quickguide/personalizer.png">
 </p>
 
-The **_Setup_** interface has the following elements:
+The interface has the following elements:
 
-1. **_Select Species_** <br/>
-   Depending on the TI exposure to be planned, a human or mouse model with associated standard electrode locations is selected here via the drop-down list. The list of available models will continue to expand in the near future.
+1. **Select Electroder Geometry** <br/>
+   The shape of the electrodes is selected here. The 
 
-2. **_Select Target Structure_** <br/>
-   The brain structure that should be targeted by TI is specified here via the drop-down list. All the exposure quality metrics will be calculated according to the selected structure. 
+2. **Select Atlas to Register** <br/>
+   If a detailed atlas should be registered to the brain, select the according option. This is a multi-select list. Please make sure that ```None``` is not selected together with the atlas to register because the registration will always be skipped if ```None``` is selected.
 
-3. **_Select Electrode Shape_** <br/>
-   The shape of the electrode is selected here via the drop-down list. Currently the circular shape is available only.
-   
-4. **_Select Electrode Dimensions_** <br/>
-   The dimension of the electrode is set here via the drop-down list. Currently the area of 3cm<sup>2</sup> is available only.
-   
-5. **_Electrode Pair Candidates_** <br/>
-   Electrode position candidates are interactively selected here. Click ```+``` button next to _Start selecting_ under each _Pair_ and then click on the location in the diagram to add. The selected electrode pair locations will be highlighted with the same color (Blue for _Pair 1_ and Yellow for _Pair 2_). Click the icon next to candidate electrode under _Pair_ list to unselect it. E*n* + and E*n* - correspond to candidate locations for the two electrodes that make up the *n*-th pair. All permutations of the candidates locations are then evaluated as part of the optimization process.
+3. **Progress Overview** <br/>
+   Shows the progress of each individual step in the model generation. ```10-10``` will only be done if the [Step 2: Fiducials Placement](/docs/services/fiducials_placement.md) already has been done.
 
+4. **Logging** <br/>
+   Provides some information about this step at start-up and will display information and eventual errors during runtime.
 
-Once you are finished with the setup, you can press ```Finish set up```. This will relay all the required information to the **Optimizer** for the evaluation. If settings are changed after submitting, the ```Finish set up``` button turns orange to indicate that the optimization results are outdated. Settings can then be resubmitted and the **Optimizer** is executed once more to update the pipeline, and the button color reverts to the standard color.
-
-You can now click to the arrow on the right side of the browser to move to [**_Optimal Configuration Identification_**](/docs/services/post_processing.md).
+You can now click to the arrow on the right side of the browser to move to [Step 2: Fiducials Placement](/docs/services/fiducials_placement.md).
