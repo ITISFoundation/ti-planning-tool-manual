@@ -7,7 +7,7 @@ The **Dashboard** hosts the two principal views: ```Studies``` and ```Data``` (1
 </p>
 
 
-- Under ```Studies```, existing Plans (own Plans, or plans that have been shared by other users) can be accessed (3.) and managed (4.), and new Plans can be [created](docs/plan/create_new_plan.md). 
+- Under ```Studies```, existing Plans (own Plans, or plans that have been shared by other users) can be accessed (3.) and managed (4.), and new Plans can be [created](docs/plan/create_new_plan.md).
 - Under ```Data```, the existing data can be managed and downloaded (see [Data](/docs/platform_introduction/data.md)).
 
 In addition, buttons on the top right provide access to notifications, various support material/contact options, and a menu (5.) with the following entries:
@@ -29,7 +29,6 @@ versions of each Service and where you can update them either individually or al
 <p align="center">
   <img width="90%" src="assets/quickguide/settings_service.png">
 </p>
-
 
 It is always possible to return to the _**Dashboard**_ by clicking the ```Dashboard``` button on the top left, which automatically saves the state of the currently opened plan.
 

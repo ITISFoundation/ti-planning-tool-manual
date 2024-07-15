@@ -10,7 +10,7 @@ In this step, the generation of the field library, as described in the chapter [
 
 Once all the preparations are finished, the logging console will show the information that the window can be closed. Since the simulations will run for approximately 2.5 to 3 hours, users can come back later once the results are available.
 
-When all the simulations are done, users can hit the ```Export``` button which downloads all the results, and compiles all the necessary files which are needed to for the following steps. Once this step is done, users can either start another simulation run in case both anisotropic and isotropic flavors should be compared, otherwise they can proceed to the next step by clicking on the right arrow.
+When all the simulations are done, users can hit the ```Export``` button which downloads all the results, and compiles all the necessary files which are needed to for the following steps. Once this step is done, users can either start another simulation run in case both anisotropic and isotropic flavors should be compared.
 
 <br>
 <p align="center">

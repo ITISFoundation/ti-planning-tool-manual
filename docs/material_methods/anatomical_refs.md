@@ -26,49 +26,49 @@ IXI025, the female model, is characterized by 43 individually segmented tissues.
 
 In version 3.0, users can generate personalized head models based on a T1-weighted MR images. The tissue segmentation is automatically generated using a U-Net, which is able to delineate 29 tissues, eight of which are subcortical regions.
 
-Here is a list of all the tissues which are segmented and their electric conductivity values which are taken directly from our material database:
+Here is a list of all the tissues which are segmented and their electric conductivity values which are taken directly from our material database [[4]](/docs/background/references.md):
 
 <table style="width: 100%; border-collapse: separate; border-spacing: 10%;">
 <tr>
 <td style="padding-left: 10%; vertical-align: top;">
 
-| Tissue Name       | Elec. Conductivity [S/m] | Density [kg/m^3]        |
-| ---------- | --- | ----------- |
-| Amygdala   | 0.419055  | 1044.5    |
-| Artery | 0.66246  | 1049.75 |
-| Brainstem| 0.35  | 1045.5     |
-| Caudate nucleus   | 0.419055  | 1044.5    |
-| Cerebellum gray matter | 0.419055  | 1044.5 |
-| Cerebellum white matter| 0.347954  | 1041     |
-| Cerebrospinal fluid   | 1.879  | 1007    |
-| Cerebrum gray matter | 0.419055  | 1044.5 |
-| Cerebrum white matter| 0.347954  | 1041     |
-| Dura   | 0.06  | 1174    |
-| Eyes | 2.16486  | 1004.5 |
-| Globus pallidus| 0.419055  | 1044.5     |
-| Hippocampus   | 0.419055  | 1044.5    |
-| Midbrain ventral | 0.35  | 1045.5 |
-| Mucosa | 0.461008  | 1102     |
+| Tissue Name       | Elec. Conductivity [S/m] |
+| ---------- | --- |
+| Amygdala   | 0.419055  |
+| Artery | 0.66246  |
+| Brainstem| 0.35  |
+| Caudate nucleus   | 0.419055  |
+| Cerebellum gray matter | 0.419055  |
+| Cerebellum white matter| 0.347954  |
+| Cerebrospinal fluid   | 1.879  |
+| Cerebrum gray matter | 0.419055  |
+| Cerebrum white matter| 0.347954  |
+| Dura   | 0.06  |
+| Eyes | 2.16486  |
+| Globus pallidus| 0.419055  |
+| Hippocampus   | 0.419055  |
+| Midbrain ventral | 0.35  |
+| Mucosa | 0.461008  |
 
 </td>
 <td style="vertical-align: top;">
 
-| Tissue Name       | Elec. Conductivity [S/m] | Density [kg/m^3]        |
-| ---------- | --- | ----------- |
-| Ocular muscle | 0.461008  | 1090.4    |
-| Nerve cranial II optic | 0.347954  | 1075 |
-| Nucleus accumbens| 0.419055  | 1044.5     |
-| Other tissues   | 0.0776213  | 911    |
-| Putamen | 0.419055  | 1044.5 |
-| Skin | 0.148297  | 1109     |
-| Skull cancellous | 0.0804595  | 1178.33    |
-| Skull cortical | 0.006302  | 1908 |
-| Spinal cord | 0.610954  | 1075     |
-| Thalamus   | 0.475  | 1044.5    |
-| Vein | 0.66246  | 1049.75 |
-| Ventricles | 1.879  | 1007     |
-| Vertebrae cancellous | 0.0804595  | 1178.33    |
-| Vetebrae cortical | 0.006302  | 1908 |
+| Tissue Name       | Elec. Conductivity [S/m] |
+| ---------- | --- |
+| Ocular muscle | 0.461008  |
+| Nerve cranial II optic | 0.347954  |
+| Nucleus accumbens| 0.419055  |
+| Other tissues   | 0.0776213  |
+| Putamen | 0.419055  |
+| Skin | 0.148297  |
+| Skull cancellous | 0.0804595  |
+| Skull cortical | 0.006302  |
+| Spinal cord | 0.610954  |
+| Thalamus   | 0.475  |
+| Vein | 0.66246  |
+| Ventricles | 1.879  |
+| Vertebrae cancellous | 0.0804595  |
+| Vetebrae cortical | 0.006302  |
 
 </td>
 </tr>
@@ -81,5 +81,5 @@ Since the model is trained on healthy subjects without implants/lesions/atrophy,
   <img width="500" src="assets/methods/personalized_head.png">
 </p>
 
-In addition to that, users have to option to provide diffusion tensor imaging data. Based on that, an inhomogeneous, anisotropic conductivity map can be extracted using a linear relationship which has been described by D.S. Tuch [citation ...]. To use this feature, users need to provide a preprocessed DTI nifty (.nii.gz), a .bval and .bvec file. The bval file lists the b-value for each volume in the series, the bvec file the gradient direction, with one column per volume
+In addition to that, users have to option to provide diffusion tensor imaging data. Based on that, an inhomogeneous, anisotropic conductivity map can be extracted using a linear relationship which has been described by D.S. Tuch [[10]](/docs/background/references.md). To use this feature, users need to provide a preprocessed DTI nifty (.nii.gz), a .bval and .bvec file. The bval file lists the b-value for each volume in the series, the bvec file the gradient direction, with one column per volume
 
