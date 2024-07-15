@@ -3,7 +3,7 @@
 The second tab available on the top of the **Dashboards** screen is the ```Data``` tab.
 
 <p align="center">
-  <img width="90%"  src="assets/quickguide/data.png">
+  <img width="90%"  src="../../assets/quickguide/data.png">
 </p>
 
 

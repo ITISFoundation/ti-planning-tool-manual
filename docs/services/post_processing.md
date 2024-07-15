@@ -33,7 +33,7 @@ xxx review the below xxx
     <br>
 
     <p align="center">
-      <img width="90%" src="assets/postpro/classic_ti_three_metrics_numbered.png">
+      <img width="90%" src="../../assets/postpro/classic_ti_three_metrics_numbered.png">
     </p>
 
 * **Report** <br/>
@@ -55,7 +55,7 @@ To facilitate the search for an ideal setup, the table summarizing the results o
 
 <br>
 <p align="center">
-  <img width="90%"  src="assets/postpro/classic_ti_three_metrics_numbered.png">
+  <img width="90%"  src="../../assets/postpro/classic_ti_three_metrics_numbered.png">
 </p>
 
 The sorting can be done using the scaling sliders on top (1.), where the weight (importance) of each metric can be set. The table is then sorted according to the score resulting from this weighting. The score is also shown in the last table column. For additional information regarding these metrics, check the [**Background**](/docs/background/background.md) section. Alternatively, the table can be sorted according to a single metric by clicking on the column name (2.). 
@@ -68,11 +68,11 @@ Once that sweep is complete, all the viewers in the lower half of the screen are
 
 <br>
 <p align="center">
-  <img width="90%"  src="assets/postpro/analysis_slicer_numbers_v2_classic_ti.png">
+  <img width="90%"  src="../../assets/postpro/analysis_slicer_numbers_v2_classic_ti.png">
 </p>
 
 <p align="center">
-  <img width="90%"  src="assets/postpro/classic_ti_quantitative_analysis.png">
+  <img width="90%"  src="../../assets/postpro/classic_ti_quantitative_analysis.png">
 </p>
 
 1. **Main Controls** <br/>
@@ -106,17 +106,17 @@ Once that sweep is complete, all the viewers in the lower half of the screen are
 
 Metrics table:
 <p align="center">
-  <img width="90%"  src="assets/quickguide/postpro_gui_1.gif">
+  <img width="90%"  src="../../assets/quickguide/postpro_gui_1.gif">
 </p>
 
 Slice Viewers:
 <p align="center">
-  <img width="90%"  src="assets/quickguide/postpro_gui_2.gif">
+  <img width="90%"  src="../../assets/quickguide/postpro_gui_2.gif">
 </p>
 
 Reporting:
 <p align="center">
-  <img width="90%"  src="assets/quickguide/postpro_gui_3.gif">
+  <img width="90%"  src="../../assets/quickguide/postpro_gui_3.gif">
 </p>
 
 #### Multichannel TI and Phase-Modulation TI
@@ -126,15 +126,15 @@ For the non-classic TI modes, the settings are similar, except for the fact that
 Multichannel TI:
 
 <p align="center">
-  <img width="90%"  src="assets/postpro/multichannel_ti_settings.png">
+  <img width="90%"  src="../../assets/postpro/multichannel_ti_settings.png">
 </p>
 
 <p align="center">
-  <img width="90%"  src="assets/postpro/multichannel_ti_visual_analysis.png">
+  <img width="90%"  src="../../assets/postpro/multichannel_ti_visual_analysis.png">
 </p>
 
 <p align="center">
-  <img width="90%"  src="assets/postpro/multichannel_ti_quantitative_analysis.png">
+  <img width="90%"  src="../../assets/postpro/multichannel_ti_quantitative_analysis.png">
 </p>
 
 
@@ -143,15 +143,15 @@ Multichannel TI:
 Phase-Modulation TI:
 
 <p align="center">
-  <img width="90%"  src="assets/postpro/phase_modulation_ti_settings.png">
+  <img width="90%"  src="../../assets/postpro/phase_modulation_ti_settings.png">
 </p>
 
 <p align="center">
-  <img width="90%"  src="assets/postpro/phase_modulation_ti_visual_analysis.png">
+  <img width="90%"  src="../../assets/postpro/phase_modulation_ti_visual_analysis.png">
 </p>
 
 <p align="center">
-  <img width="90%"  src="assets/postpro/phase_modulation_ti_quantitative_analysis.png">
+  <img width="90%"  src="../../assets/postpro/phase_modulation_ti_quantitative_analysis.png">
 </p>
 
 ### Report

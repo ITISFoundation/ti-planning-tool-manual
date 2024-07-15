@@ -3,20 +3,23 @@
 The **Dashboard** hosts the two principal views: ```Studies``` and ```Data``` (1.).
 
 <p align="center">
-  <img width="90%" src="assets/quickguide/dashboard.png">
+  <img width="90%" src="../../assets/quickguide/dashboard.png">
 </p>
 
 
 - Under ```Studies```, existing Plans (own Plans, or plans that have been shared by other users) can be accessed (3.) and managed (4.), and new Plans can be [created](docs/plan/create_new_plan.md). 
 - Under ```Data```, the existing data can be managed and downloaded (see [Data](/docs/platform_introduction/data.md)).
 
-In addition, buttons on the top right provide access to this user manual, switching between a dark and a light theme, and a menu (5.) with the following entries:
-- _**Preferences**_: Access to **Profile**, **_Security_**, **_API_**, **_UI_**, **_Confirmations_**, **_Tag_**, and **_Organization_** settings (see the [o<sup>2</sup>S<sup>2</sup>PARC User Manual](https://docs.osparc.io/#/) for detailed information)
-- _**Clusters**_: Currently inactive for default users.
-- _**Quick Start**_: A short **Quick Start** guide, which is also displayed the first time the TI Planning Tool is accessed.
+In addition, buttons on the top right provide access to notifications, various support material/contact options, and a menu (5.) with the following entries:
+
+- _**My Account**_: Information about user, option to change password or delete account. Usage overview is also accessible.
+- _**Billing Center**_: Access to **Credit Accounts**, **Payment Methods**, **Transactions** and **Usage**.
+- _**Preferences**_: Access to **General Settings**, **Confirmation Settings** and  **Create/Edit Tags**.
+- **_Organizations_** group of users who can share studies. (see the [o<sup>2</sup>S<sup>2</sup>PARC User Manual](https://docs.osparc.io/#/) for detailed information)
+- _**Light/Dark Theme**_: A short **Quick Start** guide, which is also displayed the first time the TI Planning Tool is accessed.
+- _**About oSPARC**_: List of **Front-end** and **Back-end** technologies employed by the TI Planning Tool
 - _**License**_: Information about the TI Planning Tool license, as well as the licenses of the underlying technologies.
-- _**About**_: List of **Front-end** and **Back-end** technologies employed by the TI Planning Tool
-- _**Logout**_: Logging out from the **TI Planning Tool**
+- _**Log out**_: Logging out from the **TI Planning Tool**
 
 The user access more functionality such as **_Plan management_**, **_information_**, **_sharing_**, and **_Service overview and update_** (3.) through the three-dot menu (1.) icon (see the [o<sup>2</sup>S<sup>2</sup>PARC User Manual](https://docs.osparc.io/#/) for information on these functionalities as well as the locking states). 
 If Services within a Plan need updating, the small circular arrow sign will appear in the bottom right corner (2.) of the Plan
@@ -24,7 +27,7 @@ on the **Dashboard**. Clicking this icon will bring you directly to the update m
 versions of each Service and where you can update them either individually or all together.
 
 <p align="center">
-  <img width="90%" src="assets/quickguide/settings_service.png">
+  <img width="90%" src="../../assets/quickguide/settings_service.png">
 </p>
 
 
