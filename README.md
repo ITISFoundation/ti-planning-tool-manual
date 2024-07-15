@@ -4,5 +4,5 @@ Welcome to the *TI Planning Tool* (TIP) user manual. This document provides back
 
 <br>
 <p align="center">
-  <img width="350" height="150" src="../../assets/logo.svg">
+  <img width="350" height="150" src="assets/logo.svg">
 </p>

@@ -29,7 +29,7 @@ As the initial step for personalization, the user is asked to provide, in the fi
 
 <br>
 <p align="center">
-  <img width="90%" src="../../assets/quickguide/file_picker.png">
+  <img width="90%" src="assets/quickguide/file_picker.png">
 </p>
 
 1. **Data Instructions**
@@ -48,7 +48,7 @@ Once uploaded, the user can specify the geometry of the electrode, and if the he
 
 <br>
 <p align="center">
-  <img width="90%" src="../../assets/quickguide/personalizer.png">
+  <img width="90%" src="assets/quickguide/personalizer.png">
 </p>
 
 The interface has the following elements:
