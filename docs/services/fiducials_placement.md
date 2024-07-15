@@ -10,7 +10,7 @@ Now that the anatomical 3D model is generated, it needs to be imported into the 
 
 <br>
 <p align="center">
-  <img width="90%" src="../../assets/quickguide/fiducial_placement_1.png">
+  <img width="90%" src="assets/quickguide/fiducial_placement_1.png">
 </p>
 
 The **Fiducials Placement** interface has the following elements:
@@ -23,7 +23,7 @@ The **Fiducials Placement** interface has the following elements:
 
 <br>
 <p align="center">
-  <img width="90%" src="../../assets/quickguide/fiducial_placement_2.png">
+  <img width="90%" src="assets/quickguide/fiducial_placement_2.png">
 </p>
 
 Users are asked to create 4 points, representing positions Nz (nasion), Iz (inion), LPA and RPA (left/right pre-auricular). These points should be properly renamed according to their position (Nz, Iz, LPA, RPA). This can be done using the shortcut ```F2```. Once created, points need to be exported by selecting them and clicking ```Export Selected``` in the top ribbon to put them in the ```outputs/output_1``` directory. Please specify the file extension ```.sab``` in the file name.
@@ -38,5 +38,5 @@ Users are asked to create 4 points, representing positions Nz (nasion), Iz (inio
    When selecting an entity from the model tree, this section of the UI will display information and editable settings.
 
 <p align="center">
-   <img src="../../assets/quickguide/electrode_selector.gif" width="740" height="578" />
+   <img src="assets/quickguide/electrode_selector.gif" width="740" height="578" />
 </p>

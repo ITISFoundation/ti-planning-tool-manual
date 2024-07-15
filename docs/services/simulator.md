@@ -14,7 +14,7 @@ When all the simulations are done, users can hit the ```Export``` button which d
 
 <br>
 <p align="center">
-  <img width="90%" src="../../assets/quickguide/simulator.png">
+  <img width="90%" src="assets/quickguide/simulator.png">
 </p>
 
 The **_Setup_** interface has the following elements:
