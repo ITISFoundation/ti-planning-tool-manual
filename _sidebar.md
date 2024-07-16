@@ -6,7 +6,7 @@
   * [Planning Steps](/docs/background/modeling_steps.md)
   * [TI modes](/docs/background/modes.md)
   * [Electromagnetic Modeling](/docs/background/electromagnetic_modeling.md)
-    * [Head Models](docs/material_methods/anatomical_refs.md)
+    * [Head Models](/docs/material_methods/anatomical_refs.md)
     * [Electrode Shapes and Placement](docs/material_methods/electrode_models.md)
     * [Electromagnetic (EM) Simulator](docs/material_methods/em_sim.md)
     * [Dielectric Tissue Properties](docs/material_methods/dielectric_properties.md)
