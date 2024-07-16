@@ -11,12 +11,12 @@ As the initial step for personalization, the user is asked to provide, in the fi
 <div style="width: 100%; display: flex; justify-content: center;">
 <table style="border-collapse: separate; border-spacing: 5px;">
 <tr>
-<td style="vertical-align: top; border: 1px solid black">
+<td style="vertical-align: top; border: 1px solid white">
 
 - 📃 `subject_t1.nii.gz`
 
 </td>
-<td style="vertical-align: top; border: 1px solid black">
+<td style="vertical-align: top; border: 1px solid white">
 
 - 📂 `input_data.zip/`
   - 📃 `subject_t1.nii.gz`
@@ -55,8 +55,8 @@ Once uploaded, the user can specify the geometry of the electrode, and if the he
 
 The interface has the following elements:
 
-1. **Select Electroder Geometry** <br/>
-   The shape of the electrodes is selected here. The 
+1. **Select Electroder Radius** <br/>
+   The radius of the cylindrical electrodes is selected here. This can only be changes as long as no simulations have been started in [Step 4: EM Simulations](/docs/services/simulator.md).
 
 2. **Select Atlas to Register** <br/>
    If a detailed atlas should be registered to the brain, select the according option. This is a multi-select list. Please make sure that ```None``` is not selected together with the atlas to register because the registration will always be skipped if ```None``` is selected.
