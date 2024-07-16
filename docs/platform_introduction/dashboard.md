@@ -21,10 +21,10 @@ In addition, buttons on the top right provide access to notifications, various s
 - _**License**_: Information about the TI Planning Tool license, as well as the licenses of the underlying technologies.
 - _**Log out**_: Logging out from the **TI Planning Tool**
 
-The user access more functionality such as **_Plan management_**, **_information_**, **_sharing_**, and **_Service overview and update_** (3.) through the three-dot menu (1.) icon (see the [o<sup>2</sup>S<sup>2</sup>PARC User Manual](https://docs.osparc.io/#/) for information on these functionalities as well as the locking states). 
+The user access more functionality such as **_Overview_**, **Study Files**, **Sharing**, and **_Services Updates_** (3.) through the three-dot menu (1.) icon (see the [o<sup>2</sup>S<sup>2</sup>PARC User Manual](https://docs.osparc.io/#/) for information on these functionalities as well as the locking states). 
 If Services within a Plan need updating, the small circular arrow sign will appear in the bottom right corner (2.) of the Plan
 on the **Dashboard**. Clicking this icon will bring you directly to the update menu where you see the current and newest available
-versions of each Service and where you can update them either individually or all together.
+versions of each Service and where you can update them either individually or all together (4.).
 
 <p align="center">
   <img width="90%" src="assets/quickguide/settings_service.png">
