@@ -2,7 +2,7 @@
 
 Starting from TIP v3.0, personalized optimizations are available. The personalized flavor allows the use of magnetic resonance and/or diffusion tensor images of choice, to obtain results tailored to an individual. Note that the precomputed flavors that were available in V2.0 are still supported.
 
-The planning process is described below for both approaches. Should the user proceed with the precomputed path, steps 1 to 5 can be disregarded and step 6 is considered the first step.
+The planning process is described below for both approaches. Should the user proceed with the precomputed path, steps 1 to 4 can be disregarded and step 5 is considered the first step.
 
 Personalized flavor only steps:
 - **Step 1 - Images processing**: The so-called personalizer, either uses a T1-weighted MR image for isotropic simulations only, or a T1 in combination with DTI data to enable simulations with anisotropic conductivity in the white matter of the brain as well. Based on this data, a tissue model is generated using our AI model and anisotropic conductivity is extracted if DTI was provided.
