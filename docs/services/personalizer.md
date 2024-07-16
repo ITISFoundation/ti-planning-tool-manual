@@ -8,14 +8,15 @@ As the first step for personalization, provide the data via the file picker: eit
 
 As the initial step for personalization, the user is asked to provide, in the file picker, the data you want to work with. Here you have two options: building an isotropic model which only requires a T1-weighted MR image, or an anisotropic model which requires a DTI with bval & bvac files on top of the T1. If the anisotropic option is desired, all four files should be zipped together.
 
-<table style="width: 100%; border-collapse: separate; border-spacing: 5px; border: 1px solid white">
+<div style="width: 100%; display: flex; justify-content: center;">
+<table style="border-collapse: separate; border-spacing: 5px;">
 <tr>
-<td style="padding-left: 10%; vertical-align: top; border: 1px solid white">
+<td style="vertical-align: top; border: 1px solid black">
 
 - 📃 `subject_t1.nii.gz`
 
 </td>
-<td style="padding-left: 10%; vertical-align: top; border: 1px solid white">
+<td style="vertical-align: top; border: 1px solid black">
 
 - 📂 `input_data.zip/`
   - 📃 `subject_t1.nii.gz`
@@ -26,6 +27,7 @@ As the initial step for personalization, the user is asked to provide, in the fi
 </td>
 </tr>
 </table>
+</div>
 
 <br>
 <p align="center">
