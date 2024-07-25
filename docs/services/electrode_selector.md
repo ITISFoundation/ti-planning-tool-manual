@@ -42,5 +42,5 @@ The **_Setup_** interface has the following elements:
 You can now click to the arrow on the right side of the browser to move to [**_Optimal Configuration Identification_**](/docs/services/post_processing.md).
 
 <p align="center">
-   <img src="assets/quickguide/electrode_selector_2.gif" width="900" height="578" />
+   <img src="assets/quickguide/electrode_selector.gif" width="900" height="578" />
 </p>
