@@ -52,3 +52,9 @@ Users are asked to create 4 points, representing positions Nz (nasion), Iz (inio
 
 3. **_Selection Details_** <br/>
    When selecting an entity from the model tree, this section of the UI will display information and editable settings.
+
+Fiducial placement workflow:
+
+<p align="center">
+  <img width="90%"  src="assets/quickguide/fiducial_placement.gif">
+</p>
