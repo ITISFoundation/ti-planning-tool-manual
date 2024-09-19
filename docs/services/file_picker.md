@@ -8,7 +8,7 @@ To ensure the highest quality of the head models, please adhere to the following
 
 1. **File Format**
    - Ensure your MRI data is in the NIfTI file format (`.nii.gz`).
-   - Only a T1 weighted scan is needed. Please make sure the file name contains "t1" somewhere.
+   - Only a T1 weighted scan is needed. **Please make sure the file name contains "t1" somewhere.**
 
 2. **Data Integrity**
    - The MRI scans should be free from artifacts and implants.
@@ -49,3 +49,15 @@ Providing DTI data is only necessary, if you would like to use anisotropic condu
 <p align="center">
   <img width="60%" src="assets/quickguide/TIP_v3_files-DTI.png">
 </p>
+
+### Q: What to do if your DTI data contains PA / AP acquisitions?
+
+**A:** AP / PA refer to the polarity of the phase encoding direction of the acquired sequences. AP / PA volumes are acquired to offer a way to correct the distortions that typically appear in EPI sequences, so they are used at the preprocessing stage, prior to fitting your (e.g. DTI) model. 
+
+So, you do not fit your local model into them separately; they are used at the preprocessing stage in order to get a single DWI volume where the relevant distortions have been corrected to the extent that is possible.
+
+DIPY by itself does not offer a method to correct such distortions, so you will need to use third-party tools for that purpose. One very well-known and widely used tool is **FSL**. You can read more about how to use the tools FSL offers for this purpose [here](https://www.fmrib.ox.ac.uk/primers/intro_primer/ExBox20/IntroBox20.html).
+
+There are a few packages out there that perform dMRI data preprocessing steps in a principled way, calling the required FSL methods under the hood and transparently to the user. You can find a comparison of such packages [here](https://qsiprep.readthedocs.io/en/latest/comparisons.html).
+
+*Source*: [dipy discussions](https://github.com/dipy/dipy/discussions/3289)

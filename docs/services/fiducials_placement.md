@@ -2,7 +2,7 @@
 
 **_Summary_**:
 
-Import the generated anatomical 3D model into the GUI by selecting ```Import``` and loading the model file from the ```inputs/input_1``` directory. Place the fiducial points Nz, Iz, LPA, and RPA by selecting ```Sketch``` then ```Point``` in the GUI, rename them using ```F2```, and export them to the ```outputs/output_1``` directory with the .sab extension.
+Import the generated anatomical 3D model into the GUI by selecting ```Import``` and loading the model file from the ```inputs/input_1``` directory. Place the fiducial points Nz, Iz, LPA, and RPA by selecting ```Sketch``` then ```Point``` in the GUI, rename them using ```F2```(have to be called Nz, Iz, LPA and RPA exactly), and export them to the ```outputs/output_1``` directory with the .sab extension.
 
 ----
 

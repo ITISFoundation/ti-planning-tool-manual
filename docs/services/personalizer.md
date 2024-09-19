@@ -59,7 +59,8 @@ The interface has the following elements:
    The radius of the cylindrical electrodes is selected here. This can only be changes as long as no simulations have been started in [Step 4: EM Simulations](/docs/services/simulator.md).
 
 2. **Select Atlas to Register** <br/>
-   If a detailed atlas should be registered to the brain, select the according option. This is a multi-select list. Please make sure that ```None``` is not selected together with the atlas to register because the registration will always be skipped if ```None``` is selected.
+   By defailt, the model prediction already contains a couple of targets. These are listed in the logger (4) in the image above. If these are sufficient, you can leave this setting at ```None```.
+   If not, a detailed atlas can be registered to the brain. Select the according option. Since this is a multi-select list, please make sure that ```None``` is not selected together with the atlas to register, because the registration will always be skipped if ```None``` is selected.
 
 3. **Progress Overview** <br/>
    Shows the progress of each individual step in the model generation. ```10-10``` will only be done if the [Step 2: Fiducials Placement](/docs/services/fiducials_placement.md) already has been done.
