@@ -1,5 +1,7 @@
 ## Setup
 
+**_Note: Starting with TIP V4.0, the electrode selector step has been eliminated as part of the streamlined workflow. The information below applies to TIP V3.0 and earlier versions. In TIP V4.0, users simply select Species, threshold, and Target tissue, then click "Run Optimization" to initiate the SuMo optimizer._**
+
 **_Summary_**:
 
 _During the **Setup** step, an anatomical model and an electrode shape and placement are chosen, the target structure is specified, and the huge search space is narrowed down by selecting potential electrode placement regions._
