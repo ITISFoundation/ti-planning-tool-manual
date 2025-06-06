@@ -55,17 +55,21 @@ Once uploaded, the user can specify the geometry of the electrode, and if the he
 
 The interface has the following elements:
 
-1. **Select Electroder Radius** <br/>
+1. **Select Electroder Radius**
+
    The radius of the cylindrical electrodes is selected here. This can only be changes as long as no simulations have been started in [Step 4: EM Simulations](/docs/services/simulator.md).
 
-2. **Select Atlas to Register** <br/>
+2. **Select Atlas to Register**
+
    By defailt, the model prediction already contains a couple of targets. These are listed in the logger (4) in the image above. If these are sufficient, you can leave this setting at ```None```.
    If not, a detailed atlas can be registered to the brain. Select the according option. Since this is a multi-select list, please make sure that ```None``` is not selected together with the atlas to register, because the registration will always be skipped if ```None``` is selected.
 
-3. **Progress Overview** <br/>
+3. **Progress Overview**
+
    Shows the progress of each individual step in the model generation. ```10-10``` will only be done if the [Step 2: Fiducials Placement](/docs/services/fiducials_placement.md) already has been done.
 
-4. **Logging** <br/>
+4. **Logging**
+
    Provides some information about this step at start-up and will display information and eventual errors during runtime.
 
 You can now click to the arrow on the right side of the browser to move to [Step 2: Fiducials Placement](/docs/services/fiducials_placement.md).

@@ -1,3 +1,11 @@
+## TIP V4.0 (4.0.0)
+
+- [x] Implemented automated personalization with neural network-based fiducial point detection
+- [x] Introduced SuMo optimizer replacing the previous sweeper
+- [x] Streamlined user workflow by eliminating electrode selector and sweep steps
+- [x] Enhanced parallel processing for up to 50% faster optimization runs
+- [x] Improved visualization for Pareto-optimal solutions
+
 ## Custom waveform (2.0.17)
 
 - [x] Fix electrode selector issue
