@@ -2,13 +2,13 @@
 
 **_Summary_**:
 
-_Note: Starting with TIP V4.0, fiducial point placement is fully automated using neural network technology. The system automatically identifies and places anatomical landmarks for the EEG 10-10 system, eliminating the need for manual fiducial point placement. The information below is kept for reference and applies to TIP V3.0 and earlier versions._
+_Note: Starting with TIP V4.0, fiducial point placement is fully automated using neural network technology. The system automatically identifies and places anatomical landmarks for the EEG 10-10 system, drastically reducing the need for manual fiducial point placement.
 
 Import the generated anatomical 3D model into the GUI by selecting ```Import``` and loading the model file from the ```inputs/input_1``` directory. Place the fiducial points Nz, Iz, LPA, and RPA by selecting ```Sketch``` then ```Point``` in the GUI, rename them using ```F2```(have to be called Nz, Iz, LPA and RPA exactly), and export them to the ```outputs/output_1``` directory with the .sab extension.
 
 ----
 
-### TIP V4.0 Automated Fiducial Point Placement
+### Automated Fiducial Point Placement (TIP V4.0+)
 
 In TIP V4.0, a sophisticated neural network automatically identifies and places anatomical landmarks for the EEG 10-10 system, including the following fiducial points:
 
@@ -19,9 +19,9 @@ In TIP V4.0, a sophisticated neural network automatically identifies and places 
 
 These points are then used to automatically derive the entire 10-10 electrode system on the head model.
 
-### Manual Placement (TIP V3.0 and earlier)
+### Manual Placement
 
-For TIP V3.0 and earlier versions, manual placement is required as follows:
+In case of failure of the automated fiducial point placement, or for TIP V3.0 and earlier versions, manual placement may be required. The procedure is as follows:
 
 Now that the anatomical 3D model is generated, it needs to be imported into the newly open GUI. Selecting ```Import```, the model file to be loaded should be in the ```inputs/input_1``` directory. Now, the user can place the fiducial points that will be used for the positioning of the electrodes on a 10-10 system.
 
