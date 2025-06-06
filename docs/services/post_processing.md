@@ -44,24 +44,37 @@ xxx review the below xxx
 
 #### Classic TI
 
-<!-- Let us now have a closer look at the **Analysis** section. -->
+The **Settings** section at the top allows you to configure essential optimization parameters:
 
-In the first half of this section, sweep and optimization parameters are defined. This includes the number of current ratio sweep steps, the maximal total current, and parameters affecting the performance [metrics](/docs/background/electromagnetic_modeling/quantities_of_interest.md) - namely, whether the assumed threshold shall be based on the overall brain or the target region, and what isopercentile should be used.
+* **_Select Species_**
 
-After executing the optimization and loading the analysis, information from the **Optimizer** regarding the performance of different electrode configurations is presented in a sortable table. Different setups can be compared and sorted using the three [metrics](/docs/background/electromagnetic_modeling/quantities_of_interest.md): Strength, Selectivity, and Collateral. The second half is used for visualization of the fields in 2D and 3D, as well as the visualization of waveforms.
+   Choose the anatomical model type (human or mouse) from the drop-down menu. Each species comes with pre-configured standard electrode locations appropriate for that anatomy. Additional species options are planned for future releases.
 
-To facilitate the search for an ideal setup, the table summarizing the results of the optimizer is sortable.
+<br>
+<p align="center">
+  <img width="90%" src="assets/electrode_selector/species.png">
+</p>
+
+* **_Threshold definition_**
+
+  Define how stimulation thresholds should be calculated by selecting either the entire brain or only the target region as your reference, and specify the appropriate isopercentile level for precise threshold determination.
+
+* **_Target tissue_**
+
+   Specify the exact brain structure you wish to target with TI stimulation. This selection serves as the foundation for calculating and optimizing all exposure quality metrics.
+
+After running the optimization with the SuMo engine and loading the analysis, you'll see a comprehensive view of the results. The interactive table displays all Pareto-optimal electrode configurations ranked by their performance across three key [metrics](/docs/background/electromagnetic_modeling/quantities_of_interest.md): Strength, Selectivity, and Collateral. Below this table, detailed visualization panels let you examine field distributions in both 2D and 3D views, along with comprehensive waveform analysis.
 
 <br>
 <p align="center">
   <img width="90%"  src="assets/postpro/classic_ti_three_metrics_numbered.png">
 </p>
 
-The sorting can be done using the scaling sliders on top (1.), where the weight (importance) of each metric can be set. The table is then sorted according to the score resulting from this weighting. The score is also shown in the last table column. For additional information regarding these metrics, check the [**Background**](/docs/background/background.md) section. Alternatively, the table can be sorted according to a single metric by clicking on the column name (2.).
+Use the intuitive weighting sliders at the top (1.) to prioritize metrics according to your research objectives. Adjust the relative importance of Strength, Selectivity, and Collateral stimulation, and the table automatically sorts configurations by the resulting composite score (displayed in the rightmost column). You can also sort by any individual metric by clicking directly on the column header (2.).
 
-A 3D scatter plot helps visually judge the compromise between the different performance metrics of the current selection, compared to alternative [Pareto-optimal](/docs/background/multi_goal_optimization) solutions.
+The interactive 3D scatter plot provides a visual representation of the Pareto front, allowing you to quickly understand the trade-offs between different performance metrics and identify the most promising [Pareto-optimal](/docs/background/multi_goal_optimization) solutions for your specific application.
 
-Once a promising setup has been identified, you can load the corresponding fields and data by clicking Load (3.). A sweep over channel weights is performed to render subsequent exporation more interactive and responsive. The progress of the sweep is shown below the table (4.).
+When you've identified a promising configuration, click the Load button (3.) to examine it in detail. The system performs a targeted sweep across channel weights to prepare the visualization, making subsequent exploration more responsive. A progress indicator (4.) shows the status of this optimization process.
 
 Once that sweep is complete, all the viewers in the lower half of the screen are updated. Now you can visually inspect the exposure scenario:
 
@@ -76,25 +89,31 @@ Once that sweep is complete, all the viewers in the lower half of the screen are
 
 1. **Main Controls**
 
-   Here, all the setting options for the viewers are located.
-   * At the top, you can freely change electrode positions (**_Configuration_**) and then update the fields by clicking the ```Reload Field``` button.
-   * Below that, the channel weighting (**_Channel Weight A/B_**) can be changed via the slide bar.
-   * Then, the parameters for the performance metrics can be adapted, by selecting the considered **_volume_** and **_isopercentile level_**.
-   * Next are the **_Masking Options_**, where you can switch between seeing the field in the whole head or only in the brain.
-      Using the **_Region of Interest_** dropdown list, one or multiple regions can be selected, which are then highlighted in the visualizations.
-      To reset the highlighting, choose **_None_** in the dropdown list.
-   * **_Plot Options_** permit to toggle between **_Log_** and dB scales and between high frequency(**_HF_**) and temporal interference (TI) field visualization.
-     Additionally, a slide bar is available to adapt the opacity of the field display on top of the medical image data in the Slice Views (**_Field vs MRI_**).
-   * The value range of the field views in each slice can be adapted by editing **_Range Min_** and **_Range Max_** data fields.
-   * Finally, three sliders (**_Slice X_**, **_Slice Y_**, and **_Slice Z_**) are available to change the three slice locations of the Slice Views.
+   This comprehensive control panel provides all visualization settings:
+   * **_Configuration_**: Adjust electrode positions freely and update the field visualization by clicking the ```Reload Field``` button.
+   * **_Channel Current A/B_**: Fine-tune the relative contribution of each channel using the intuitive slider control.
+   * **_Performance Metrics_**: Customize the metrics calculation by selecting the appropriate **_volume_** and **_isopercentile level_**.
+   * **_Masking Options_**: Focus on specific anatomical areas by toggling between whole head and brain-only views.
+     Use the **_Region of Interest_** dropdown to highlight specific brain regions for detailed analysis.
+     Select **_None_** to return to the default view without highlighting.
+   * **_Plot Options_**: Switch between **_Log_** and dB scales, or toggle between high frequency (**_HF_**) and temporal interference (**_TI_**) field visualizations.
+     Adjust the balance between field visualization and underlying MRI data using the **_Field vs MRI_** opacity slider.
+   * **_Value Range_**: Fine-tune the visualization range by modifying **_Range Min_** and **_Range Max_** values for enhanced detail in areas of interest.
+   * **_Slice Navigation_**: Position the orthogonal slice planes precisely using the **_Slice X_**, **_Slice Y_**, and **_Slice Z_** sliders.
 
-2. **Special Settings**
+2. **Advanced Parameter**
 
-   The number of sweep steps (**_Sweep Step_**) and the maximal current applied (**_Max Current [mA]_**) to the electrode pairs differ from the other settings in that they don't trigger an immediate visualization update, since changing them requires re-calculations of the fields and metrics. Viewer updates can instead be triggered using the ```Reload Field``` Button.
+   Unlike other controls that update the visualization instantly, this parameters require additional computation when changed:
+   * **_Sweep Step_**: Controls the resolution of the channel current ratio sweep, with higher values providing more detailed analysis.
+
+   After adjusting these parameters, click the ```Reload Field``` button to recalculate the field distributions and update all visualizations.
 
 3. **Slice Viewers**
 
-   Here, the three orthogonal slice field views are shown. They are overlayed on the image data from which the anatomical model was created. Crosshairs on the view indicate the intersections with the other two slices.
+   The three orthogonal slice views display field distributions overlaid on the original MRI data. Interactive crosshairs indicate the intersections between slice planes, providing spatial context.
+   Navigate through the volume easily by either:
+   * Using the dedicated sliders (**_Slice X_**, **_Slice Y_**, and **_Slice Z_**)
+   * Directly clicking on any location within a slice view (which automatically repositions all crosshairs)
 
 4. **E-Field Envelope**
 
