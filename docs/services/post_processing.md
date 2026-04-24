@@ -1,9 +1,9 @@
-## Optimal Configuration Identification
+## Classic TI
 
 **_Summary_**
 
 [Classic TI](/docs/background/modes.md):
-_Based on the information provided during the setup step, the surrogate-modeling-based optimizer (SuMo) systematically explores the solution space to identify optimal configurations considering three key metrics:_
+_Based on the selected model and target, the surrogate-modeling-based optimizer (SuMo) systematically explores the solution space to identify optimal configurations considering three key metrics:_
 
 * _target exposure magnitude: the median of the TI modulation envelope magnitude within the target_
 * _stimulation selectivity: the ratio of the mean TI exposure in the target vs. the rest of the brain_
@@ -11,7 +11,7 @@ _Based on the information provided during the setup step, the surrogate-modeling
 
 _These metrics are also central to the visualization and included in the downloadable report._
 
-_By combining Gaussian process modeling with a multi-objective genetic algorithm, the SuMo optimizer provides a diverse set of Pareto-optimal solutions. This allows users to easily navigate trade-offs like selectivity versus intensity, making informed choices with regard to conflicting TI exposure criteria._
+_By combining Gaussian process modeling with a multi-objective genetic algorithm, the SuMo optimizer provides a diverse set of Pareto-optimal solutions. This allows users to easily navigate trade-offs like selectivity versus intensity, making informed choices with regard to conflicting TI exposure criteria. As of TIP V5.0, the optimizer completes in **5–10 minutes** — approximately 6× faster than in previous versions._
 
 _Starting from a thus optimized, or from a user-defined TIS configuration, the resulting exposure can be studied and if desired, the configuration (electrode locations, current magnitudes) can be interactively refined. For that purpose, TI and high-frequency exposure distributions are dynamically visualized on top of medical image data, and key exposure metrics as well as plots are shown._
 
@@ -126,7 +126,7 @@ Once that sweep is complete, all the viewers in the lower half of the screen are
 6. **Export Buttons**
 
    * ```Add to Report``` allows addition of the six viewing elements to the PDF report (according to the currently selected slicing positions and viewing angle).
-   * ```Export to S4L``` creates a .cache file of the TI maximum modulation amplitude, which can then be explored in [Step 3: Exposure Analysis](/docs/services/s4l_post_processing.md).
+   * ```Export to S4L``` creates a .cache file of the TI maximum modulation amplitude, which can then be explored in [Exposure Analysis](/docs/services/s4l_post_processing.md).
 
 Metrics table:
 <p align="center">

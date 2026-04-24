@@ -1,16 +1,14 @@
-## Local Anonymization (Data Privacy Workflow)
-
-> **Coming soon in TIP V5.0** — This feature is not yet available and is currently under development. Details on this page are subject to change.
+## Offline Personalization
 
 **_Summary_**:
 
-TIP V5.0 will introduce an optional local anonymization workflow for users with data privacy concerns. A personalizer pipeline, available as part of [Sim4Life](https://sim4life.swiss/), can be run locally to generate an anonymized, segmented head model from a T1 MRI scan. The tool deforms facial features beyond recognition while preserving the accuracy of internal tissues relevant for TI stimulation planning, and automatically segments the different tissues. Only the anonymized, segmented output is then uploaded to the cloud for electromagnetic simulation.
+TIP V5.0 introduces an optional offline personalization workflow for users with data privacy requirements. A personalizer pipeline, available as part of [Sim4Life](https://sim4life.swiss/), is run locally to generate an anonymized, segmented head model from a T1 MRI scan. The tool deforms facial features beyond recognition while fully preserving the internal tissue structures relevant for TI simulation planning. Only the anonymized, segmented output is uploaded to the cloud for electromagnetic simulation.
 
 ----
 
 ### Motivation
 
-In the standard TIP workflow, magnetic resonance (MR) images are uploaded directly to the cloud for processing, including automatic segmentation from MR images and personalization of the head model. Some users and institutions have concerns about uploading identifiable medical images to remote servers. To address this, TIP V5.0 will offer a **local anonymization workflow** that ensures no personally identifiable anatomical features leave the user's local environment.
+In the standard TIP workflow, magnetic resonance (MR) images are uploaded directly to the cloud for processing, including automatic segmentation from MR images and personalization of the head model. Some users and institutions have concerns about uploading identifiable medical images to remote servers. To address this, TIP V5.0 provides a **local anonymization workflow** that ensures no personally identifiable anatomical features leave the user's local environment.
 
 ### How It Works
 
@@ -104,5 +102,5 @@ Running the cloud simulations for a personalized head model costs approximately 
 ### Requirements
 
 - A local installation of [Sim4Life](https://sim4life.swiss/) **version 9.4 or later** on Windows.
-- A T1-weighted MRI scan in `.nii.gz` format meeting the [data quality requirements](/docs/services/file_picker.md) outlined in Step 0.
+- A T1-weighted MRI scan in `.nii.gz` format meeting the [data quality requirements](/docs/services/file_picker.md).
 - A TIP account with sufficient credits for cloud simulation (see [Billing Center](/docs/platform_introduction/billing_center.md)).

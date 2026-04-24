@@ -1,4 +1,4 @@
-## Preparing Your Data
+## File Picker
 
 This preparatory step is crucial for smooth operation of the pipeline. If you choose to follow the personalized pipeline, you have the prepare your data according to our acceptable formatting and setting.
 

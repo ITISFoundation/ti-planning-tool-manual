@@ -1,5 +1,21 @@
 # Release Notes
 
+## TIP 5.0
+
+### Release Date: 24.04.2026
+
+TIP V5.0 introduces offline data privacy, a fully capable Sim4Life workbench in Exposure Analysis, and dramatically faster optimization—making TI planning more accessible, more powerful, and more interactive than ever.
+
+### Selected New Features
+
+- **Offline Personalization & Local Anonymization**: Users with data-privacy requirements can now run the full personalization pipeline locally using `run_personalizer.bat` (requires [Sim4Life](https://sim4life.swiss/) 9.4+). Raw MRI data is anonymized on-device—facial features are deformed beyond recognition while all internal tissue structures are preserved—and only the anonymized, segmented head model is uploaded to TIP for cloud simulation.
+- **Full Sim4Life Workbench in Exposure Analysis**: The Exposure Analysis step now provides a complete Sim4Life workbench with Modeling, Simulation, and Analysis sections—replacing the previous read-only analysis viewer. Ready-to-use template projects are provided for all precomputed models (MIDA isotropic/anisotropic, IXI Female, IXI Male, Mouse), enabling users to recreate the full lead-field library or investigate a specific electrode configuration in detail.
+- **~6× Faster SuMo Optimizer**: Algorithmic improvements to the field superposition engine—lead-field array caching and Numba-accelerated array operations—reduce typical optimization time from ~1 hour to 5–10 minutes.
+
+TIP V5.0 also includes many smaller features and general improvements in the presented information content and usability, as well as bug fixes.
+
+----
+
 ## TIP 4.0
 
 ### Release Date: 05.06.2025

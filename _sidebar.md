@@ -26,7 +26,7 @@
   * [Workflows](/docs/plan/workflows.md)
     * [Offline Personalization](/docs/services/data_privacy.md)
     * [File Picker](/docs/services/file_picker.md)
-    * [Images Processing](/docs/services/personalizer.md)
+    * [Personalizer](/docs/services/personalizer.md)
     * [Model Inspector](/docs/services/fiducials_placement.md)
     * [Simulator](/docs/services/simulator.md)
     * [Classic TI](/docs/services/post_processing.md)
