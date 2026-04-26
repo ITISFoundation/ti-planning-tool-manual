@@ -23,6 +23,7 @@
     * [Data](/docs/platform_introduction/data.md)
     * [Billing Center](/docs/platform_introduction/billing_center.md)
   * [Creating a New Plan](/docs/plan/create_new_plan.md)
+  * [Data Quality Requirements](/docs/plan/data_quality_requirements.md)
   * [Workflows](/docs/plan/workflows.md)
     * [Offline Personalization](/docs/services/data_privacy.md)
     * [File Picker](/docs/services/file_picker.md)

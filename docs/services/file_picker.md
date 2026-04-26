@@ -1,71 +1,58 @@
 ## File Picker
 
-This preparatory step is crucial for smooth operation of the pipeline. If you choose to follow the personalized pipeline, you have the prepare your data according to our acceptable formatting and setting.
+**_Summary_**:
 
-### MRI Data Quality Requirements for Optimal Modeling
+As the first cloud-based step for personalization, provide the data via the File Picker: either a T1-weighted MRI for an isotropic model, a zipped file containing T1, DTI, bval, and bvec files for an anisotropic model, or — when using the [Offline Personalization](/docs/services/data_privacy.md) workflow — the anonymized zip archive produced locally by `run_personalizer.bat`.
 
-To ensure the highest quality of the head models, please adhere to the following guidelines:
+----
 
-1. **File Format**
+As the initial step for personalization, the user is asked to provide, in the File Picker, the data to work with. There are two options for the standard workflow: building an isotropic model which only requires a T1-weighted MR image, or an anisotropic model which requires a DTI with bval & bvec files on top of the T1. If the anisotropic option is desired, all four files should be zipped together. Users following the [Offline Personalization](/docs/services/data_privacy.md) workflow upload the `results.zip` archive produced by the local `run_personalizer.bat` tool instead.
 
-   - Ensure your MRI data is in the NIfTI file format (`.nii.gz`).
-   - Only a T1 weighted scan is needed. **Please make sure the file name contains "t1" somewhere.**
+<div style="width: 100%; display: flex; justify-content: center;">
+<table style="border-collapse: separate; border-spacing: 5px;">
+<tr>
+<td style="vertical-align: top; border: 1px solid white">
 
-2. **Data Integrity**
+- 📃 `subject_t1.nii.gz`
 
-   - The MRI scans should be free from artifacts and implants.
-   - Presence of tumors, stroke lesions, or similar conditions may result in a low-quality model.
+</td>
+<td style="vertical-align: top; border: 1px solid white">
 
-3. **Device Specifications**
+- 📂 `input_data.zip/`
+  - 📃 `subject_t1.nii.gz`
+  - 📃 `subject_dti.nii.gz`
+  - 📃 `subject_dti.bvec`
+  - 📃 `subject_dti.bval`
 
-   - Training data included images from 1.5 and 3 Tesla MRI devices manufactured by Siemens, Philips, and GE HealthCare.
+</td>
+<td style="vertical-align: top; border: 1px solid white">
 
-4. **Field-of-View Requirements**
+- 📂 `input_data.zip/`
+  - 📃 `subject.smash`
+  - 📃 `subject_t1.nii.gz`
+  - 📃 `subject.sab`
+  - 📃 `subject.sat`
+  - 📃 `targets_list.yaml`
+  - 📃 `tensor_s4l.nii.gz`
 
-   - The field-of-view should cover the complete width of the head.
-   - Vertically, the scan should extend from the top of the head to at least the mid-neck.
-
-5. **Avoid High Deformations**
-
-   - Avoid high deformations around the ear region (e.g., due to headphones) as this can make the placement of fiducials difficult.
-
-<br>
-<p align="center">
-  <img width="60%" src="assets/quickguide/TIP_v3_files-MRI.png">
-</p>
-
-### DWI Data Quality Requirements
-
-Providing DTI data is only necessary, if you would like to use anisotropic conductivity in the white matter of the brain as described in [**Dielectric Tissue and Material Properties**](/docs/material_methods/dielectric_properties.md). Please follow these points to make sure that the model generation and simulations function correctly.
-
-1. **File Format**
-
-   - Ensure your DWI data includes the following files:
-     - NIfTI file format (`.nii.gz`)
-     - Gradient values file (`.bval`)
-     - Gradient directions file (`.bvec`)
-
-2. **Co-Registration**
-
-   - Ensure that the MRI and DTI scans are co-registered.
-
-3. **Field-of-View Requirements**
-
-   - The field of view needs to include the whole brain.
+</td>
+</tr>
+</table>
+</div>
 
 <br>
 <p align="center">
-  <img width="60%" src="assets/quickguide/TIP_v3_files-DTI.png">
+  <img width="90%" src="assets/quickguide/file_picker.png">
 </p>
 
-### Q: What to do if your DTI data contains PA / AP acquisitions?
+1. **Data Instructions**
+   A brief summary of what files and formates are needed, image quality recommendations and a reminder to annonymize the data before uploading.
 
-**A:** AP / PA refer to the polarity of the phase encoding direction of the acquired sequences. AP / PA volumes are acquired to offer a way to correct the distortions that typically appear in EPI sequences, so they are used at the preprocessing stage, prior to fitting your (e.g. DTI) model.
+2. **Upload Option 1**
+   Select a file using the file explorer by clicking on ```Select File``` or directly drag and drop the the data to the designated area.
 
-So, you do not fit your local model into them separately; they are used at the preprocessing stage in order to get a single DWI volume where the relevant distortions have been corrected to the extent that is possible.
+3. **Upload Option 2**
+   If the data is already available online somewhere (eg. Google Drive or Dropbox), given that the sharing is set to public, the link can be provided.
 
-DIPY by itself does not offer a method to correct such distortions, so you will need to use third-party tools for that purpose. One very well-known and widely used tool is **FSL**. You can read more about how to use the tools FSL offers for this purpose [here](https://www.fmrib.ox.ac.uk/primers/intro_primer/ExBox20/IntroBox20.html).
-
-There are a few packages out there that perform dMRI data preprocessing steps in a principled way, calling the required FSL methods under the hood and transparently to the user. You can find a comparison of such packages [here](https://qsiprep.readthedocs.io/en/latest/comparisons.html).
-
-*Source*: [dipy discussions](https://github.com/dipy/dipy/discussions/3289)
+4. **Upload Option 3**
+   In case data already uploaded to TIP in a different study shall be reused, it can be selected from TIP's data explorer.

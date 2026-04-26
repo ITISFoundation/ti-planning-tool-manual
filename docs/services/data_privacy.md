@@ -102,5 +102,5 @@ Running the cloud simulations for a personalized head model costs approximately 
 ### Requirements
 
 - A local installation of [Sim4Life](https://sim4life.swiss/) **version 9.4 or later** on Windows.
-- A T1-weighted MRI scan in `.nii.gz` format meeting the [data quality requirements](/docs/services/file_picker.md).
+- A T1-weighted MRI scan in `.nii.gz` format meeting the [data quality requirements](/docs/plan/data_quality_requirements.md).
 - A TIP account with sufficient credits for cloud simulation (see [Billing Center](/docs/platform_introduction/billing_center.md)).

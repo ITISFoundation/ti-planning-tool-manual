@@ -59,9 +59,9 @@ where α denotes the angle between <img width = "30" src="assets/equations/E12w2
 
 To assess the quality of a TI exposure condition, three key metrics have been defined:
 
-* M1 - target exposure strength (**strength**): the median (or _p_-th isopercentile, where _p_ can be set by users) of T<sub>max</sub> in the target,
-* M2 - exposure selectivity (**selectivity**): the ratio of the mean target T<sub>max</sub> and the mean off-target T<sub>max</sub>,
-* M3 - off-target exposure (**collateral**): the fraction of the non-target brain volume with T<sub>max</sub> exceeding M1.
+* M1 - target exposure strength (**strength**): the median of T<sub>max</sub> in the target,
+* M2 - exposure selectivity (**selectivity**): the signal to noise ratio, so the ratio of the root mean square (RMS) of the target T<sub>max</sub> and the mean off-target T<sub>max</sub> squared,
+* M3 - off-target exposure (**collateral**): the fraction of the non-target brain volume with T<sub>max</sub> exceeding the _p_-th isopercentile of T<sub>max</sub> in the target or the brain, where _p_ can be set by users.
 
 Typically, it is not possible to find exposure conditions that simultaneously optimize all three metrics, and a compromise or prioritization is needed.
 

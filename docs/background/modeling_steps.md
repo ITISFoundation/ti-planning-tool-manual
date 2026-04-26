@@ -14,7 +14,7 @@ Personalized Workflow Steps:
 
 All Plan Types:
 
-- **[Classic TI](/docs/services/post_processing.md)**: Users select the species, stimulation threshold, and target tissue, then run the surrogate-modeling-based (SuMo) optimizer. A diverse set of Pareto-optimal solutions is provided; users can interactively explore trade-offs like selectivity versus intensity. As of TIP V5.0, optimization completes in 5–10 minutes. Identified configurations can be documented and added to a report.
+- **[Classic TI](/docs/services/post_processing.md)**: Users select the species, parameters for the quantities of interest, and target tissue, then run the surrogate-modeling-based (SuMo) optimizer. A diverse set of Pareto-optimal solutions is provided; users can interactively explore trade-offs like selectivity versus intensity. As of TIP V5.0, optimization completes in 5–10 minutes. Identified configurations can be documented and added to a report.
 - **[Exposure Analysis](/docs/services/s4l_post_processing.md)**: Optionally, users can freely visualize and analyze exposure conditions using the full Sim4Life workbench (Modeling, Simulation, and Analysis sections), with ready-to-use template projects available for all precomputed models (TIP V5.0+).
 
 Please refer to [Quick Start Guide](/docs/plan/start.md) section for more details.

@@ -5,7 +5,7 @@
 - [x] Upgraded Exposure Analysis from a read-only analysis viewer to a full Sim4Life workbench (Modeling + Simulation + Analysis)
 - [x] Added ready-to-use Sim4Life template projects for all precomputed models (MIDA isotropic/anisotropic, IXI Female, IXI Male, Mouse)
 - [x] Reduced SuMo optimizer runtime from ~1 hour to 5–10 minutes via lead-field array caching and Numba-accelerated field superposition
-- [x] Updated workflow documentation to replace Step-numbered conventions with named workflow steps
+
 
 ## TIP V4.0 (4.0.0)
 
