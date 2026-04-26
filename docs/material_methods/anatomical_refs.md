@@ -24,9 +24,9 @@ IXI025, the female model, is characterized by 43 individually segmented tissues.
   <img width="500" src="assets/methods/mouse_model.png">
 </p>
 
-In version 3.0, users can generate personalized head models based on a T1-weighted MR images. The tissue segmentation is automatically generated using a U-Net, which is able to delineate 29 tissues, eight of which are subcortical regions.
+In version 3.0, users can generate personalized head models based on T1-weighted MR images. The tissue segmentation is automatically generated using a U-Net, which is able to delineate 29 tissues, eight of which are subcortical regions.
 
-Here is a list of all the tissues which are segmented and their electric conductivity values which are taken directly from our material database [[4]](/docs/background/references.md):
+Here is a list of all the tissues which are segmented and their electric conductivity values which are taken directly from our material database [[4]](/docs/background/references.md) (see also [Dielectric Tissue and Material Properties](/docs/material_methods/dielectric_properties.md)):
 
 <table style="width: 100%; border-collapse: separate; border-spacing: 10%;">
 <tr>
@@ -68,7 +68,7 @@ Here is a list of all the tissues which are segmented and their electric conduct
 | Vein | 0.66246  |
 | Ventricles | 1.879  |
 | Vertebrae cancellous | 0.0804595  |
-| Vetebrae cortical | 0.006302  |
+| Vertebrae cortical | 0.006302  |
 
 </td>
 </tr>
@@ -81,5 +81,5 @@ Since the model is trained on healthy subjects without implants/lesions/atrophy,
   <img width="500" src="assets/methods/personalized_head.png">
 </p>
 
-In addition to that, users have to option to provide diffusion tensor imaging data. Based on that, an inhomogeneous, anisotropic conductivity map can be extracted using a linear relationship which has been described by D.S. Tuch [[10]](/docs/background/references.md). To use this feature, users need to provide a preprocessed DTI nifty (.nii.gz), a .bval and .bvec file. The bval file lists the b-value for each volume in the series, the bvec file the gradient direction, with one column per volume
+In addition to that, users have the option to provide diffusion tensor imaging data. Based on that, an inhomogeneous, anisotropic conductivity map can be extracted using a linear relationship which has been described by D.S. Tuch [[10]](/docs/background/references.md). To use this feature, users need to provide a preprocessed DTI nifty (.nii.gz), a .bval and .bvec file. The bval file lists the b-value for each volume in the series, the bvec file lists the gradient direction, with one column per volume
 

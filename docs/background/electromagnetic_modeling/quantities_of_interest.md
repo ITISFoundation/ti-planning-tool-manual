@@ -77,6 +77,6 @@ E_{\textrm{max}}(x)=\textrm{max}(\left|\vec{E}_1(x)+\vec{E}_2(x)\right|,\left|\v
 $$
 -->
 
-For [multi-channel TI](/docs/background/electromagnetic_modeling/modes.md), the **high-frequency** exposure is evaluated as the local worst-case peak E{-}field magnitude over time, and the **TI exposure** as the local maximum of the modulation envelope magnitude along any orientation (high frequency oscillations are eliminated through root-mean-square filtering) -- this QoI can be extracted for any low-frequency difference between two channel carrier frequencies.
+For [multi-channel TI](/docs/background/modes.md), the **high-frequency** exposure is evaluated as the local worst-case peak E{-}field magnitude over time, and the **TI exposure** as the local maximum of the modulation envelope magnitude along any orientation (high frequency oscillations are eliminated through root-mean-square filtering) -- this QoI can be extracted for any low-frequency difference between two channel carrier frequencies.
 
-For [phase-modulation TI](/docs/background/electromagnetic_modeling/modes.md), the **TI exposure** is evaluated as the local difference between the maximum and the minimum of the field magnitude envelope (the envelope is obtained based on the root of the low-pass-filtered squared field magnitude).
+For [phase-modulation TI](/docs/background/modes.md), the **TI exposure** is evaluated as the local difference between the maximum and the minimum of the field magnitude envelope (the envelope is obtained based on the root of the low-pass-filtered squared field magnitude).

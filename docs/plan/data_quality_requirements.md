@@ -1,6 +1,6 @@
 ## Data Quality Requirements
 
-This preparatory step is crucial for smooth operation of the pipeline. If you choose to follow the personalized pipeline, you have the prepare your data according to our acceptable formatting and setting.
+This preparatory step is crucial for smooth operation of the pipeline. If you choose to follow the [personalized pipeline](/docs/plan/workflows.md), you need to prepare your data according to our acceptable formatting and setting.
 
 ### MRI Data Quality Requirements for Optimal Modeling
 

@@ -4,4 +4,5 @@ This section briefly introduces the theoretical and technical background behind 
 * [Electromagnetic Modeling](/docs/background/electromagnetic_modeling.md)
 * [Quantities-of-Interest](/docs/background/electromagnetic_modeling/quantities_of_interest.md)
 * [Multi-Goal Optimization](/docs/background/multi_goal_optimization.md)
+* [SuMo Optimizer](/docs/background/sumo_optimizer.md)
 

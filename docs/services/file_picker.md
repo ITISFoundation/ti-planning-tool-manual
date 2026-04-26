@@ -2,7 +2,7 @@
 
 **_Summary_**:
 
-As the first cloud-based step for personalization, provide the data via the File Picker: either a T1-weighted MRI for an isotropic model, a zipped file containing T1, DTI, bval, and bvec files for an anisotropic model, or — when using the [Offline Personalization](/docs/services/data_privacy.md) workflow — the anonymized zip archive produced locally by `run_personalizer.bat`.
+As the first cloud-based step for personalization, provide the data via the File Picker: either a T1-weighted MRI for an isotropic model, a zipped file containing T1, DTI, bval, and bvec files for an anisotropic model, or — when using the [Offline Personalization](/docs/services/data_privacy.md) workflow — the anonymized zip archive produced locally by `run_personalizer.bat`. See [Data Quality Requirements](/docs/plan/data_quality_requirements.md) for input file specifications.
 
 ----
 
@@ -46,10 +46,10 @@ As the initial step for personalization, the user is asked to provide, in the Fi
 </p>
 
 1. **Data Instructions**
-   A brief summary of what files and formates are needed, image quality recommendations and a reminder to annonymize the data before uploading.
+   A brief summary of what files and formats are needed, image quality recommendations and a reminder to anonymize the data before uploading.
 
 2. **Upload Option 1**
-   Select a file using the file explorer by clicking on ```Select File``` or directly drag and drop the the data to the designated area.
+   Select a file using the file explorer by clicking on ```Select File``` or directly drag and drop the data to the designated area.
 
 3. **Upload Option 2**
    If the data is already available online somewhere (eg. Google Drive or Dropbox), given that the sharing is set to public, the link can be provided.

@@ -7,10 +7,10 @@ Full TIP Features:
 - Multiple TI modes: **Classic TI**, **multi-channel TI** (up to 8 channels), and **phase-modulation TI**
 - Five pre-computed anatomical models
 - Personalized anatomical models with automated landmark detection
-- SuMo optimizer with Gaussian process modeling and multi-objective genetic algorithms
-- Comprehensive exposure analysis using embedded [Sim4Life](https://sim4life.swiss) postprocessing
-- Report generation capabilities
-- Advanced optimization for all TI modes
+- [SuMo optimizer](/docs/background/sumo_optimizer.md) with Gaussian process modeling and multi-objective genetic algorithms
+- Comprehensive [exposure analysis](/docs/services/s4l_post_processing.md) using embedded [Sim4Life](https://sim4life.swiss) postprocessing
+- [Report generation](/docs/services/post_processing.md) capabilities
+- Advanced optimization for all [TI modes](/docs/background/modes.md)
 
 TIP.lite Features:
 
@@ -23,4 +23,4 @@ TIP.lite remains free to use without credit card information. It provides essent
 
 Upgrading to Full TIP:
 
-- Users can request access to the full version of TIP to access all features, including personalized planning, advanced TI modes, and comprehensive analysis tools.
+- Users can request access to the full version of TIP to access all features, including personalized planning, advanced TI modes, and comprehensive analysis tools. Please visit the [Support](/docs/support/support.md) page for contact information.

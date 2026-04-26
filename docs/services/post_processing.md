@@ -17,7 +17,7 @@ _Starting from a thus optimized, or from a user-defined TIS configuration, the r
 
 _Once promising exposure conditions have been identified, the associated visualizations and metrics can be added to an automatically generated, downloadable report._
 
-[Multi-channel and phase-modulation TI](/docs/background/modes.md): For multi-channel and phase-modulation TI, the offered functionality is slightly different. Additional or alternative settings are presented, reflecting the obvious differences in relevant stimulation parameters (e.g., targeted modulation shape, number of channels and channel frequencies). Also the definition of the Quantities-of-Interest necessarily differs (see [here](/docs/background/electromagnetic_modeling/quantities_of_interest)). Finally, the vast parameter space of multi-channel and phase-modulation TI currently prohibits systematic optimization, such that only user-specified configurations can be analyzed.
+[Multi-channel and phase-modulation TI](/docs/background/modes.md): For multi-channel and phase-modulation TI, the offered functionality is slightly different. Additional or alternative settings are presented, reflecting the obvious differences in relevant stimulation parameters (e.g., targeted modulation shape, number of channels and channel frequencies). Also the definition of the Quantities-of-Interest necessarily differs (see [here](/docs/background/electromagnetic_modeling/quantities_of_interest.md)). Finally, the vast parameter space of multi-channel and phase-modulation TI currently prohibits systematic optimization, such that only user-specified configurations can be analyzed.
 
 ----
 
@@ -71,7 +71,7 @@ After running the optimization with the SuMo engine and loading the analysis, yo
 
 Use the intuitive weighting sliders at the top (1.) to prioritize metrics according to your research objectives. Adjust the relative importance of Strength, Selectivity, and Collateral stimulation, and the table automatically sorts configurations by the resulting composite score (displayed in the rightmost column). You can also sort by any individual metric by clicking directly on the column header (2.).
 
-The interactive 3D scatter plot provides a visual representation of the Pareto front, allowing you to quickly understand the trade-offs between different performance metrics and identify the most promising [Pareto-optimal](/docs/background/multi_goal_optimization) solutions for your specific application.
+The interactive 3D scatter plot provides a visual representation of the Pareto front, allowing you to quickly understand the trade-offs between different performance metrics and identify the most promising [Pareto-optimal](/docs/background/multi_goal_optimization.md) solutions for your specific application.
 
 When you've identified a promising configuration, click the Load button (3.) to examine it in detail. The system performs a targeted sweep across channel weights to prepare the visualization, making subsequent exploration more responsive. A progress indicator (4.) shows the status of this optimization process.
 

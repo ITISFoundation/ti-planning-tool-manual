@@ -2,7 +2,7 @@
 
 **_Summary_**:
 
-As the first cloud-based step for personalization, provide the data via the File Picker: either a T1-weighted MRI for an isotropic model, a zipped file containing T1, DTI, bval, and bvec files for an anisotropic model, or — when using the [Offline Personalization](/docs/services/data_privacy.md) workflow — the anonymized zip archive produced locally by `run_personalizer.bat`. After uploading, specify the electrode geometry and whether to register a detailed atlas to the brain; click Start to generate the anatomical model.
+As the first cloud-based step for personalization, provide the data via the File Picker: either a T1-weighted MRI for an isotropic model, a zipped file containing T1, DTI, bval, and bvec files for an anisotropic model, or — when using the [Offline Personalization](/docs/services/data_privacy.md) workflow — the anonymized zip archive produced locally by `run_personalizer.bat`. After uploading, specify the electrode geometry and whether to register a detailed atlas to the brain; click Start to generate the anatomical model. See [Data Quality Requirements](/docs/plan/data_quality_requirements.md) for input file specifications.
 
 ----
 
@@ -17,13 +17,13 @@ Once uploaded, the user can specify the geometry of the electrode, and if the he
 
 The interface has the following elements:
 
-1. **Select Electroder Radius**
+1. **Select Electrode Radius**
 
-   The radius of the cylindrical electrodes is selected here. This can only be changes as long as no simulations have been started in [Simulator](/docs/services/simulator.md).
+   The radius of the cylindrical electrodes is selected here. This can only be changed as long as no simulations have been started in [Simulator](/docs/services/simulator.md).
 
 2. **Select Atlas to Register**
 
-   By defailt, the model prediction already contains a couple of targets. These are listed in the logger (4) in the image above. If these are sufficient, you can leave this setting at ```None```.
+   By default, the model prediction already contains a couple of targets. These are listed in the logger (4) in the image above. If these are sufficient, you can leave this setting at ```None```.
    If not, a detailed atlas can be registered to the brain. Select the according option. Since this is a multi-select list, please make sure that ```None``` is not selected together with the atlas to register, because the registration will always be skipped if ```None``` is selected.
 
 3. **Progress Overview**
