@@ -6,6 +6,15 @@ _The Exposure Analysis step provides a complete [Sim4Life](https://zmt.swiss/sim
 
 ----
 
+### Sim4Life Documentation & Tutorials
+
+> **Note:** Since Exposure Analysis provides a full Sim4Life workbench, the complete Sim4Life documentation, training materials, and video tutorials apply directly and are a valuable resource for getting the most out of this step.
+
+| Resource | Description |
+| -------- | ----------- |
+| [Sim4Life Support & Documentation](https://sim4life.swiss/servicesupport) | Official page with user manuals, product flyers, training materials, and support resources |
+| [How-To Video Playlist](https://www.youtube.com/playlist?list=PLALTJh1yv61vi6MWCE6gD8vonRo-n5wc1) | Full collection of how-to and tutorial videos on the ZMT Zurich MedTech AG YouTube channel |
+
 ### Overview
 
 Starting with TIP V5.0, the Exposure Analysis step exposes a **full Sim4Life workbench** with all three sections available:
@@ -59,3 +68,4 @@ Available precomputed models with template projects:
 <p align="center">
   <img width="90%"  src="assets/quickguide/postpro_s4l.gif">
 </p>
+
