@@ -2,7 +2,7 @@
 
 **_Summary_**:
 
-In this step, users generate the field library by selecting isotropic or anisotropic white matter conductivity simulations. Once completed, users can export the results and either start a new simulation run or proceed to Classic TI.
+In this step, users generate the field library by selecting isotropic or anisotropic white matter conductivity simulations. Once completed, users can export the results and either start a new simulation run or proceed to TI Analysis.
 
 ----
 
@@ -27,4 +27,4 @@ The **_Setup_** interface has the following elements:
 
    The brain structure that should be targeted by TI is specified here via the drop-down list. All the exposure quality metrics will be calculated according to the selected structure.
 
-You can now click to the arrow on the right side of the browser to move to [**Classic TI**](/docs/services/post_processing.md).
+You can now click to the arrow on the right side of the browser to move to [**TI Analysis**](/docs/services/post_processing.md).

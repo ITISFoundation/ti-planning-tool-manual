@@ -1,6 +1,6 @@
 # Workflows
 
-The TI Planning Tool supports multiple workflow configurations, each designed for a different use case. All workflows include a **Classic TI** analysis step; the number and type of preceding steps depend on the plan type selected.
+The TI Planning Tool supports multiple workflow configurations, each designed for a different use case. All workflows include a **TI Analysis** step; the number and type of preceding steps depend on the plan type selected.
 
 The diagrams below outline each workflow. Click any step box to navigate directly to its documentation.
 
@@ -11,7 +11,7 @@ The diagrams below outline each workflow. Click any step box to navigate directl
 TIP Lite is the entry-level configuration, offering essential TI planning with **Classic TI** mode only. It works with pre-computed anatomical models and requires no personalization steps, making it the fastest way to get started.
 
 <div class="tip-workflow">
-  <a class="tip-workflow__step twf-blue" href="#/docs/services/post_processing">Classic TI</a>
+  <a class="tip-workflow__step twf-blue" href="#/docs/services/post_processing">TI Analysis</a>
 </div>
 
 ---
@@ -21,7 +21,7 @@ TIP Lite is the entry-level configuration, offering essential TI planning with *
 The non-personalized TIP workflow extends TIP Lite by adding a full **Exposure Analysis** step, enabling comprehensive safety and dosimetry assessment via integrated Sim4Life postprocessing. Pre-computed anatomical models are used throughout — no imaging data required.
 
 <div class="tip-workflow">
-  <a class="tip-workflow__step twf-blue" href="#/docs/services/post_processing">Classic TI</a>
+  <a class="tip-workflow__step twf-blue" href="#/docs/services/post_processing">TI Analysis</a>
   <span class="tip-workflow__arrow">&#8594;</span>
   <a class="tip-workflow__step twf-indigo" href="#/docs/services/s4l_post_processing">Exposure Analysis</a>
 </div>
@@ -41,7 +41,7 @@ The personalized workflow builds a patient-specific anatomical model from your o
   <span class="tip-workflow__arrow">&#8594;</span>
   <a class="tip-workflow__step twf-orange" href="#/docs/services/simulator">Simulator</a>
   <span class="tip-workflow__arrow">&#8594;</span>
-  <a class="tip-workflow__step twf-blue" href="#/docs/services/post_processing">Classic TI</a>
+  <a class="tip-workflow__step twf-blue" href="#/docs/services/post_processing">TI Analysis</a>
   <span class="tip-workflow__arrow">&#8594;</span>
   <a class="tip-workflow__step twf-indigo" href="#/docs/services/s4l_post_processing">Exposure Analysis</a>
 </div>
@@ -63,7 +63,7 @@ This workflow extends the personalized workflow with an initial **Offline Person
   <span class="tip-workflow__arrow">&#8594;</span>
   <a class="tip-workflow__step twf-orange" href="#/docs/services/simulator">Simulator</a>
   <span class="tip-workflow__arrow">&#8594;</span>
-  <a class="tip-workflow__step twf-blue" href="#/docs/services/post_processing">Classic TI</a>
+  <a class="tip-workflow__step twf-blue" href="#/docs/services/post_processing">TI Analysis</a>
   <span class="tip-workflow__arrow">&#8594;</span>
   <a class="tip-workflow__step twf-indigo" href="#/docs/services/s4l_post_processing">Exposure Analysis</a>
 </div>

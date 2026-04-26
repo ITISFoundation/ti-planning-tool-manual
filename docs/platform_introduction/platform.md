@@ -16,5 +16,5 @@ The TI Planning Tool has the following principal views:
 
   Available in all plan types:
 
-  * [Classic TI](/docs/services/post_processing.md)
+  * [TI Analysis](/docs/services/post_processing.md)
   * [Exposure Analysis](/docs/services/s4l_post_processing.md)

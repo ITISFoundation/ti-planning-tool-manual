@@ -1,4 +1,4 @@
-## Classic TI
+## TI Analysis
 
 **_Summary_**
 

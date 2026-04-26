@@ -103,7 +103,7 @@ a.tip-workflow__step.twf-orange:hover {
     box-shadow: 0 6px 22px rgba(240, 138, 53, 0.38);
 }
 
-/* Blue — Classic TI analysis (brand color) */
+/* Blue — TI Analysis (brand color) */
 .tip-workflow__step.twf-blue {
     border-color: #0190d0;
     background: rgba(1, 144, 208, 0.12);

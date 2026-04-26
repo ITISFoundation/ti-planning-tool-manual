@@ -30,7 +30,7 @@
     * [Personalizer](/docs/services/personalizer.md)
     * [Model Inspector](/docs/services/fiducials_placement.md)
     * [Simulator](/docs/services/simulator.md)
-    * [Classic TI](/docs/services/post_processing.md)
+    * [TI Analysis](/docs/services/post_processing.md)
     * [Exposure Analysis](/docs/services/s4l_post_processing.md)
 * [References](/docs/background/references.md)
 * [Licensing](/docs/support/license.md)

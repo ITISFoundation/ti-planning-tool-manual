@@ -13,7 +13,7 @@
 
 #### classic TI mode
 
-- Once an electrode selector setting has been submitted, it can not be changed anymore since the input of the [Classic TI](/docs/services/post_processing.md) step is not updated anymore.
+- Once an electrode selector setting has been submitted, it can not be changed anymore since the input of the [TI Analysis](/docs/services/post_processing.md) step is not updated anymore.
 - If "Load Analysis" fails since no results file is there, then optimization is done to create the file, "Load Analysis" still doesn't work even if the file is present.
 
 #### mc TI mode
