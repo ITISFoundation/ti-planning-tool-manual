@@ -27,7 +27,7 @@ The **_Setup_** interface has the following elements:
   <img width="90%" src="assets/electrode_selector/species.png">
 </p>
 
-2. **_Select Target Structure_** <br/>
+1. **_Select Target Structure_** <br/>
    The brain structure that should be targeted by TI is specified here via the drop-down list. All the exposure quality metrics will be calculated according to the selected structure. 
 
 3. **_Select Electrode Shape and Dimension_** <br/>
