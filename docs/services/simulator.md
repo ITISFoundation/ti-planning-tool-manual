@@ -21,7 +21,7 @@ The **_Setup_** interface has the following elements:
 
 1. **_White Matter Selectivity Selection_**
 
-   Use the drop-down to select whether to run isotropic or anisotropic simulations. The anisotropic option is only available when DTI data was provided in the File Picker.
+1. **_Simulation Type Selection_**
 
 2. **_Simulation Cost Estimation_**
 
