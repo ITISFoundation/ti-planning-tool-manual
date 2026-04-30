@@ -1,44 +1,43 @@
-## Optimal Configuration Identification
+## TI Analysis
 
 **_Summary_**
 
 [Classic TI](/docs/background/modes.md):
-_Based on the information provided during the setup step, the surrogate-modeling-based optimizer (SuMo) systematically explores the solution space to identify optimal configurations considering three key metrics:_
+_Based on the selected model and target, the surrogate-modeling-based optimizer (SuMo) systematically explores the solution space to identify optimal configurations considering three key metrics:_
 
-* _target exposure magnitude: the median of the TI modulation envelope magnitude within the target_
-* _stimulation selectivity: the ratio of the mean TI exposure in the target vs. the rest of the brain_
-* _collateral stimulation: the off-target brain fraction with a TI exposure above the target exposure magnitude_
+* **strength**: the median of the TI modulation envelope magnitude (T<sub>max</sub>) within the target
+* **selectivity**: the signal-to-noise ratio of TI exposure — squared ratio of the RMS of T<sub>max</sub> in the target to the RMS of T<sub>max</sub> in the off-target brain: (RMS<sub>target</sub> / RMS<sub>off-target</sub>)²
+* **collateral**: the fraction of the non-target brain volume with T<sub>max</sub> exceeding the p-th isopercentile of T<sub>max</sub> in the target or the brain (p is user-configurable)
 
 _These metrics are also central to the visualization and included in the downloadable report._
 
-_By combining Gaussian process modeling with a multi-objective genetic algorithm, the SuMo optimizer provides a diverse set of Pareto-optimal solutions. This allows users to easily navigate trade-offs like selectivity versus intensity, making informed choices with regard to conflicting TI exposure criteria._
+_By combining Gaussian process modeling with a multi-objective genetic algorithm, the SuMo optimizer provides a diverse set of Pareto-optimal solutions. This allows users to easily navigate trade-offs like selectivity versus intensity, making informed choices with regard to conflicting TI exposure criteria. As of TIP V5.0, the optimizer completes in **5–10 minutes** — approximately 6× faster than in previous versions._
 
 _Starting from a thus optimized, or from a user-defined TIS configuration, the resulting exposure can be studied and if desired, the configuration (electrode locations, current magnitudes) can be interactively refined. For that purpose, TI and high-frequency exposure distributions are dynamically visualized on top of medical image data, and key exposure metrics as well as plots are shown._
 
 _Once promising exposure conditions have been identified, the associated visualizations and metrics can be added to an automatically generated, downloadable report._
 
-[Multi-channel and phase-modulation TI](/docs/background/modes.md): For multi-channel and phase-modulation TI, the offered functionality is slightly different. Additional or alternative settings are presented, reflecting the obvious differences in relevant stimulation parameters (e.g., targeted modulation shape, number of channels and channel frequencies). Also the definition of the Quantities-of-Interest necessarily differs (see [here](/docs/background/electromagnetic_modeling/quantities_of_interest)). Finally, the vast parameter space of multi-channel and phase-modulation TI currently prohibits systematic optimization, such that only user-specified configurations can be analyzed.
+[Multi-channel and phase-modulation TI](/docs/background/modes.md): For multi-channel and phase-modulation TI, the offered functionality is slightly different. Additional or alternative settings are presented, reflecting the obvious differences in relevant stimulation parameters (e.g., targeted modulation shape, number of channels and channel frequencies). Also the definition of the Quantities-of-Interest necessarily differs (see [here](/docs/background/electromagnetic_modeling/quantities_of_interest.md)). Finally, the vast parameter space of multi-channel and phase-modulation TI currently prohibits systematic optimization, such that only user-specified configurations can be analyzed.
 
 ----
-<!--
-xxx review the below xxx
 
-* **Analysis** <br/>
+### TIP Lite
 
-    In the first half of the **Analysis** section, information from the **Optimizer** regarding the performance of different electrode configurations is presented in a sortable table (only applies to planning for [classic TI](/docs/background/modes.md)).
-    Different setups can be compared and sorted using the three main [metrics](/docs/background/electromagnetic_modeling/quantities_of_interest.md): Strength, Selectivity, and Collateral. A 3D scatter plots also visually presents configurations near the [Pareto Front](/docs/background/multi_goal_optimization) to illustrate the trade-offs.
-    The second half is used for visualization of the fields in 2D and 3D, as well as the visualization of waveforms.
+In [TIP Lite](https://tip-lite.science), this service is available in a reduced form. The table below summarizes what is and is not available compared to full TIP:
 
-    <br>
+| Feature | TIP Lite | Full TIP |
+| ------- | :------: | :------: |
+| Classic TI mode | ✓ | ✓ |
+| SuMo optimizer and Pareto-optimal configuration table | ✓ | ✓ |
+| Exposure visualization (2D/3D slices, waveforms, iso-surface) | Full | Full |
+| Available anatomical models | MIDA (anisotropic) and Mouse | All precomputed models + personalized |
+| Multi-channel TI and phase-modulation TI modes | — | ✓ |
+| Export to S4L (.cache) and Exposure Analysis | — | ✓ |
+| Report generation | — | ✓ |
 
-    <p align="center">
-      <img width="90%" src="assets/postpro/classic_ti_three_metrics_numbered.png">
-    </p>
+TIP Lite is designed for users new to TI or with basic planning needs. Upgrade to full TIP to access optimization, advanced analysis, and reporting capabilities.
 
-* **Report** <br/>
-    In this section, a more detailed and quantitative exposure overview is provided for both high frequency (HF) and temporal interference (TI) fields. Cumulative histograms show the on- and off-target exposure and line plots the dependence of the key metrics on the relative channel weight.
-
--->
+----
 
 ### Analysis
 
@@ -72,7 +71,7 @@ After running the optimization with the SuMo engine and loading the analysis, yo
 
 Use the intuitive weighting sliders at the top (1.) to prioritize metrics according to your research objectives. Adjust the relative importance of Strength, Selectivity, and Collateral stimulation, and the table automatically sorts configurations by the resulting composite score (displayed in the rightmost column). You can also sort by any individual metric by clicking directly on the column header (2.).
 
-The interactive 3D scatter plot provides a visual representation of the Pareto front, allowing you to quickly understand the trade-offs between different performance metrics and identify the most promising [Pareto-optimal](/docs/background/multi_goal_optimization) solutions for your specific application.
+The interactive 3D scatter plot provides a visual representation of the Pareto front, allowing you to quickly understand the trade-offs between different performance metrics and identify the most promising [Pareto-optimal](/docs/background/multi_goal_optimization.md) solutions for your specific application.
 
 When you've identified a promising configuration, click the Load button (3.) to examine it in detail. The system performs a targeted sweep across channel weights to prepare the visualization, making subsequent exploration more responsive. A progress indicator (4.) shows the status of this optimization process.
 
@@ -126,7 +125,7 @@ Once that sweep is complete, all the viewers in the lower half of the screen are
 6. **Export Buttons**
 
    * ```Add to Report``` allows addition of the six viewing elements to the PDF report (according to the currently selected slicing positions and viewing angle).
-   * ```Export to S4L``` creates a .cache file of the TI maximum modulation amplitude, which can then be explored in [Step 3: Exposure Analysis](/docs/services/s4l_post_processing.md).
+   * ```Export to S4L``` creates a .cache file of the TI maximum modulation amplitude, which can then be explored in [Exposure Analysis](/docs/services/s4l_post_processing.md).
 
 Metrics table:
 <p align="center">
@@ -160,8 +159,6 @@ Multichannel TI:
 <p align="center">
   <img width="90%"  src="assets/postpro/multichannel_ti_quantitative_analysis.png">
 </p>
-
-####
 
 Phase-Modulation TI:
 
@@ -199,7 +196,7 @@ In the **Report** section, a more detailed and quantitative exposure overview is
 
 5. **Metrics Plots**
 
-   The three principal metrics are plotted as a function of the distribution of the total current to the two channels, for both HF and TI.
+   For classic TI, the three principal metrics (Strength, Selectivity, Collateral) are plotted as a function of the channel current ratio (A/B), for both HF and TI fields. This panel is not shown for multi-channel or phase-modulation TI.
 
 6. **Export Buttons**
 

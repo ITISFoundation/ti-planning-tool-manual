@@ -4,7 +4,7 @@ In view of the above-mentioned impossibility of simultaneously optimizing all ex
 
 ### Surrogate-Modeling-Based Optimizer (SuMo)
 
-Starting with TIP V4.0, the optimization process uses a surrogate-modeling-based optimizer (SuMo) which combines Gaussian process modeling with a multi-objective genetic algorithm. This approach systematically explores the solution space to provide a diverse set of Pareto-optimal solutions, enabling users to efficiently navigate trade-offs like selectivity versus intensity.
+Starting with TIP V4.0, the optimization process uses a surrogate-modeling-based optimizer ([SuMo](/docs/background/sumo_optimizer.md)) which combines Gaussian process modeling with a multi-objective genetic algorithm. This approach systematically explores the solution space to provide a diverse set of Pareto-optimal solutions, enabling users to efficiently navigate trade-offs like selectivity versus intensity.
 
 The SuMo optimizer works by:
 

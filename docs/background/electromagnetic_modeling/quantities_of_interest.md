@@ -59,9 +59,9 @@ where α denotes the angle between <img width = "30" src="assets/equations/E12w2
 
 To assess the quality of a TI exposure condition, three key metrics have been defined:
 
-* M1 - target exposure strength (**strength**): the median (or _p_-th isopercentile, where _p_ can be set by users) of T<sub>max</sub> in the target,
-* M2 - exposure selectivity (**selectivity**): the ratio of the mean target T<sub>max</sub> and the mean off-target T<sub>max</sub>,
-* M3 - off-target exposure (**collateral**): the fraction of the non-target brain volume with T<sub>max</sub> exceeding M1.
+* M1 - target exposure strength (**strength**): the median of T<sub>max</sub> in the target,
+* M2 - exposure selectivity (**selectivity**): the squared ratio of the RMS of T<sub>max</sub> in the target to the RMS of T<sub>max</sub> in the off-target brain, i.e. (RMS<sub>target</sub> / RMS<sub>off-target</sub>)²,
+* M3 - off-target exposure (**collateral**): the fraction of the non-target brain volume with T<sub>max</sub> exceeding the _p_-th isopercentile of T<sub>max</sub> in the target or the brain, where _p_ can be set by users.
 
 Typically, it is not possible to find exposure conditions that simultaneously optimize all three metrics, and a compromise or prioritization is needed.
 
@@ -77,6 +77,6 @@ E_{\textrm{max}}(x)=\textrm{max}(\left|\vec{E}_1(x)+\vec{E}_2(x)\right|,\left|\v
 $$
 -->
 
-For [multi-channel TI](/docs/background/electromagnetic_modeling/modes.md), the **high-frequency** exposure is evaluated as the local worst-case peak E{-}field magnitude over time, and the **TI exposure** as the local maximum of the modulation envelope magnitude along any orientation (high frequency oscillations are eliminated through root-mean-square filtering) -- this QoI can be extracted for any low-frequency difference between two channel carrier frequencies.
+For [multi-channel TI](/docs/background/modes.md), the **high-frequency** exposure is evaluated as the local worst-case peak E{-}field magnitude over time, and the **TI exposure** as the local maximum of the modulation envelope magnitude along any orientation (high frequency oscillations are eliminated through root-mean-square filtering) -- this QoI can be extracted for any low-frequency difference between two channel carrier frequencies.
 
-For [phase-modulation TI](/docs/background/electromagnetic_modeling/modes.md), the **TI exposure** is evaluated as the local difference between the maximum and the minimum of the field magnitude envelope (the envelope is obtained based on the root of the low-pass-filtered squared field magnitude).
+For [phase-modulation TI](/docs/background/modes.md), the **TI exposure** is evaluated as the local difference between the maximum and the minimum of the field magnitude envelope (the envelope is obtained based on the root of the low-pass-filtered squared field magnitude).

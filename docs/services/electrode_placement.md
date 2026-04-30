@@ -19,4 +19,4 @@ It is important to note that if the fiducial were misplaced, or the imported hea
   <img width="90%" src="assets/quickguide/fiducial_placement_3.png">
 </p>
 
-You can now click to the arrow on the right side of the browser to move to [**_Step 4: EM Simulations_**](/docs/services/simulator.md).
+You can now click to the arrow on the right side of the browser to move to [**Simulator**](/docs/services/simulator.md).

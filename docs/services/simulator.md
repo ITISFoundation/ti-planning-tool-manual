@@ -1,8 +1,8 @@
-## EM Simulations
+## Simulator
 
 **_Summary_**:
 
-In this step, users generate the field library by selecting isotropic or anisotropic white matter conductivity simulations. Once completed, users can export the results and either start a new simulation run or proceed to the next step.
+In this step, users generate the field library by selecting isotropic or anisotropic white matter conductivity simulations. Once completed, users can export the results and either start a new simulation run or proceed to TI Analysis.
 
 ----
 
@@ -10,7 +10,7 @@ In this step, the generation of the field library, as described in the chapter [
 
 Once all the preparations are finished, the logging console will show the information that the window can be closed. Since the simulations will run for approximately 2.5 to 3 hours, users can come back later once the results are available.
 
-When all the simulations are done, users can hit the ```Export``` button which downloads all the results, and compiles all the necessary files which are needed to for the following steps. Once this step is done, users can either start another simulation run in case both anisotropic and isotropic flavors should be compared.
+When all the simulations are done, users can hit the ```Export``` button which downloads all the results, and compiles all the necessary files which are needed for the following steps. Once this step is done, users can either start another simulation run in case both anisotropic and isotropic flavors should be compared.
 
 <br>
 <p align="center">
@@ -21,10 +21,10 @@ The **_Setup_** interface has the following elements:
 
 1. **_White Matter Selectivity Selection_**
 
-   Depending on the TI exposure to be planned, a human or mouse model with associated standard electrode locations is selected here via the drop-down list. The list of available models will continue to expand in the near future.
+1. **_Simulation Type Selection_**
 
 2. **_Simulation Cost Estimation_**
 
-   The brain structure that should be targeted by TI is specified here via the drop-down list. All the exposure quality metrics will be calculated according to the selected structure.
+   Before computation begins, a pop-up displays the estimated credit cost for this simulation run. Accept using the ```Confirm``` button to proceed.
 
-You can now click to the arrow on the right side of the browser to move to [**Step 5: Setup**](/docs/services/electrode_selector.md).
+You can now click to the arrow on the right side of the browser to move to [**TI Analysis**](/docs/services/post_processing.md).

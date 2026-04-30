@@ -7,13 +7,13 @@ At IT'IS Foundation, we are dedicated to supporting innovative, safe, and effect
 - [TIP](https://tip.science): A powerful and feature-rich environment offered primarily to our research partners and members of the Early Adopter Program.
 - [TIP.lite](https://tip-lite.science): A streamlined version of TIP with both practical and educational value, open to students and researchers.
 
-Both TIP platforms are based on our[o<sup>2</sup>S<sup>2</sup>PARC](https://osparc.io/) technology and are designed to support neuroscientists and brain stimulation experts in optimizing electrode placement and exposure conditions for targeted TIS
+Both TIP platforms are based on our [o<sup>2</sup>S<sup>2</sup>PARC](https://osparc.io/) technology and are designed to support neuroscientists and brain stimulation experts in optimizing electrode placement and exposure conditions for targeted TIS.
 
 ## Key Features
 
 - Advanced Modeling: Utilize state-of-the-art computational tools for precise TIS planning.
-- Automated Personalization: Neural network-based automatic identification and placement of anatomical landmarks.
-- Smart Optimization: SuMo optimizer combines Gaussian process modeling with multi-objective genetic algorithms.
+- Automated Personalization: Neural network-based automatic identification and placement of anatomical landmarks (see [Personalizer](/docs/services/personalizer.md)).
+- Smart Optimization: [SuMo optimizer](/docs/background/sumo_optimizer.md) combines Gaussian process modeling with multi-objective genetic algorithms.
 - User-Friendly Interface: Designed for researchers who may not be modeling experts.
 - Customization: Tailor stimulation protocols to specific research needs.
 - Educational Value: TIP.lite serves as a learning tool for students and early-career researchers.

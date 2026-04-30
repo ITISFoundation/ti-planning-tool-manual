@@ -1,4 +1,4 @@
-## Fiducials Placement
+## Model Inspector
 
 **_Summary_**:
 
