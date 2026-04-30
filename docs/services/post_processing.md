@@ -6,7 +6,7 @@
 _Based on the selected model and target, the surrogate-modeling-based optimizer (SuMo) systematically explores the solution space to identify optimal configurations considering three key metrics:_
 
 * **strength**: the median of the TI modulation envelope magnitude (T<sub>max</sub>) within the target
-* **selectivity**: the signal-to-noise ratio of TI exposure — the RMS of T<sub>max</sub> in the target divided by the RMS of off-target T<sub>max</sub> squared
+* **selectivity**: the signal-to-noise ratio of TI exposure — squared ratio of the RMS of T<sub>max</sub> in the target to the RMS of T<sub>max</sub> in the off-target brain: (RMS<sub>target</sub> / RMS<sub>off-target</sub>)²
 * **collateral**: the fraction of the non-target brain volume with T<sub>max</sub> exceeding the p-th isopercentile of T<sub>max</sub> in the target or the brain (p is user-configurable)
 
 _These metrics are also central to the visualization and included in the downloadable report._
