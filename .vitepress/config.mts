@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'TIP Manual',
   description: 'User manual for the TI Planning Tool (TIP)',
+  base: '/ti-planning-tool-manual/',
   ignoreDeadLinks: [
     /\/uploads\//
   ],
