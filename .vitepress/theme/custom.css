@@ -1,3 +1,20 @@
+/* ── Hero Carousel ──────────────────────────────────── */
+.VPHomeHero .image-bg {
+  display: none;
+}
+
+.VPHomeHero .image-container {
+  max-width: 480px !important;
+  width: 480px !important;
+}
+
+@media (max-width: 960px) {
+  .VPHomeHero .image-container {
+    width: 100% !important;
+    max-width: 480px !important;
+  }
+}
+
 /* ── Brand Colors & Typography ───────────────────────── */
 :root {
   --vp-c-brand-1: #0190d0;
