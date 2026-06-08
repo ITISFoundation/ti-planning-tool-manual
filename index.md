@@ -16,6 +16,10 @@ hero:
       link: /docs/background/background
 
 features:
+  - icon: 🔀
+    title: Workflows
+    details: Explore the different pipelines of TIP and TIP.lite at a glance.
+    link: /docs/plan/workflows.md
   - icon: 🧠
     title: Personalized Head Models
     details: Generate individualized computational head models from MRI and DTI data for accurate field predictions.
@@ -32,4 +36,10 @@ features:
     title: Post-Processing & Analysis
     details: Visualize and quantify TI field distributions with interactive slicers, metrics, and export capabilities.
     link: /docs/services/post_processing
+  - icon:
+      dark: /assets/youtube-dark.svg
+      light: /assets/youtube-light.svg
+    title: Youtube Playlist
+    details: Get a high level overview of TIP by watching our playlist showing the tool in action.
+    link: https://youtube.com/playlist?list=PLcJQYcVCSqDu5gXnJj-_vS_spGhZOe-jF&si=9W-fHPf3MYl4fXCn
 ---

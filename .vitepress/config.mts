@@ -35,6 +35,7 @@ export default defineConfig({
       { text: 'Background', link: '/docs/background/background' },
       { text: 'Workflows', link: '/docs/plan/workflows' },
       { text: 'IT\'IS', link: 'https://itis.swiss/' },
+      { text: 'YouTube', link: 'https://youtube.com/playlist?list=PLcJQYcVCSqDu5gXnJj-_vS_spGhZOe-jF&si=9W-fHPf3MYl4fXCn' },
     ],
 
     sidebar: [

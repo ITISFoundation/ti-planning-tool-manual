@@ -1,9 +1,16 @@
+import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
 import type { Theme } from 'vitepress'
 import './custom.css'
+import HeroCarousel from './HeroCarousel.vue'
 
 export default {
   extends: DefaultTheme,
+  Layout() {
+    return h(DefaultTheme.Layout, null, {
+      'home-hero-image': () => h(HeroCarousel)
+    })
+  },
   enhanceApp({ app, router }) {
     // Image zoom on click
     if (typeof window !== 'undefined') {
