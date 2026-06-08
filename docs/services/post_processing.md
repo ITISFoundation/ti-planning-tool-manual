@@ -51,7 +51,7 @@ The **Settings** section at the top allows you to configure essential optimizati
 
 <br>
 <p align="center">
-  <img width="90%" src="assets/electrode_selector/species.png">
+  <img width="90%" src="/assets/electrode_selector/species.png">
 </p>
 
 * **_Threshold definition_**
@@ -66,7 +66,7 @@ After running the optimization with the SuMo engine and loading the analysis, yo
 
 <br>
 <p align="center">
-  <img width="90%"  src="assets/postpro/classic_ti_three_metrics_numbered.png">
+  <img width="90%"  src="/assets/postpro/classic_ti_three_metrics_numbered.png">
 </p>
 
 Use the intuitive weighting sliders at the top (1.) to prioritize metrics according to your research objectives. Adjust the relative importance of Strength, Selectivity, and Collateral stimulation, and the table automatically sorts configurations by the resulting composite score (displayed in the rightmost column). You can also sort by any individual metric by clicking directly on the column header (2.).
@@ -79,11 +79,11 @@ Once that sweep is complete, all the viewers in the lower half of the screen are
 
 <br>
 <p align="center">
-  <img width="90%"  src="assets/postpro/analysis_slicer_numbers_v2_classic_ti.png">
+  <img width="90%"  src="/assets/postpro/analysis_slicer_numbers_v2_classic_ti.png">
 </p>
 
 <p align="center">
-  <img width="90%"  src="assets/postpro/classic_ti_quantitative_analysis.png">
+  <img width="90%"  src="/assets/postpro/classic_ti_quantitative_analysis.png">
 </p>
 
 1. **Main Controls**
@@ -129,17 +129,17 @@ Once that sweep is complete, all the viewers in the lower half of the screen are
 
 Metrics table:
 <p align="center">
-  <img width="90%"  src="assets/quickguide/postpro_gui_1.gif">
+  <img width="90%"  src="/assets/quickguide/postpro_gui_1.gif">
 </p>
 
 Slice Viewers:
 <p align="center">
-  <img width="90%"  src="assets/quickguide/postpro_gui_2.gif">
+  <img width="90%"  src="/assets/quickguide/postpro_gui_2.gif">
 </p>
 
 Reporting:
 <p align="center">
-  <img width="90%"  src="assets/quickguide/postpro_gui_3.gif">
+  <img width="90%"  src="/assets/quickguide/postpro_gui_3.gif">
 </p>
 
 #### Multichannel TI and Phase-Modulation TI
@@ -149,29 +149,29 @@ For the non-classic TI modes, the settings are similar, except for the fact that
 Multichannel TI:
 
 <p align="center">
-  <img width="90%"  src="assets/postpro/multichannel_ti_settings.png">
+  <img width="90%"  src="/assets/postpro/multichannel_ti_settings.png">
 </p>
 
 <p align="center">
-  <img width="90%"  src="assets/postpro/multichannel_ti_visual_analysis.png">
+  <img width="90%"  src="/assets/postpro/multichannel_ti_visual_analysis.png">
 </p>
 
 <p align="center">
-  <img width="90%"  src="assets/postpro/multichannel_ti_quantitative_analysis.png">
+  <img width="90%"  src="/assets/postpro/multichannel_ti_quantitative_analysis.png">
 </p>
 
 Phase-Modulation TI:
 
 <p align="center">
-  <img width="90%"  src="assets/postpro/phase_modulation_ti_settings.png">
+  <img width="90%"  src="/assets/postpro/phase_modulation_ti_settings.png">
 </p>
 
 <p align="center">
-  <img width="90%"  src="assets/postpro/phase_modulation_ti_visual_analysis.png">
+  <img width="90%"  src="/assets/postpro/phase_modulation_ti_visual_analysis.png">
 </p>
 
 <p align="center">
-  <img width="90%"  src="assets/postpro/phase_modulation_ti_quantitative_analysis.png">
+  <img width="90%"  src="/assets/postpro/phase_modulation_ti_quantitative_analysis.png">
 </p>
 
 ### Report

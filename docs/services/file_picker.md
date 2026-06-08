@@ -42,7 +42,7 @@ As the initial step for personalization, the user is asked to provide, in the Fi
 
 <br>
 <p align="center">
-  <img width="90%" src="assets/quickguide/file_picker.png">
+  <img width="90%" src="/assets/quickguide/file_picker.png">
 </p>
 
 1. **Data Instructions**

@@ -14,7 +14,7 @@ If you are using the personalized classic TI mode, the model selection will be e
 
 <br>
 <p align="center">
-  <img width="90%" src="assets/electrode_selector/electrode_selector.png">
+  <img width="90%" src="/assets/electrode_selector/electrode_selector.png">
 </p>
 
 The **_Setup_** interface has the following elements:
@@ -24,7 +24,7 @@ The **_Setup_** interface has the following elements:
 
 <br>
 <p align="center">
-  <img width="90%" src="assets/electrode_selector/species.png">
+  <img width="90%" src="/assets/electrode_selector/species.png">
 </p>
 
 1. **_Select Target Structure_** <br/>
@@ -44,5 +44,5 @@ The **_Setup_** interface has the following elements:
 You can now click to the arrow on the right side of the browser to move to [**_TI Analysis_**](/docs/services/post_processing.md).
 
 <p align="center">
-   <img src="assets/quickguide/electrode_selector.gif" width="900" height="578" />
+   <img src="/assets/quickguide/electrode_selector.gif" width="900" height="578" />
 </p>

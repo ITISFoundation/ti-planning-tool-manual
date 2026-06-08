@@ -1,11 +1,13 @@
 {
+  "name": "ti-planning-tool-manual",
+  "private": true,
   "scripts": {
-    "start": "docsify serve ."
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
   },
   "devDependencies": {
-    "docsify-cli": "^4.4.4"
-  },
-  "dependencies": {
-    "docsify": "^4.12.2"
+    "markdown-it-mathjax3": "^4.3.2",
+    "vitepress": "^1.6.3"
   }
 }

@@ -66,6 +66,6 @@ Available precomputed models with template projects:
 | Mouse | Isotropic |
 
 <p align="center">
-  <img width="90%"  src="assets/quickguide/postpro_s4l.gif">
+  <img width="90%"  src="/assets/quickguide/postpro_s4l.gif">
 </p>
 

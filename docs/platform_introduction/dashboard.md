@@ -3,7 +3,7 @@
 The **Dashboard** hosts the principal view: ```Studies``` (1.).
 
 <p align="center">
-  <img width="90%" src="assets/quickguide/dashboard.png">
+  <img width="90%" src="/assets/quickguide/dashboard.png">
 </p>
 
 Under ```Studies```, existing Plans (own Plans, or plans that have been shared by other users (6.)) can be accessed (3.) and managed (4.), and new Plans can be [created](/docs/plan/create_new_plan.md).
@@ -25,7 +25,7 @@ on the **Dashboard**. Clicking this icon will bring you directly to the update m
 versions of each Service and where you can update them either individually or all together (4.).
 
 <p align="center">
-  <img width="90%" src="assets/quickguide/settings_service.png">
+  <img width="90%" src="/assets/quickguide/settings_service.png">
 </p>
 
 It is always possible to return to the _**Dashboard**_ by clicking the ```Dashboard``` button on the top left, which automatically saves the state of the currently opened plan.

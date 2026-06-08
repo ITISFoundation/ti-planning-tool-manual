@@ -1,13 +1,18 @@
-.PHONY: install show public help sync
+.PHONY: install dev build preview public help sync
 
-UID:=$(shell stat -c %u $(CURDIR))
 CURRENT_BRANCH:=$(shell git branch | grep \* | cut -d ' ' -f2)
 
-install: ## one time installation 
-	npm i docsify-cli -g
+install: ## install dependencies
+	npm install
 
-show: ## serves website locally in http://localhost:3000/
-	docsify serve .
+dev: ## serves website locally with hot-reload
+	npx vitepress dev
+
+build: ## builds static site
+	npx vitepress build
+
+preview: ## preview the built site locally
+	npx vitepress preview
 
 public: sync ## pushes to main repo and publishes website
 	git push

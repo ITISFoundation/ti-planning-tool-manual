@@ -454,7 +454,7 @@ Implement feedback
 
 Electrode Selector: Feedback & Cosmetics
 
-![image](/uploads/41ffe350688294c3ea43801ac95e2f95/image.png)
+<!-- image unavailable: /uploads/41ffe350688294c3ea43801ac95e2f95/image.png -->
 
 
 adding tests, using common data, and some refactoring too
@@ -636,7 +636,7 @@ Feature/renaming pairs
 
 - [x] Groups -> Pairs
 - [x] Colored shapes
-![image](/uploads/6d19d56310cdff81e884e47d27d9d718/image.png)
+<!-- image unavailable: /uploads/6d19d56310cdff81e884e47d27d9d718/image.png -->
 
 
 ## Fix X11 configuration (1.0.1)
@@ -650,7 +650,7 @@ Based on `jupyter-smash`
 
 Electrode Groups and Submit button to the left side
 
-![image](/uploads/09ed0d93c846f22e4368afb5321a0c37/image.png)
+<!-- image unavailable: /uploads/09ed0d93c846f22e4368afb5321a0c37/image.png -->
 
 
 address memory leak
@@ -694,7 +694,7 @@ Electrode selector review
 - [x] Add feedback to the submit button
 - [x] Tissue List coming from MIDA
 
-![image](/uploads/cb6a0f6a9d63b5d02ac603fcad9a8de3/image.png)
+<!-- image unavailable: /uploads/cb6a0f6a9d63b5d02ac603fcad9a8de3/image.png -->
 
 
 Update service to latest kernel
@@ -742,7 +742,7 @@ Electrodes II
 - [x] Place human's ears correctly
 - [x] Mouse
 
-![image](/uploads/3237a876acab60280be8b274d94b22df/image.png)
+<!-- image unavailable: /uploads/3237a876acab60280be8b274d94b22df/image.png -->
 
 
 Refactor optimizer kernel
@@ -823,7 +823,7 @@ Electrode selector. Feature requests
 - [x] Showing 10-20 system (less electrodes)
 - [x] Electrode group colored to make more clear what electrode goes in which group
 
-![image](/uploads/ff3d37cc3d01d58e1485ac8086542cd4/image.png)
+<!-- image unavailable: /uploads/ff3d37cc3d01d58e1485ac8086542cd4/image.png -->
 
 
 Feature/electrode selector
