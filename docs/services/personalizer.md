@@ -12,7 +12,7 @@ Once uploaded, the user can specify the geometry of the electrode, and if the he
 
 <br>
 <p align="center">
-  <img width="90%" src="assets/quickguide/personalizer.png">
+  <img width="90%" src="/assets/quickguide/personalizer.png">
 </p>
 
 The interface has the following elements:
@@ -46,7 +46,7 @@ Verify the electrode placement in the viewer. If electrodes are misplaced or hav
 
 <br>
 <p align="center">
-  <img width="90%" src="assets/quickguide/fiducial_placement_3.png">
+  <img width="90%" src="/assets/quickguide/fiducial_placement_3.png">
 </p>
 
 If an error occurs during electrode placement, possible causes and workarounds are:

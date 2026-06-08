@@ -31,7 +31,7 @@ To ensure the highest quality of the head models, please adhere to the following
 
 <br>
 <p align="center">
-  <img width="60%" src="assets/quickguide/TIP_v3_files-MRI.png">
+  <img width="60%" src="/assets/quickguide/TIP_v3_files-MRI.png">
 </p>
 
 ### DWI Data Quality Requirements
@@ -55,7 +55,7 @@ Providing DTI data is only necessary, if you would like to use anisotropic condu
 
 <br>
 <p align="center">
-  <img width="60%" src="assets/quickguide/TIP_v3_files-DTI.png">
+  <img width="60%" src="/assets/quickguide/TIP_v3_files-DTI.png">
 </p>
 
 ### Q: What to do if your DTI data contains PA / AP acquisitions?

@@ -34,14 +34,14 @@ Now that the anatomical 3D model is generated, it needs to be imported into the 
 
 <br>
 <p align="center">
-  <img width="70%" src="assets/quickguide/fiducial_locations.png">
+  <img width="70%" src="/assets/quickguide/fiducial_locations.png">
 </p>
 
  In the top ribbon of the GUI, selecting ```Sketch``` then ```Point``` allows for the creation of points directly on the model visible in the 3D viewer on the right.
 
 <br>
 <p align="center">
-  <img width="90%" src="assets/quickguide/fiducial_placement_1.png">
+  <img width="90%" src="/assets/quickguide/fiducial_placement_1.png">
 </p>
 
 The **Fiducials Placement** interface has the following elements:
@@ -56,7 +56,7 @@ Users are asked to create 4 points, representing positions Nz (nasion), Iz (inio
 
 <br>
 <p align="center">
-  <img width="90%" src="assets/quickguide/fiducial_placement_2.png">
+  <img width="90%" src="/assets/quickguide/fiducial_placement_2.png">
 </p>
 
  Once created, points need to be exported by selecting them and clicking ```Export Selected``` in the top ribbon to put them in the ```outputs/output_1``` directory. Please specify the file extension ```.sab``` in the file name.
@@ -73,5 +73,5 @@ Users are asked to create 4 points, representing positions Nz (nasion), Iz (inio
 Fiducial placement workflow:
 
 <p align="center">
-  <img width="90%"  src="assets/quickguide/fiducial_placement.gif">
+  <img width="90%"  src="/assets/quickguide/fiducial_placement.gif">
 </p>

@@ -3,7 +3,7 @@
 The Data of a service can be accessed via the **Study Details** menu screen in the ```Study Files``` tab.
 
 <p align="center">
-  <img width="90%"  src="assets/quickguide/data.png">
+  <img width="90%"  src="/assets/quickguide/data.png">
 </p>
 
 

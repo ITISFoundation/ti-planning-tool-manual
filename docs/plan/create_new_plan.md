@@ -3,7 +3,7 @@
 The setup of a new TI Plan can easily be initiated by clicking on the large ```New Plan``` icon on the ```Dashboard```.
 
 <p align="center">
-  <img width="90%" src="assets/quickguide/newplanv3.png">
+  <img width="90%" src="/assets/quickguide/newplanv3.png">
 </p>
 
 Via the pop-up, six different kinds of planning studies can be initialized, which correspond to the [three modes](/docs/background/modes.md): _classic TI_, _multi-channel TI_, and _phase-modulation TI, in both non-personalized and personalized form.
