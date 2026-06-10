@@ -22,3 +22,5 @@
 [9] [ViZOO - 3 week male mouse](https://itis.swiss/virtual-population/animal-models/animals/3-week-male-mouse/). Accessed: 2023-08-11.
 
 [10] David S. Tuch, Van J. Wedeen, Anders M. Dale, John S. George, and John W. Belliveau. Conductivity tensor mapping of the human brain using diffusion tensor MRI, DOI: 10.1073, Sept 25, 2001
+
+[11] Eckart Zitzler and Lothar Thiele. Multiobjective evolutionary algorithms: a comparative case study and the strength Pareto approach. IEEE Transactions on Evolutionary Computation, 3(4):257–271, 1999.

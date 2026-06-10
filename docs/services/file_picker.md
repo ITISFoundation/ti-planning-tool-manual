@@ -8,36 +8,35 @@ As the first cloud-based step for personalization, provide the data via the File
 
 As the initial step for personalization, the user is asked to provide, in the File Picker, the data to work with. There are two options for the standard workflow: building an isotropic model which only requires a T1-weighted MR image, or an anisotropic model which requires a DTI with bval & bvec files on top of the T1. If the anisotropic option is desired, all four files should be zipped together. Users following the [Offline Personalization](/docs/services/data_privacy.md) workflow upload the `results.zip` archive produced by the local `run_personalizer.bat` tool instead.
 
-<div style="width: 100%; display: flex; justify-content: center;">
-<table style="border-collapse: separate; border-spacing: 5px;">
-<tr>
-<td style="vertical-align: top; border: 1px solid white">
-
-- 📃 `subject_t1.nii.gz`
-
-</td>
-<td style="vertical-align: top; border: 1px solid white">
-
-- 📂 `input_data.zip/`
-  - 📃 `subject_t1.nii.gz`
-  - 📃 `subject_dti.nii.gz`
-  - 📃 `subject_dti.bvec`
-  - 📃 `subject_dti.bval`
-
-</td>
-<td style="vertical-align: top; border: 1px solid white">
-
-- 📂 `input_data.zip/`
-  - 📃 `subject.smash`
-  - 📃 `subject_t1.nii.gz`
-  - 📃 `subject.sab`
-  - 📃 `subject.sat`
-  - 📃 `targets_list.yaml`
-  - 📃 `tensor_s4l.nii.gz`
-
-</td>
-</tr>
-</table>
+<div class="file-option-grid">
+  <div class="file-option-card">
+    <p class="card-title">Isotropic</p>
+    <ul>
+      <li>📃 <code>subject_t1.nii.gz</code></li>
+    </ul>
+  </div>
+  <div class="file-option-card">
+    <p class="card-title">Anisotropic</p>
+    <ul>
+      <li>📂 <code>input_data.zip/</code></li>
+      <li class="indent">📃 <code>subject_t1.nii.gz</code></li>
+      <li class="indent">📃 <code>subject_dti.nii.gz</code></li>
+      <li class="indent">📃 <code>subject_dti.bvec</code></li>
+      <li class="indent">📃 <code>subject_dti.bval</code></li>
+    </ul>
+  </div>
+  <div class="file-option-card">
+    <p class="card-title">Offline Personalization</p>
+    <ul>
+      <li>📂 <code>input_data.zip/</code></li>
+      <li class="indent">📃 <code>subject.smash</code></li>
+      <li class="indent">📃 <code>subject_t1.nii.gz</code></li>
+      <li class="indent">📃 <code>subject.sab</code></li>
+      <li class="indent">📃 <code>subject.sat</code></li>
+      <li class="indent">📃 <code>targets_list.yaml</code></li>
+      <li class="indent">📃 <code>tensor_s4l.nii.gz</code></li>
+    </ul>
+  </div>
 </div>
 
 <br>

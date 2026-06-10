@@ -3,7 +3,7 @@
 **_Summary_**
 
 [Classic TI](/docs/background/modes.md):
-_Based on the selected model and target, the surrogate-modeling-based optimizer (SuMo) systematically explores the solution space to identify optimal configurations considering three key metrics:_
+_Based on the selected model and target, the [surrogate-modeling-based optimizer (SuMo)](/docs/background/sumo_optimizer.md) systematically explores the solution space to identify optimal configurations considering three key metrics:_
 
 * **strength**: the median of the TI modulation envelope magnitude (T<sub>max</sub>) within the target
 * **selectivity**: the signal-to-noise ratio of TI exposure — squared ratio of the RMS of T<sub>max</sub> in the target to the RMS of T<sub>max</sub> in the off-target brain: (RMS<sub>target</sub> / RMS<sub>off-target</sub>)²
@@ -11,7 +11,7 @@ _Based on the selected model and target, the surrogate-modeling-based optimizer 
 
 _These metrics are also central to the visualization and included in the downloadable report._
 
-_By combining Gaussian process modeling with a multi-objective genetic algorithm, the SuMo optimizer provides a diverse set of Pareto-optimal solutions. This allows users to easily navigate trade-offs like selectivity versus intensity, making informed choices with regard to conflicting TI exposure criteria. As of TIP V5.0, the optimizer completes in **5–10 minutes** — approximately 6× faster than in previous versions._
+_By combining Gaussian process modeling with a multi-objective genetic algorithm, the [SuMo optimizer](/docs/background/sumo_optimizer.md) provides a diverse set of Pareto-optimal solutions. This allows users to easily navigate trade-offs like selectivity versus intensity, making informed choices with regard to conflicting TI exposure criteria. As of TIP V5.2, The optimizer launches multiple independent searches, seeds, in parallel, each of which explores the electrode search space from a different starting point. The individual Pareto fronts are merged by means of non-dominated sorting into a single combined front that provides a denser Pareto front with wider coverage, richer configurations, and overall superior solutions, as quantified by the [hypervolume indicator](/docs/background/hv_score.md). Furthermore, instead of always running to a maximum iteration count, each seed now monitors for convergence after every iteration and stops automatically once meaningful improvement ceases. Users can choose between low, medium, and high precision modes, whereby low provides a quick first look after about **5 minutes** and high delivers the most exhaustive Pareto-front coverage, requiring 30 minutes to one hour._
 
 _Starting from a thus optimized, or from a user-defined TIS configuration, the resulting exposure can be studied and if desired, the configuration (electrode locations, current magnitudes) can be interactively refined. For that purpose, TI and high-frequency exposure distributions are dynamically visualized on top of medical image data, and key exposure metrics as well as plots are shown._
 
@@ -45,7 +45,12 @@ TIP Lite is designed for users new to TI or with basic planning needs. Upgrade t
 
 The **Settings** section at the top allows you to configure essential optimization parameters:
 
-* **_Select Species_**
+<br>
+<p align="center">
+  <img width="90%"  src="/assets/postpro/settings_section.png">
+</p>
+
+1. **_Select Species_**
 
    Choose the anatomical model type (human or mouse) from the drop-down menu. Each species comes with pre-configured standard electrode locations appropriate for that anatomy. Additional species options are planned for future releases.
 
@@ -54,13 +59,25 @@ The **Settings** section at the top allows you to configure essential optimizati
   <img width="90%" src="/assets/electrode_selector/species.png">
 </p>
 
-* **_Threshold definition_**
+2. **_Threshold definition_**
 
   Define how stimulation thresholds should be calculated by selecting either the entire brain or only the target region as your reference, and specify the appropriate isopercentile level for precise threshold determination.
 
-* **_Target tissue_**
+3. **_Target tissue_**
 
-   Specify the exact brain structure you wish to target with TI stimulation. This selection serves as the foundation for calculating and optimizing all exposure quality metrics.
+  Specify the exact brain structure you wish to target with TI stimulation. This selection serves as the foundation for calculating and optimizing all exposure quality metrics.
+
+4. **_Convergence_**
+
+  Select from low, medium or high convergence requirement. The **low** setting is meant for fast exploration of different setting parameter choices. This comes at the cost of [HV score](/docs/background/hv_score.md). The **medium** setting gives a balance between optimization speed and performance, suitable for situations where time is limited but the quality of the pareto front should also be higher. The **high** constraint yields the best [HV score](/docs/background/hv_score.md). This should be used when the other parameters are fixed and a rich pareto front is needed to support your electrode setup decision.
+
+  Max Iterations can be increased in case convergance isn't reached even after the default 100 iterations. For most cases 100 iterations is sufficient. 
+
+  The last box in this section indicates the OpenBLAS kernel currently in use. This is not meant for interaction. It only shows which kernel is available on the infrastructure the service is running on. On modern AVX-512 CPUs this defaults to the SKYLAKEX kernel. Since the kernel affects the optimization results, we added the following safety precatution: If the service detects that the kernel changed from the last time the service was used, this box will turn red. If this happens to you, please get in touch with us.
+
+5. **_Seed Convergence_**
+
+  This plot show you the convergence behaviour of all the different seeds while the optimization is running. This allows you to see the progress and estimate approximately how long the process might still run.
 
 After running the optimization with the SuMo engine and loading the analysis, you'll see a comprehensive view of the results. The interactive table displays all Pareto-optimal electrode configurations ranked by their performance across three key [metrics](/docs/background/electromagnetic_modeling/quantities_of_interest.md): Strength, Selectivity, and Collateral. Below this table, detailed visualization panels let you examine field distributions in both 2D and 3D views, along with comprehensive waveform analysis.
 
