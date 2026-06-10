@@ -1,3 +1,12 @@
+## TIP V5.2 (5.2.0)
+
+- [x] Improved SuMo optimizer Pareto front quality via three complementary enhancements to Step 6 (Post-Processing)
+- [x] Replaced penalty-based handling of invalid electrode configurations with native Dakota nonlinear inequality constraints, producing a smoother surrogate fit and eliminating invalid solutions from the Pareto front
+- [x] Added parallel multi-seed execution (default: 6 seeds) with Pareto front merging via non-dominated sorting, yielding a denser and more representative approximation of the true Pareto front without increasing wall-clock time
+- [x] Introduced adaptive convergence stopping based on the hypervolume indicator (HV): the optimizer halts each seed once HV improvement falls below a threshold, avoiding wasted iterations
+- [x] Added user-selectable convergence precision (Low / Medium / High), each backed by optimized evolutionary algorithm parameters, allowing users to trade off speed against Pareto front completeness
+
+
 ## TIP V5.0 (5.0.0)
 
 - [x] Introduced offline personalization workflow (`run_personalizer.bat`) for local MRI anonymization and segmentation using Sim4Life 9.4+

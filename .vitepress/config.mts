@@ -68,6 +68,7 @@ export default defineConfig({
           { text: 'Quantities-of-Interest', link: '/docs/background/electromagnetic_modeling/quantities_of_interest' },
           { text: 'Multi-Goal Optimization', link: '/docs/background/multi_goal_optimization' },
           { text: 'SuMo Optimizer', link: '/docs/background/sumo_optimizer' },
+          { text: 'Hypervolume Indicator', link: '/docs/background/hv_score' },
         ]
       },
       {

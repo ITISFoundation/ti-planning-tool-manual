@@ -156,6 +156,12 @@
   background: var(--vp-c-bg-soft);
 }
 
+/* ── Dark/light mode image switching ───────────────── */
+.dark-only { display: none; }
+.dark .dark-only { display: inline; }
+.light-only { display: inline; }
+.dark .light-only { display: none; }
+
 /* ── Headings: slight letter spacing ────────────────── */
 .vp-doc h1,
 .vp-doc h2,
@@ -312,4 +318,58 @@ a.tip-workflow__step.twf-indigo:hover {
   flex-shrink: 0;
   user-select: none;
   line-height: 1;
+}
+
+/* ── File option cards ──────────────────────────────── */
+.file-option-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 12px;
+  margin: 1.5rem 0;
+}
+
+.file-option-card {
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 10px;
+  padding: 14px 18px;
+}
+
+.file-option-card .card-title {
+  font-weight: 600;
+  font-size: 0.78rem;
+  color: var(--vp-c-brand-1);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+.file-option-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.9;
+}
+
+.file-option-card li {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+
+.file-option-card li.indent {
+  padding-left: 18px;
+}
+
+.file-option-card li code {
+  font-size: 0.78rem;
+  background: var(--vp-c-bg-mute);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 4px;
+  padding: 1px 5px;
+  color: var(--vp-c-text-1);
+  font-family: var(--vp-font-family-mono);
 }

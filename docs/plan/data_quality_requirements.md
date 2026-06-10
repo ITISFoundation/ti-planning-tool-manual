@@ -36,7 +36,7 @@ To ensure the highest quality of the head models, please adhere to the following
 
 ### DWI Data Quality Requirements
 
-Providing DTI data is only necessary, if you would like to use anisotropic conductivity in the white matter of the brain as described in [**Dielectric Tissue and Material Properties**](/docs/material_methods/dielectric_properties.md). Please follow these points to make sure that the model generation and simulations function correctly.
+Providing DTI data is only necessary, if you would like to use anisotropic conductivity in the white matter of the brain as described in [**Dielectric Tissue and Material Properties**](/docs/material_methods/dielectric_properties.md). **Make sure the file name of the nifti DOES NOT contains "t1" anywhere. Otherwise it will be confused with the T1 image.** Please follow these points to make sure that the model generation and simulations function correctly.
 
 1. **File Format**
 
