@@ -90,20 +90,20 @@
 }
 
 /* ── Nav bar ────────────────────────────────────────── */
-.VPNav {
+/* backdrop-filter on .VPNavBar creates a compositing layer; give .VPNavScreen
+   z-index:1 so it paints above the composited bar in the same stacking context */
+.VPNavBar {
   backdrop-filter: blur(12px) saturate(150%);
   background: var(--vp-c-bg) !important;
+}
+
+.VPNavScreen {
+  z-index: 1;
 }
 
 /* ── Sidebar: hide scrollbar bleed behind navbar ─────── */
 .VPSidebar {
   z-index: 20;
-}
-
-.VPNavBar {
-  position: relative;
-  z-index: 30;
-  background: var(--vp-c-bg) !important;
 }
 
 /* ── Scrollbar styling ──────────────────────────────── */
