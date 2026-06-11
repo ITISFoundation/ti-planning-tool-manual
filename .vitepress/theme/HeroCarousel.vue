@@ -5,7 +5,7 @@ import { withBase } from 'vitepress'
 const images = [
   { src: withBase('/assets/logo.svg'), alt: 'TI Planning Tool', isLogo: true },
   { src: withBase('/assets/carousel/privacy.png'), alt: 'TI Planning Tool Dashboard', isLogo: false },
-  { src: withBase('/assets/carousel/tip_v5_release.jpg'), alt: 'Personalized Head Models', isLogo: false },
+  { src: withBase('/assets/carousel/anonymization.png'), alt: 'Personalized Head Models', isLogo: false },
   { src: withBase('/assets/carousel/tip_ui_1.png'), alt: 'Electromagnetic Simulation', isLogo: false },
   { src: withBase('/assets/carousel/tip_ui_2.png'), alt: 'Electrode Selector', isLogo: false },
   { src: withBase('/assets/carousel/e_fields.png'), alt: 'Post-Processing Analysis', isLogo: false },
