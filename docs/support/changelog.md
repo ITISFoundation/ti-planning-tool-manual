@@ -14,98 +14,96 @@
 
 ## TIP V5.0 <Badge type="info" text="5.0.0" />
 
-::: info Personalization
+::: details Personalization
 - Introduced offline personalization workflow (`run_personalizer.bat`) for local MRI anonymization and segmentation using Sim4Life 9.4+
 - Raw MRI never leaves the user's machine; only the anonymized, segmented head model is uploaded to TIP
 :::
 
-::: info Exposure Analysis
+::: details Exposure Analysis
 - Upgraded Exposure Analysis from a read-only analysis viewer to a full Sim4Life workbench (Modeling + Simulation + Analysis)
 - Added ready-to-use Sim4Life template projects for all precomputed models (MIDA isotropic/anisotropic, IXI Female, IXI Male, Mouse)
 :::
 
-::: info Performance
+::: details Performance
 - Reduced SuMo optimizer runtime from ~1 hour to 5–10 minutes via lead-field array caching and Numba-accelerated field superposition
 :::
 
 
 ## TIP V4.0 <Badge type="info" text="4.0.0" />
 
-::: info Personalization
+::: details Personalization
 - Implemented automated personalization with neural network-based fiducial point detection
 :::
 
-::: info Optimizer
+::: details Optimizer
 - Introduced SuMo optimizer replacing the previous sweeper
 - Streamlined user workflow by eliminating electrode selector and sweep steps
 :::
 
-::: info Performance & Visualization
+::: details Performance & Visualization
 - Enhanced parallel processing for up to 50% faster optimization runs
 - Improved visualization for Pareto-optimal solutions
 :::
 
+## TIP V3.0 <Badge type="info" text="3.0.0" />
 
-::: details TIP V3.0
-
-**Personalization & Target Selection**
+::: details **Personalization & Target Selection**
 - Introduced personalized TI stimulation planning: users can upload subject-specific T1-weighted MRI (and optionally DTI) data for personalized exposure assessment and optimization
 - Added ICBM brain atlas registration for an expanded number of target regions available for stimulation optimization
-
-**Infrastructure**
-- Migrated platform to Amazon Web Services (AWS) for increased reliability, stability, and scalability
-- Parallelized low-frequency EM simulations across individual electrodes using AWS resources, accelerating the overall workflow
-
-**New Features**
-- Optimized for the TIBS-R multichannel device
-- Launched TIP.lite: a reduced-functionality tier giving broader audiences access to Classic TI mode and selected precomputed head models
-
 :::
 
+::: details **Infrastructure**
+- Migrated platform to Amazon Web Services (AWS) for increased reliability, stability, and scalability
+- Parallelized low-frequency EM simulations across individual electrodes using AWS resources, accelerating the overall workflow
+:::
 
-::: details TIP V2.2
+::: details **New Features**
+- Optimized for the TIBS-R multichannel device
+- Launched TIP.lite: a reduced-functionality tier giving broader audiences access to Classic TI mode and selected precomputed head models
+:::
 
-**Standards & Imaging**
+## TIP V2.2 <Badge type="info" text="2.2.0" />
+
+::: details **Standards & Imaging**
 - Adopted the RAS (Right, Anterior, Superior) coordinate convention for image and exposure viewing, aligning with established scientific standards
 - Integrated co-registered brain atlases to expand the number of supported target regions for stimulation planning
 - Registered MRI data to field distributions for improved visualization and methodological rigor
-
-**Infrastructure**
-- Expanded internal cluster capacity to increase availability and support multiple simultaneous users
-
 :::
 
+::: details **Infrastructure**
+- Expanded internal cluster capacity to increase availability and support multiple simultaneous users
+:::
 
-::: details TIP V2.0
+## TIP V2.0 <Badge type="info" text="2.0.0" />
 
-**Head Models**
+::: details **Head Models**
 - Expanded head model library from one to four highly detailed computational anatomical models, enabling investigation of inter-subject variability
 - Added a mouse head model to support optimization of TI protocols for rodent research
-
-**New Stimulation Modes**
-- Introduced Multichannel TI mode with up to eight independent channels, improving stimulation focality, selectivity, and multifocal targeting while distributing current over larger scalp areas
-- Introduced Phase Modulation TI mode, enabling advanced pulse shapes, burst stimulation, and complex modulation schemes for activity-synchronized and state-dependent stimulation
-
-**UX & Performance**
-- Added visual guidance alongside the quantitative results table to help users interactively balance conflicting optimization goals (e.g., target exposure vs. collateral exposure)
-- Leveraged cloud computing and parallelization to enable interactive exploration of large electrode configuration spaces
-
 :::
 
+::: details **New Stimulation Modes**
+- Introduced Multichannel TI mode with up to eight independent channels, improving stimulation focality, selectivity, and multifocal targeting while distributing current over larger scalp areas
+- Introduced Phase Modulation TI mode, enabling advanced pulse shapes, burst stimulation, and complex modulation schemes for activity-synchronized and state-dependent stimulation
+:::
 
-::: details TIP V1.0
+::: details **UX & Performance**
+- Added visual guidance alongside the quantitative results table to help users interactively balance conflicting optimization goals (e.g., target exposure vs. collateral exposure)
+- Leveraged cloud computing and parallelization to enable interactive exploration of large electrode configuration spaces
+:::
 
-**Initial Release**
+## TIP V1.0 <Badge type="info" text="1.0.0" />
+
+::: details **Initial Release**
 - First release of TIP: an online-accessible, cloud-based TI stimulation planning tool built on o2S2PARC technologies
 - Optimization based on 71 precomputed 3D electric field distributions for the standard 10-10 International EEG Electrode System, computed using the MIDA head model with the Sim4Life low-frequency electro-quasistatic solver
 - Pareto-based multi-goal optimization using field superposition for efficient search over electrode pair permutations
 - Computed three key performance metrics per electrode configuration: target exposure strength, stimulation selectivity, and collateral exposure
+:::
 
-**Analysis & Reporting**
+::: details **Analysis & Reporting**
 - Visually guided interactive refinement of the stimulation strategy with high-frequency and TI modulation field distributions overlaid on anatomical image data
 - 3D isosurface visualization of the TI exposure distribution within head anatomy to assess collateral stimulation
 - Automatic report generation covering electrode placement, current intensities, performance metrics, field distributions, and cumulative dose histograms
 - Field export in multiple formats (e.g., MATLAB) and integration with Sim4Life web for in-depth post-processing
-
 :::
 
