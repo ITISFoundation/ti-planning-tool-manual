@@ -321,6 +321,10 @@ a.tip-workflow__step.twf-indigo:hover {
 }
 
 /* ── File option cards ──────────────────────────────── */
+.vp-doc mjx-container[display="true"] {
+  padding-block: 0.5em;
+}
+
 .file-option-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
@@ -372,4 +376,7 @@ a.tip-workflow__step.twf-indigo:hover {
   padding: 1px 5px;
   color: var(--vp-c-text-1);
   font-family: var(--vp-font-family-mono);
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
 }

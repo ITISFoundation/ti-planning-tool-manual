@@ -26,11 +26,23 @@ The interface has the following elements:
    By default, the model prediction already contains a couple of targets. These are listed in the logger (4) in the image above. If these are sufficient, you can leave this setting at ```None```.
    If not, a detailed atlas can be registered to the brain. Select the according option. Since this is a multi-select list, please make sure that ```None``` is not selected together with the atlas to register, because the registration will always be skipped if ```None``` is selected.
 
-3. **Progress Overview**
+3. **DTI Processing Options**
+
+   Specify how the DTI data should be processed:
+   - Turn the registration of the DTI to MRI T1 on or off. This option is only appropriate, when the two acquisitions differ by minor translations with no rotations involved. If a rotation is required, the b-vectors will no longer correspond to the rotated DTI volume.
+   - Turn Denoising of the DTI on or off
+   - Select, whether to cap the b-values, and if yes, at what level. Finally, the tool allows you to select the model used to extract the diffusion tensor (`auto`, `dti`, `dki`). The `dti` and `dki` model are explained in the table below. `auto` will select `dki` if the number of non-zero b-value shells is bigger or equal two, otherwise it will select the `dti` model.
+
+   | Label | Tooltip | Reference |
+   | -------- | -------- | ----------- |
+   | DTI | Fits a second-order diffusion tensor assuming Gaussian diffusion. Best suited to low-to-moderate diffusion weighting; estimates may become biased when non-Gaussian diffusion is significant at higher b-values. | Basser PJ, Mattiello J, LeBihan D. MR diffusion tensor spectroscopy and imaging. Biophys J. 1994;66:259–267. DOI: 10.1016/S0006-3495(94)80775-1. ([PubMed](https://pubmed.ncbi.nlm.nih.gov/8130344/)) |
+   |DKI | Extends DTI to account for non-Gaussian diffusion by jointly estimating the diffusion tensor and a kurtosis tensor. Typically requires multi-shell data and higher diffusion weighting. | Jensen JH, Helpern JA, Ramani A, Lu H, Kaczynski K. Diffusional kurtosis imaging: The quantification of non-Gaussian water diffusion by means of magnetic resonance imaging. Magn Reson Med. 2005;53:1432–1440. DOI: 10.1002/mrm.20508. ([Wiley Online Library](https://onlinelibrary.wiley.com/doi/10.1002/mrm.20508)) |
+
+4. **Progress Overview**
 
    Shows the progress of each individual step in the model generation. ```10-10``` will only be done if the [Model Inspector](/docs/services/fiducials_placement.md) step has already been completed.
 
-4. **Logging**
+5. **Logging**
 
    Provides some information about this step at start-up and will display information and eventual errors during runtime.
 
