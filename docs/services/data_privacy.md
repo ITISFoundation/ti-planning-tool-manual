@@ -1,3 +1,7 @@
+<script setup>
+import { withBase } from 'vitepress'
+</script>
+
 ## Offline Personalization
 
 **_Summary_**:
@@ -57,6 +61,10 @@ Key arguments:
 | `--sim4life PATH`       | Sim4Life installation directory (if non-default)           |
 | `--atlas NAME`          | Brain atlas to register (e.g. `ICBM_152`)                 |
 | `--dti`                 | Process DTI/DWI data for anisotropic conductivity          |
+| `--register-dti`                 | Register DTI to MRI T1 before conductivity extraction (safe only for minor translations with no rotation — if rotation is involved, register the T1 to the DTI yourself)          |
+| `--denoise-dti`                 | Denoise DTI data before conductivity extraction          |
+| `--max-bval INT`                 | Exclude DTI shells above this b-value threshold (e.g. 1000)          |
+| `--dti-model MODEL`                 | Diffusion model for conductivity extraction: `auto`, `dti`, or `dki`          |
 
 You must provide either `--electrode-radius` or `--electrode-type`.
 
@@ -75,8 +83,12 @@ The pipeline produces the following files in the project's `outputs/` directory:
 | `outputs/output_1/` | SMASH file (`.smash`) — head model  |
 | `outputs/output_2/` | SAB file (`.sab`) — head model      |
 | `outputs/output_3/` | T1 image (`.nii.gz`) — processed T1 |
+| `outputs/output_4/` | Diffusion Tensor (`.nii.gz`) — DTI in S4L convention |
 | `outputs/output_5/` | JSON config — target coordinates    |
 | `outputs/output_6/` | SAT file (`.sat`) — head model      |
+| `outputs/output_7/` | T1 image resampled (`.nii.gz`) — processed T1 |
+| `outputs/output_8/` | Label field (`.nii.gz`) — tissue labels    |
+| `outputs/output_9/` | Tissue list (`.txt`) — tissue names      |
 
 All output files are bundled into a zip archive (`results.zip`) along with a `personalizer_args.json` file that records the exact parameters used.
 
@@ -101,6 +113,7 @@ Running the cloud simulations for a personalized head model costs approximately 
 
 ### Requirements
 
-- A local installation of [Sim4Life](https://sim4life.swiss/) **version 9.4 or later** on Windows.
+- A local installation of [Sim4Life](https://sim4life.swiss/) **version 9.4** on Windows.
+- The offline personalizer batch file: <a :href="withBase('/assets/offline_personalizer_batch/run_personalizer.bat')" download="run_personalizer.bat">Download</a>.
 - A T1-weighted MRI scan in `.nii.gz` format meeting the [data quality requirements](/docs/plan/data_quality_requirements.md).
 - A TIP account with sufficient credits for cloud simulation (see [Billing Center](/docs/platform_introduction/billing_center.md)).
