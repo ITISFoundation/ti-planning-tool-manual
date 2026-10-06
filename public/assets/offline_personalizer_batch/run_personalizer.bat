@@ -295,8 +295,11 @@ if errorlevel 1 (
 )
 
 REM --- Install personalizer package ---
+REM  --no-warn-script-location suppresses expected "script is not on PATH"
+REM  warnings: Sim4Life's Python\Scripts folder is never added to PATH, and
+REM  nothing in this pipeline relies on it being there.
 echo Installing personalizer package...
-"%PYTHON_EXE%" -m pip install "%WHEEL_URL%" --no-cache-dir --force-reinstall --quiet
+"%PYTHON_EXE%" -m pip install "%WHEEL_URL%" --no-cache-dir --force-reinstall --no-warn-script-location --quiet
 if errorlevel 1 (
     echo.
     echo ERROR: Failed to install personalizer package.
@@ -313,7 +316,7 @@ echo Personalizer installed successfully.
 REM --- Run the pipeline ---
 echo.
 echo Running personalizer pipeline...
-echo   Sim4Life:    %SIM4LIFE_DIR% ^(%S4L_VERSION%^)
+echo   Sim4Life:    %SIM4LIFE_DIR%
 echo   Python:      %PYTHON_EXE%
 echo   Project:     %PROJECT_ROOT%
 echo.
