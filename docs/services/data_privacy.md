@@ -92,7 +92,7 @@ The pipeline produces the following files in the project's `outputs/` directory:
 
 All output files are bundled into a zip archive (`results.zip`) along with a `personalizer_args.json` file that records the exact parameters used.
 
-> **Tip**: To inspect the anonymized head model locally, open Sim4Life, go to **File > Import...**, and select the `.smash` or `.sab` file from the outputs.
+> **Tip**: To inspect the anonymized head model locally, open Sim4Life, go to **File > Open...**, and select the `.smash` file from the outputs.
 
 #### 2. Cloud Simulation (AWS)
 
