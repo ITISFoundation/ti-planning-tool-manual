@@ -12,7 +12,7 @@ REM --- Default Sim4Life installation path ---
 SET "SIM4LIFE_DIR=C:\Program Files\Sim4Life_9.4"
 
 REM --- Personalizer wheel URL ---
-SET "WHEEL_URL=https://itis.swiss/assets/wheels/personalizer-2.1.2.tar.gz"
+SET "WHEEL_URL=https://itis.swiss/assets/wheels/personalizer-2.1.3.tar.gz"
 
 REM --- Initialize variables ---
 SET "SUBJECT_ID="
