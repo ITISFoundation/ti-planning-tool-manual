@@ -31,7 +31,7 @@ The files pre-loaded in Exposure Analysis depend on the pipeline path:
 | ----- | -------- |
 | `input_1/` | TI and HF field `.cache` files exported from TI Analysis via `Export to S4L` |
 | `input_2/` | Subject `.smash` model file (personalized: from the Personalizer; precomputed: from the template library) |
-| `input_3/` | DTI tensor data, if available (personalized anisotropic models only) |
+| `input_3/` | DTI tensor data, if available (anisotropic models only) |
 
 The subject model forwarded to Exposure Analysis is determined by the previous step: once a subject is selected in the TI Analysis dropdown and **Load** is clicked, the corresponding `.smash` file (and DTI tensors, where available) are automatically forwarded.
 

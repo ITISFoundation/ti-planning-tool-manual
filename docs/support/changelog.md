@@ -1,13 +1,28 @@
-## TIP V5.2 <Badge type="tip" text="Latest" />
+## TIP V5.4 <Badge type="tip" text="Latest" />
 
-::: info SuMo Optimizer — Pareto Front Quality
+::: info Extended DTI Processing
+- Optionally denoise DTI data, register it to the T1 image, cap b-values, or use a diffusion kurtosis model for tensor extraction.
+:::
+
+::: info Custom Regions of Interest
+- Add user-provided label-field NIfTI and tissue-list files to the personalizer and use the extracted surfaces in the optimization as targets.
+:::
+
+::: info More Robust Current Normalization
+- Integration surfaces are generated dynamically in the simulator with a region growing algorithm, removing the need for fixed helper cylinders around electrodes which used to trigger clash detection errors.
+:::
+
+
+## TIP V5.2 <Badge type="info" text="5.2.0" />
+
+::: details SuMo Optimizer — Pareto Front Quality
 - Improved SuMo optimizer Pareto front quality via three complementary enhancements to Step 6 (Post-Processing)
 - Replaced penalty-based handling of invalid electrode configurations with native Dakota nonlinear inequality constraints, producing a smoother surrogate fit and eliminating invalid solutions from the Pareto front
 - Added parallel multi-seed execution (default: 6 seeds) with Pareto front merging via non-dominated sorting, yielding a denser and more representative approximation of the true Pareto front without increasing wall-clock time
 - Introduced adaptive convergence stopping based on the hypervolume indicator (HV): the optimizer halts each seed once HV improvement falls below a threshold, avoiding wasted iterations
 :::
 
-::: info New User Controls
+::: details New User Controls
 - Added user-selectable convergence precision (Low / Medium / High), each backed by optimized evolutionary algorithm parameters, allowing users to trade off speed against Pareto front completeness
 :::
 

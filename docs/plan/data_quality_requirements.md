@@ -23,7 +23,7 @@ To ensure the highest quality of the head models, please adhere to the following
 4. **Field-of-View Requirements**
 
    - The field-of-view should cover the complete width of the head.
-   - Vertically, the scan should extend from the top of the head to at least the mid-neck.
+   - Vertically, the scan should extend from the top of the head to ideally the mid-neck, but at least below the lowest point of the brain.
 
 5. **Avoid High Deformations**
 
@@ -69,3 +69,43 @@ DIPY by itself does not offer a method to correct such distortions, so you will 
 There are a few packages out there that perform dMRI data preprocessing steps in a principled way, calling the required FSL methods under the hood and transparently to the user. You can find a comparison of such packages [here](https://qsiprep.readthedocs.io/en/latest/comparisons.html).
 
 *Source*: [dipy discussions](https://github.com/dipy/dipy/discussions/3289)
+
+### Custom Target Masks Requirements
+
+As of TIP v5.4 it is possible to add custom regions of interest (ROI), which can be used as optimization targets. **Make sure the file name of the nifti DOES NOT contains "t1" anywhere. Otherwise it will be confused with the T1 image.**
+
+1. **File Format**
+
+   - Ensure your Custom Targets data pair includes:
+     - A label field in NIfTI format (`.nii.gz`)
+     - A tissue list (`.txt`)
+   - Ensure that the label field integer value corresponds to the correct tissue list row index
+
+2. **File Naming**
+
+   - The NIfTI file and tissue list must have the same name, excluding their extensions.
+   - The name must begin with `Targets_`
+   - Use underscores instead of white spaces
+
+3. **Co-Registration**
+
+   - Ensure that the masks are registered to the T1 scan.
+
+If you would like to add targets that overlap (eg. masks of the entire ROI and its subregions), several labelfield-tissue list file pairs may be added. Like this the overlapping masks are separated into different groups and can be used in the optimization process independantly. 
+
+**Tissue List Convention**
+
+The first row of the text file indicates the tissue list version, which can be set to `V7`. The second row indicates the number of tissues in the list as `N<x>` where `<x>` is the number of tissues. The following rows contain the different tissues. Each row is a combination of an RGBA color code followed by the tissue name. **Please use underscores instead of white spaces in the tissue name.** Here is an example of a tissue list with one entry:
+
+```text
+V7
+N1
+C1.000000 0.000000 1.000000 1.000000 anterior_thalamus_combined
+```
+
+Background is automatically set to integer value `0` and does not need to be included in the list. `anterior_thalamus_combined` has integer value `1` in the label field Nifti, which is shown below:
+
+<br>
+<p align="center">
+  <img width="60%" src="/assets/quickguide/TIP_v5_4_files-Custom_Mask.png">
+</p>

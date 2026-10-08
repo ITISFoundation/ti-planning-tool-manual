@@ -6,13 +6,16 @@ As the first cloud-based step for personalization, provide the data via the File
 
 ----
 
-As the initial step for personalization, the user is asked to provide, in the File Picker, the data to work with. There are two options for the standard workflow: building an isotropic model which only requires a T1-weighted MR image, or an anisotropic model which requires a DTI with bval & bvec files on top of the T1. If the anisotropic option is desired, all four files should be zipped together. Users following the [Offline Personalization](/docs/services/data_privacy.md) workflow upload the `results.zip` archive produced by the local `run_personalizer.bat` tool instead.
+As the initial step for personalization, the user is asked to provide, in the File Picker, the data to work with. There are two options for the standard workflow: building an isotropic model, which requires a T1-weighted MR image, or an anisotropic model, which requires a DTI with bval and bvec files in addition to the T1. For the anisotropic option, zip these four files together. For an isotropic model, upload the T1 image by itself when no custom targets are needed. If you include custom targets, zip the T1 image together with the matching NIfTI label field and tissue list files. Custom target files can also be included in the anisotropic input ZIP. Users following the [Offline Personalization](/docs/services/data_privacy.md) workflow upload the `results.zip` archive produced by the local `run_personalizer.bat` tool instead.
 
 <div class="file-option-grid">
   <div class="file-option-card">
     <p class="card-title">Isotropic</p>
     <ul>
       <li>📃 <code>subject_t1.nii.gz</code></li>
+      <li><strong>Optional custom target (include in ZIP with T1):</strong></li>
+      <li class="indent">📃 <code>Targets_Custom.nii.gz</code></li>
+      <li class="indent">📃 <code>Targets_Custom.txt</code></li>
     </ul>
   </div>
   <div class="file-option-card">
@@ -23,18 +26,24 @@ As the initial step for personalization, the user is asked to provide, in the Fi
       <li class="indent">📃 <code>subject_dti.nii.gz</code></li>
       <li class="indent">📃 <code>subject_dti.bvec</code></li>
       <li class="indent">📃 <code>subject_dti.bval</code></li>
+      <li class="indent"><strong>Optional custom target:</strong></li>
+      <li class="indent">📃 <code>Targets_Custom.nii.gz</code></li>
+      <li class="indent">📃 <code>Targets_Custom.txt</code></li>
     </ul>
   </div>
   <div class="file-option-card">
     <p class="card-title">Offline Personalization</p>
     <ul>
-      <li>📂 <code>input_data.zip/</code></li>
+      <li>📂 <code>results.zip/</code></li>
       <li class="indent">📃 <code>subject.smash</code></li>
       <li class="indent">📃 <code>subject_t1.nii.gz</code></li>
+      <li class="indent">📃 <code>subject_t1_resampled.nii.gz</code></li>
       <li class="indent">📃 <code>subject.sab</code></li>
       <li class="indent">📃 <code>subject.sat</code></li>
       <li class="indent">📃 <code>targets_list.yaml</code></li>
       <li class="indent">📃 <code>tensor_s4l.nii.gz</code></li>
+      <li class="indent">📃 <code>labelfield_subject.nii.gz</code></li>
+      <li class="indent">📃 <code>labelfield_subject.txt</code></li>
     </ul>
   </div>
 </div>
