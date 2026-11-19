@@ -89,14 +89,11 @@ exit /b 1
 
 REM --- Resolve bundled Python and the matching Personalizer release ---
 :validate_installation
-echo Validating Sim4Life installation at "%SIM4LIFE_DIR%"...
 set "PYTHON_EXE=%SIM4LIFE_DIR%\Python\python.exe"
-echo Checking for Python executable at "%PYTHON_EXE%"...
 if not exist "%PYTHON_EXE%" (
     echo ERROR: Sim4Life Python not found at "%PYTHON_EXE%". 1>&2
     exit /b 1
 )
-echo Checking for version.ini at "%VERSION_INI%"...
 set "VERSION_INI=%SIM4LIFE_DIR%\version.ini"
 if not exist "%VERSION_INI%" (
     echo ERROR: version.ini not found at "%VERSION_INI%". 1>&2
@@ -133,10 +130,7 @@ REM  Sim4Life discovery and release mapping
 REM ============================================================================
 
 :search_directory
-echo Searching for Sim4Life installations in "%SEARCH_DIR%"...
-echo %SEARCH_DIR%\Sim4Life_*
 for /d %%D in ("%SEARCH_DIR%\Sim4Life_*") do (
-    echo Found potential Sim4Life installation: %%~fD
     set "SIM4LIFE_DIR=%%~fD"
     call :add_installation
 )
@@ -144,13 +138,10 @@ exit /b 0
 
 :add_installation
 if not exist "%SIM4LIFE_DIR%\Python\python.exe" exit /b 0
-echo python exists
 set "VERSION_INI=%SIM4LIFE_DIR%\version.ini"
 if not exist "%VERSION_INI%" exit /b 0
-echo version.ini exists
 call :read_sim4life_version
 if errorlevel 1 exit /b 0
-echo read_sim4life_version called "%SIM4LIFE_RELEASE%"
 call :resolve_release
 if errorlevel 1 exit /b 0
 set /a INSTALL_COUNT+=1
@@ -178,10 +169,6 @@ for /f "usebackq tokens=1,2,* delims==	 " %%A in ("!VERSION_INI!") do (
         if /i "!KEY!"=="BuildVersion" set "VERSION_BUILD=!VALUE!"
     )
 )
-echo VERSION_MAJOR=!VERSION_MAJOR!
-echo VERSION_MINOR=!VERSION_MINOR!
-echo VERSION_UPDATE=!VERSION_UPDATE!
-echo VERSION_BUILD=!VERSION_BUILD!
 for %%V in (MAJOR MINOR UPDATE BUILD) do if not defined VERSION_%%V exit /b 1
 endlocal & set "SIM4LIFE_RELEASE=%VERSION_MAJOR%.%VERSION_MINOR%" & set "SIM4LIFE_VERSION=%VERSION_MAJOR%.%VERSION_MINOR%.%VERSION_UPDATE%.%VERSION_BUILD%"
 exit /b 0
@@ -263,7 +250,7 @@ if "%~1"=="editable" (
     "%PYTHON_EXE%" -m pip install -e "%PERSONALIZER_ROOT%" -c "%CONSTRAINTS%" --no-warn-script-location --quiet
 ) else (
     REM The published artifact can be replaced without a version bump.
-    "%PYTHON_EXE%" -m pip uninstall --yes personalizer
+    "%PYTHON_EXE%" -m pip uninstall --yes personalizer --quiet
     if errorlevel 1 (
         echo ERROR: Could not uninstall the existing Personalizer package. 1>&2
         set "INSTALL_EXIT=1"

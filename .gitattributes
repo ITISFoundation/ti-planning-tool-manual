@@ -1,0 +1,2 @@
+public/assets/offline_personalizer_batch/run_personalizer.bat text eol=crlf
+public/assets/offline_personalizer_batch/orchestrator.bat text eol=crlf
