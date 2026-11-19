@@ -23,9 +23,9 @@ The anonymization workflow consists of two stages:
 The local personalizer pipeline (`run_personalizer.bat`) generates an anonymized, personalized head model with electrode placement from a T1 MRI scan using Sim4Life.
 
 **Prerequisites**
-- [Sim4Life](https://sim4life.swiss/) **version 9.4 or later**, installed on Windows.
+- [Sim4Life](https://sim4life.swiss/) **version 9.4 or 10.0**, installed on Windows.
 - A T1 MRI scan in NIfTI format (`.nii.gz`). The filename must contain `t1`.
-- The `personalizer` Python package is automatically installed into Sim4Life's bundled Python environment on first run.
+- The `personalizer` Python package is automatically installed into Sim4Life's bundled Python environment.
 - Atlas data (~37 MB) is downloaded automatically to `%USERPROFILE%\.personalizer` on first run.
 
 **Input files**
@@ -48,33 +48,75 @@ project_root\
 Open a Command Prompt and run the batch file. Paths containing spaces must be enclosed in double quotes:
 
 ```bat
-run_personalizer.bat --sim4life "C:\Program Files\Sim4Life_9.4" --project-root C:\data\subj01 --electrode-radius 7.0
+run_personalizer.bat --project-root C:\data\subj01 --electrode-radius 7.0
 ```
 
-Key arguments:
+#### Required Arguments
 
-| Argument                | Description                                                |
-| ----------------------- | ---------------------------------------------------------- |
-| `--project-root PATH`  | Project root directory (contains `inputs/` and `outputs/`) |
-| `--electrode-radius MM` | Electrode radius in mm (e.g. `7.0`)                       |
-| `--electrode-type TYPE` | Preset type: `ROUND_1_6CM2` or `ROUND_3CM2`               |
-| `--sim4life PATH`       | Sim4Life installation directory (if non-default)           |
-| `--atlas NAME`          | Brain atlas to register (e.g. `ICBM_152`)                 |
-| `--dti`                 | Process DTI/DWI data for anisotropic conductivity          |
-| `--register-dti`                 | Register DTI to MRI T1 before conductivity extraction (safe only for minor translations with no rotation — if rotation is involved, register the T1 to the DTI yourself)          |
-| `--denoise-dti`                 | Denoise DTI data before conductivity extraction          |
-| `--max-bval INT`                 | Exclude DTI shells above this b-value threshold (e.g. 1000)          |
-| `--dti-model MODEL`                 | Diffusion model for conductivity extraction: `auto`, `dti`, or `dki`          |
+You must provide the project location:
 
-You must provide either `--electrode-radius` or `--electrode-type`.
+| Argument              | Description                                                |
+| --------------------- | ---------------------------------------------------------- |
+| `--project-root PATH` | Project root directory (contains `inputs/` and `outputs/`) |
 
-**What it does**
+And **at least one** of:
+
+| Argument                | Description                                 |
+| ----------------------- | ------------------------------------------- |
+| `--electrode-radius MM` | Electrode radius in mm (e.g. `7.0`)         |
+| `--electrode-type TYPE` | Preset type: `ROUND_1_6CM2` or `ROUND_3CM2` |
+
+
+
+#### Optional Arguments
+
+**General**
+
+
+| Argument                  | Default                | Description                  |
+| ------------------------- | ---------------------- | ---------------------------- |
+| `--sim4life PATH`         | _(auto-detected)_      | Sim4Life installation directory (if omitted, compatible versions are searched) |
+| `--atlas NAME`            | _(none)_               | Brain atlas to register (e.g. `ICBM_152`) |
+| `--no-electrodes`        | off                     | Skip electrode placement |
+| `--electrodes-only`      | off                     | Replace the EEG electrodes in the existing workspace model without regenerating it or running the atlas/DTI stages |
+
+
+**DTI**
+| Argument                  | Default                | Description                  |
+| ------------------------- | ---------------------- | ---------------------------- |
+| `--dti`                  | off                     | Process DTI/DWI data for anisotropic conductivity |
+| `--register-dti`         | off                     | Register DTI to MRI before conductivity extraction (safe only for minor translations with **no rotation** — if rotation is involved, register the MRI to the DTI yourself) |
+| `--denoise-dti`          | off                     | Denoise DTI data before conductivity extraction |
+| `--max-bval INT`         | _(none)_                | Exclude DTI shells above this b-value threshold (e.g. `1000`) |
+| `--dti-model MODEL`      | `auto`                  | Diffusion model for conductivity extraction: `auto`, `dti`, or `dki` |
+| `--bvec-frame FRAME`     | `fsl`                   | Coordinate frame of the b-vectors in the `.bvec` file: `fsl` or `world` |
+
+
+#### DTI Model Selection (--dti-model MODEL)
+
+- `auto` selects DKI when the input contains at least two non-zero b-value shells; otherwise it selects DTI.
+- `dti` fits a second-order diffusion tensor assuming Gaussian diffusion. It is best suited to low-to-moderate diffusion weighting; estimates can become biased when non-Gaussian diffusion is significant at higher b-values.
+- `dki` accounts for non-Gaussian diffusion by jointly estimating diffusion and kurtosis tensors. It requires multi-shell data with at least three b-value levels including b=0.
+
+When `dti` is selected for data containing a shell at or above b=1500, the pipeline emits a warning. Use `dki` for suitable multi-shell data, or use `--max-bval` to restrict fitting to lower shells.
+
+#### B-vector Frame (--bvec-frame FRAME)
+
+The `.bvec` file does not encode its coordinate frame. The default, `fsl`, means
+the vectors are in voxel axes, as written by `dcm2niix` (with x negated for
+right-handed affines); they are rotated into the world frame before fitting.
+Use `world` when the vectors are already in the scanner/world frame, for example
+when derived directly from DICOM or supplied as an MRtrix table. Select the
+frame from the data's provenance; it cannot be detected from the vector values.
+
+
+#### What it does
 
 - The tool **deforms facial features** (face, ears, etc.) beyond recognition, removing identifying characteristics from the image.
 - Crucially, internal tissue structures relevant for TI planning are **not degraded** by this process.
 - It **automatically segments** the different tissues in the image and generates a personalized head model with electrode placement.
 
-**Output**
+#### Output
 
 The pipeline produces the following files in the project's `outputs/` directory:
 
@@ -88,7 +130,7 @@ The pipeline produces the following files in the project's `outputs/` directory:
 | `outputs/output_6/` | SAT file (`.sat`) — head model      |
 | `outputs/output_7/` | T1 image resampled (`.nii.gz`) — processed T1 |
 | `outputs/output_8/` | Label field (`.nii.gz`) — tissue labels    |
-| `outputs/output_9/` | Tissue list (`.txt`) — tissue names      |
+| `outputs/output_9/` | Tissue list (`.txt`) — tissue names |
 
 All output files are bundled into a zip archive (`results.zip`) along with a `personalizer_args.json` file that records the exact parameters used.
 
@@ -113,7 +155,8 @@ Running the cloud simulations for a personalized head model costs approximately 
 
 ### Requirements
 
-- A local installation of [Sim4Life](https://sim4life.swiss/) **version 9.4** on Windows.
+- A local installation of [Sim4Life](https://sim4life.swiss/) on Windows.
+- Supported S4L versions: **9.4 / 10.0**
 - The offline personalizer batch file: <a :href="withBase('/assets/offline_personalizer_batch/run_personalizer.bat')" download="run_personalizer.bat">Download</a>.
 - A T1-weighted MRI scan in `.nii.gz` format meeting the [data quality requirements](/docs/plan/data_quality_requirements.md).
 - A TIP account with sufficient credits for cloud simulation (see [Billing Center](/docs/platform_introduction/billing_center.md)).
